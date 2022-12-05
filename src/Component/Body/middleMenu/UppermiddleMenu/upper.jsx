@@ -7,6 +7,34 @@ import OwlCarousel from "react-owl-carousel"
 import "owl.carousel/dist/assets/owl.carousel.min.css"
 import "owl.carousel/dist/assets/owl.theme.default.min.css"
 
+const options = {
+    margin: 10,
+    responsiveClass: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        700: {
+            items: 2,
+        },
+        1000: {
+            items: 2,
+
+        }
+    },
+};
+
+
+
+
+
 function UpperMiddleMenu() {
     return (
         <>
@@ -25,7 +53,7 @@ function UpperMiddleMenu() {
                                     <div className={uppercss.profileinfo}>
                                         <h5>S. Osama Ali</h5>
                                         <p>Sr. UI/UX Designer</p>
-                                        <progress id="file" value="82" max="100"> </progress>
+                                        <progress id="file" value="82" max="100"/>
                                         <div className={uppercss.progressLabel}>
                                             <label>complete Your Profile</label>
                                             <label>82%</label>
@@ -135,12 +163,7 @@ function UpperMiddleMenu() {
                             <div className={uppercss.notificationbarouter}>
                                 <div className={uppercss.notificationbarinner}>
                                     <div className={uppercss.innerbars}>
-                                        <OwlCarousel
-                                            className="owl-theme"
-                                            items="2"
-                                            nav
-                                            margin={10}
-                                        >
+                                        <OwlCarousel  className="owl-theme" {...options}>
                                             <div className={` item  ${uppercss.notificationbar}`}>
                                                 <div className={uppercss.notificationBarprofile}>
                                                     <img src={noticeboardprofilepic} />
