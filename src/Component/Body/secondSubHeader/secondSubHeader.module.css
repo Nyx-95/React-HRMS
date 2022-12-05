@@ -1,0 +1,35 @@
+.UserMenuTopHeader{
+    border-bottom: 2px solid #faf6fc;
+    padding-top: 8.8%;
+    z-index: 2;
+    background-color: white;
+}
+.UserDetailsMainHeadingInner img{
+    width: 12%;
+}
+.UserMenuTopHeader ul {
+
+    margin-bottom: 0;
+    font-size: 1vw;
+    display: flex;
+    padding-left: 15%;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.UserMenuTopHeader li{
+    text-align: center;
+    padding: 0% 1% 1% 1%;
+}
+.UserMenuTopHeader li:hover{
+    border-bottom: 3px solid #8200c6;
+}
+.UserMenuTopHeader li a{
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+.UserMenuTopHeader li a:hover{
+    text-decoration: none;
+    color: #8200c6;
+}

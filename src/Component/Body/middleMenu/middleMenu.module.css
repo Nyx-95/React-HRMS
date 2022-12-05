@@ -1,0 +1,9 @@
+.upperrow {
+    padding-top: 35px;
+    padding-left: 0;
+}
+.lowerrow{
+    padding-top: 35px;
+    padding-left: 0;
+    padding-bottom: 35px;
+}
