@@ -101,9 +101,13 @@ font-size: 11px;
     width: 100%;
 }
 
-#file[value]::-moz-progress-bar { background: red; }
-#file[value]::-webkit-progress-value { background: red; }
-#file { color: red; }
+
+
+.profileinfo progress { 
+    accent-color: #8300c6;
+    width: 90%;
+    height: 7px;
+    }
 
 .profilescheduleinnerUl1{
     width: 50%;

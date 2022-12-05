@@ -8,11 +8,6 @@ import "owl.carousel/dist/assets/owl.carousel.min.css"
 import "owl.carousel/dist/assets/owl.theme.default.min.css"
 
 function UpperMiddleMenu() {
-
-
-
-
-
     return (
         <>
 
@@ -30,9 +25,7 @@ function UpperMiddleMenu() {
                                     <div className={uppercss.profileinfo}>
                                         <h5>S. Osama Ali</h5>
                                         <p>Sr. UI/UX Designer</p>
-                                        <div className="progressBar">
-                                            <div className="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                                        <progress id="file" value="82" max="100"> </progress>
                                         <div className={uppercss.progressLabel}>
                                             <label>complete Your Profile</label>
                                             <label>82%</label>
