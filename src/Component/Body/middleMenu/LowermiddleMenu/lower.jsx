@@ -211,7 +211,7 @@ function LowerMiddleMenu() {
                         <div className={lowercss.EmployeDataInner}>
 
                             <div className="row">
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 col-6">
                                     <div className={lowercss.EmplpoyeeWrapper}>
                                         <div className={lowercss.EmplpoyeeWrapperInner}>
                                             <img src={graphbar1}></img>
@@ -221,7 +221,7 @@ function LowerMiddleMenu() {
 
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 col-6">
                                     <div className={lowercss.EmplpoyeeWrapper}>
                                         <div className={lowercss.EmplpoyeeWrapperInner}>
                                             <img src={graphbar2}></img>
@@ -231,7 +231,7 @@ function LowerMiddleMenu() {
 
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className={`col-lg-4 col-12 ${lowercss.employeeColumn}`}>
                                     <div className={lowercss.EmplpoyeeWrapper}>
                                         <div className={lowercss.EmplpoyeeWrapperInner}>
                                             <img src={graphbar3}></img>
@@ -242,8 +242,8 @@ function LowerMiddleMenu() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row mt-5">
-                                <div className="col-lg-4">
+                            <div className={`row ${lowercss.lowerThirdContainer}`}>
+                                <div className="col-lg-4 col-6">
                                     <div className={lowercss.EmplpoyeeWrapper}>
                                         <div className={lowercss.EmplpoyeeWrapperInner}>
                                             <img src={graphbar4}></img>
@@ -253,7 +253,7 @@ function LowerMiddleMenu() {
 
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 col-6">
                                     <div className={lowercss.EmplpoyeeWrapper}>
                                         <div className={lowercss.EmplpoyeeWrapperInner}>
                                             <img src={graphbar5}></img>
@@ -263,7 +263,7 @@ function LowerMiddleMenu() {
 
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className={`col-lg-4 col-12 ${lowercss.employeeColumn}`}>
                                     <div className={lowercss.EmplpoyeeWrapper}>
                                         <div className={lowercss.EmplpoyeeWrapperInner}>
                                             <img src={graphbar6}></img>

@@ -17,9 +17,8 @@ import $ from 'jquery'
 function Header() {
     useEffect(() => {
         let screenWidth = window.innerWidth;
-        console.log(screenWidth)
-        screenWidth <= 991 ? $(".monitornav").hide() : $(".monitornav").show();
-        screenWidth <= 991 ? $(".mobilenav").show() : $(".mobilenav").hide();
+        screenWidth <= 992 ? $(".monitornav").hide() : $(".monitornav").show();
+        screenWidth <= 992 ? $(".mobilenav").show() : $(".mobilenav").hide();
     });
 
 
@@ -32,12 +31,12 @@ function Header() {
         <>
 
             <div className={` row ${headercss.headerrow}`}>
-                <div className="col-lg-3 col-sm-3">
+                <div className="col-lg-2 col-sm-3 col-4">
                     <div className={headercss.headerimage}>
                         <img src={Logo}></img>
                     </div>
                 </div>
-                <div className="col-lg-5 col-sm-6">
+                <div className="col-lg-5 col-sm-7 col-6">
                     <div className={headercss.headersearch}>
                         <div className={headercss.headersearchinner}>
                             <button type="submit"><i className="ri-search-line"></i></button>
@@ -47,7 +46,7 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-2 col-sm-0 monitornav">
+                <div className="col-lg-3 col-sm-0 col-0 monitornav">
                     <div className={headercss.headertime}>
                         <div className={headercss.thirdinnerdiv}>
                             <div className={headercss.Timeindiv}> <label>Time In</label> </div>
@@ -58,7 +57,7 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-2 col-sm-0 monitornav">
+                <div className="col-lg-2 col-sm-0 col-0 monitornav">
                     <div className={headercss.headermenu}>
                         <ul className={headercss.headermenuUl}>
                             <li className={headercss.menuiconli}><a href="#"><img src={Menuicon1} /></a> </li>
@@ -69,7 +68,7 @@ function Header() {
                     </div>
                 </div>
 
-                <div className="col-sm-3 mobilenav">
+                <div className="col-sm-2 col-2 mobilenav">
 
                     <div className="dropDownContainer">
                         <div onClick={toggling} className={headercss.dropDownHeader}><i className="ri-menu-line"></i></div>

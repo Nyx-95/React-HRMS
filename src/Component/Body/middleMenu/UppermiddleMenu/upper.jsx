@@ -10,7 +10,8 @@ import "owl.carousel/dist/assets/owl.theme.default.min.css"
 const options = {
     margin: 10,
     responsiveClass: true,
-    nav: true,
+    nav: false,
+    dots: false,
     responsive: {
         0: {
             items: 1,
@@ -39,7 +40,7 @@ function UpperMiddleMenu() {
     return (
         <>
 
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-12">
 
                 <div className={uppercss.secondlowerdiv}>
                     <div className={uppercss.secondlowerouter}>
@@ -151,7 +152,7 @@ function UpperMiddleMenu() {
                 </div>
 
             </div>
-            <div className="col-lg-8">
+            <div className="col-lg-8 col-12">
 
                 <div className={`row ${uppercss.Noticesboard}`}>
                     <div className={uppercss.Noticesboardinner}>
@@ -170,10 +171,7 @@ function UpperMiddleMenu() {
                                                 </div>
                                                 <div className={uppercss.notificationBarmessage}>
                                                     <h5>Important</h5>
-                                                    <p>It long is established fact that a reader
-                                                        will be
-                                                        distracted
-                                                        by
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem ab ullam. Consectetur sapiente itaque alias excepturi? Animi ea adipisci, voluptates quas perspiciatis quis deleniti qui consequuntur voluptatem corrupti praesentium cum facilis. In cupiditate voluptate officiis eligendi, saepe obcaecati ad esse possimus. Velit, cum sint ipsa reiciendis alias, rem ipsam illo id voluptates maiores ea placeat debitis totam provident! Iste a ipsa dignissimos consectetur minus, eum vero quisquam perferendis commodi tempore cumque iusto asperiores quam totam aliquid quaerat nostrum modi tenetur maiores nemo ullam optio unde! Non, ab ducimus maiores praesentium nobis eaque, minus dolor magnam incidunt fuga autem!
                                                     </p>
                                                 </div>
                                             </div>

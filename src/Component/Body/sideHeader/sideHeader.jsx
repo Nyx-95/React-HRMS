@@ -1,12 +1,20 @@
 import sideHeadercss from "./sideHeader.module.css";
-import leftBarProfilePic from "../../../assets/leftbarprofilepic.png"
+import leftBarProfilePic from "../../../assets/leftbarprofilepic.png";
+import { useState, useEffect } from 'react';
+import $ from 'jquery';
 
 
-function sideHeader() {
+function SideHeader() {
+    useEffect(() => {
+        let screenWidth = window.innerWidth;
+        console.log(screenWidth)
+        screenWidth <= 992 ? $(".mobilesidenav").hide() : $(".mobilesidenav").show();
+        screenWidth <= 992 ? $(".mobilesidenavbutton").show() : $(".mobilesidenavbutton").hide();
+    });
     return ( 
         <>
         
-        <nav className={`${sideHeadercss.mainMenu} ${sideHeadercss.mobilesidenav}`}>
+        <nav className={`mobilesidenav ${sideHeadercss.mainMenu} `}>
                     <div className={sideHeadercss.profileicon}>
                         <div className={sideHeadercss.profileicontab}>
                             <a href="#">
@@ -98,7 +106,7 @@ function sideHeader() {
                       
                     </ul>
         </nav>
-                <div className="mobilesidenavbutton">
+                <div className={`mobilesidenavbutton ${sideHeadercss.mobilesidenavbtn}`}>
                     <div className="mobilesidenavouter">
                         <button className="btn btn-primary movilesidenavbuttonouterbtn shadow-none">Side Bar</button>
                     </div>
@@ -108,7 +116,7 @@ function sideHeader() {
      );
 }
 
-export default sideHeader;
+export default SideHeader;
 
 
 

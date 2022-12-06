@@ -53,7 +53,7 @@
 
 .headertime {
     width: 90%;
-    height: 35%;
+
     margin: 16% 5% 10% 5%;
 }
 
@@ -219,32 +219,85 @@
 
 
 @media (min-width: 320px) {
-/*
+ 
+/*Top header*/
+
  .headerimage{
     width: 100%;
-    margin: 10% 0% 10% 0%;
-    display: flex;
-    justify-content: center;
+    margin: 25px 10px 25px 10px;
+ }
+ .headerimage img{
+    width: 100%;
  }
  .headersearch{
-    height: 80%;
-    width: 80%;
-    margin: 5% 5% 4% 0%;
-    margin-right: 0px;
+
+    margin: 20px 0px 20px 0px;
+    width: 100%;
  }
+ .headersearchinner{
+    width: 100%;
+ }
+ .headersearchinner input{
+    width: 100%;
+ } 
  #searchinput{
     padding-left: 40px;
  }
 
-    */
 }
 
 @media (min-width: 576px) {
    
-    
+       /*Top header*/
+
+ .headerimage{
+    width: 100%;
+    margin: 25px 10px 25px 10px;
+ }
+ .headerimage img{
+    width: 100%;
+ }
+ .headersearch{
+
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+ }
+ .headersearchinner{
+    width: 100%;
+ }
+ .headersearchinner input{
+    width: 100%;
+ } 
+ #searchinput{
+    padding-left: 40px;
+ }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
+    .headerimage{
+        width: 100%;
+        margin: 25px 10px 25px 10px;
+     }
+     .headerimage img{
+        width: 100%;
+     }
+     .headersearch{
+    
+        margin: 20px 0px 20px 0px;
+        width: 100%;
+     }
+     .headersearchinner{
+        width: 100%;
+     }
+     .headersearchinner input{
+        width: 100%;
+     } 
+     #searchinput{
+        padding-left: 40px;
+     }
+     .headertime{
+        margin: 9% 5% 10% 5%;
+     }
    
 }
 

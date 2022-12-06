@@ -163,3 +163,33 @@ nav.mainMenu li.active>a,
 
     color: #8200c6;
 }
+
+
+.mobilesidenavbuttonouter{
+    height: 100%;
+    width: 100%;
+}
+
+.mobilesidenavbtn button{
+
+    font-size: 0.9em;
+    position: fixed;
+    width: 100px;
+    z-index: 500;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8300c6;
+    --bs-btn-border-color: #8300c6;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #a34dce;
+    --bs-btn-hover-border-color: #a34dce;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #8600c9;
+    --bs-btn-active-border-color: #8600c9;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
+}
+.mobilesidenavbtn button:focus{
+    background-color: #8600c9;
+    border-color: #8600c9;
+}

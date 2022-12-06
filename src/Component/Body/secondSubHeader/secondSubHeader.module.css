@@ -33,3 +33,92 @@
     text-decoration: none;
     color: #8200c6;
 }
+
+.subHeaderLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subHeaderLink p{
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+
+@media (min-width: 320px) {
+ 
+    /*Second Sub Header*/
+
+    .UserMenuTopHeader{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100% !important;
+        padding-top: 95px ;
+    }
+
+    
+    .UserMenuTopHeader::-webkit-scrollbar {
+        display: none;
+    }
+
+    .UserMenuTopHeader ul li a{
+        font-size: 10px;
+    }
+
+    .UserMenuTopHeader li {
+        padding: 0% 0% 1% 0%;
+        width: 100%;
+        min-width: 120px;
+    }
+   
+}
+
+@media (min-width: 576px) {
+
+     /*Second Sub Header*/
+
+     .UserMenuTopHeader{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100% !important;
+        padding-top: 16%;
+    }
+
+    
+    .UserMenuTopHeader::-webkit-scrollbar {
+        display: none;
+    }
+
+    .UserMenuTopHeader ul li a{
+        font-size: 10px;
+    }
+
+    .UserMenuTopHeader li {
+        padding: 0% 0% 1% 0%;
+        width: 100%;
+        min-width: 120px;
+    }
+   
+    
+}
+
+@media (min-width: 992px) {
+   
+    .UserMenuTopHeader{
+        padding-top: 10%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .UserMenuTopHeader{
+        padding-top: 9%;
+    }
+    .UserMenuTopHeader ul{
+        padding-left: 0%;
+    }
+}
+
+@media (min-width: 1400px) {
+
+}
