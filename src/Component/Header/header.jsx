@@ -60,10 +60,10 @@ function Header() {
                 <div className="col-lg-2 col-sm-0 col-0 monitornav">
                     <div className={headercss.headermenu}>
                         <ul className={headercss.headermenuUl}>
-                            <li className={headercss.menuiconli}><a href="#"><img src={Menuicon1} /></a> </li>
-                            <li className={headercss.menuiconli}> <a href="#"><img src={Menuicon2} /></a> </li>
-                            <li className={headercss.menuiconli}> <a href="#"><img src={Menuicon3} /></a> </li>
-                            <li className={headercss.menuiconli}> <a href="#"><img src={Menuicon4} /> </a> </li>
+                            <li className={headercss.menuiconli}><a href="#"><i className="ri-function-line"></i></a> </li>
+                            <li className={headercss.menuiconli}> <a href="#"><i className="ri-wechat-line"></i></a> </li>
+                            <li className={headercss.menuiconli}> <a href="#"><i className="ri-notification-3-line"></i></a> </li>
+                            <li className={headercss.menuiconli}> <a href="#"><i className="ri-settings-3-line"></i> </a> </li>
                         </ul>
                     </div>
                 </div>
@@ -88,25 +88,25 @@ function Header() {
                                     </div>
                                     <div className={headercss.ListItem}>
                                         <a href="#">
-                                            <div className={headercss.menuIconName}><img src={Menuicon1} />
+                                            <div className={headercss.menuIconName}><i className="ri-function-line"></i>
                                                 <span>Menu</span></div>
                                         </a>
                                     </div>
                                     <div className={headercss.ListItem}>
                                         <a href="#">
-                                            <div className={headercss.menuIconName}><img src={Menuicon2} />
+                                            <div className={headercss.menuIconName}><i className="ri-wechat-line"></i>
                                                 <span>Chat</span></div>
                                         </a>
                                     </div>
                                     <div className={headercss.ListItem}>
                                         <a href="#">
-                                            <div className={headercss.menuIconName}><img src={Menuicon3} />
+                                            <div className={headercss.menuIconName}><i className="ri-notification-3-line"></i>
                                                 <span>Notification</span></div>
                                         </a>
                                     </div>
                                     <div className={headercss.ListItem}>
                                         <a href="#">
-                                            <div className={headercss.menuIconName}><img src={Menuicon4} />
+                                            <div className={headercss.menuIconName}><i className="ri-settings-3-line"></i>
                                                 <span>Settings</span></div>
                                         </a>
                                     </div>
