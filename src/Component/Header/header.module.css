@@ -287,7 +287,7 @@ text-decoration: none;
 
 @media (min-width: 992px) {
     .headerimage{
-        width: 100%;
+        width: 90%;
         margin: 25px 10px 25px 10px;
      }
      .headerimage img{

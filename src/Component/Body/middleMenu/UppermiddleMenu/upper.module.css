@@ -414,6 +414,15 @@ font-size: 11px;
 }
 
 @media (min-width: 1200px) {
+    .secondlowerinner{
+        margin-left: 1%;
+    }
+    .Noticesboardinner{
+        margin-left: 6%;
+        margin-top: 0px;
+        margin-right: 10%;
+        width: 92%;
+    }
   
 }
 

@@ -349,6 +349,11 @@
 }
 
 @media (min-width: 1200px) {
+
+
+    .Employeeinner{
+        margin-left: 8%;
+    }
     .EmployeDataOuter{
         margin-top: 0px;
         margin-left: 8%;
@@ -363,7 +368,10 @@
         width: 100%;
         min-width: 100px;
     }
-  
+    .timetrackinginner{
+        margin-top: 0px;
+        margin-left: 10%;
+    }
 }
 
 @media (min-width: 1400px) {
