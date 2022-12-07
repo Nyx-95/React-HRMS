@@ -163,8 +163,6 @@ nav.mainMenu li.active>a,
 
     color: #8200c6;
 }
-
-
 .mobilesidenavbuttonouter{
     height: 100%;
     width: 100%;
@@ -193,3 +191,52 @@ nav.mainMenu li.active>a,
     background-color: #8600c9;
     border-color: #8600c9;
 }
+
+.mobilesidebarmain{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.mobilesidenavouter button{
+    bottom: 50%;
+    left: -35px;
+    z-index: 2000;
+    rotate: 90deg;
+    position: fixed;
+}
+
+
+    @media (min-width: 320px) {
+    
+        .mainMenu{
+            width: 250px;
+            margin-top: 80px;
+        }
+
+
+    }
+    
+    @media (min-width: 576px) {
+      
+    }
+    
+    @media (min-width: 992px) {
+        .mainMenu{
+            width: 90px;
+            margin-top: 7.5%;
+        }
+
+       
+    }
+    
+    @media (min-width: 1200px) {
+      
+    }
+    
+    @media (min-width: 1400px) {
+    
+    }
+    
+    
+    

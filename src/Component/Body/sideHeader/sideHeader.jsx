@@ -10,6 +10,25 @@ function SideHeader() {
         console.log(screenWidth)
         screenWidth <= 992 ? $(".mobilesidenav").hide() : $(".mobilesidenav").show();
         screenWidth <= 992 ? $(".mobilesidenavbutton").show() : $(".mobilesidenavbutton").hide();
+
+
+
+        $(".mobilesidenav").on('click',()=>{
+            $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width()-32}px`);
+        })
+        $(".movilesidenavbuttonouterbtn").on ('click', function(){
+            $(".mobilesidenav").toggle();
+            if($(".mobilesidenav").is(":visible")){
+                $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width()-32}px`);
+            }
+            else{
+                $(".movilesidenavbuttonouterbtn").css("left", "-35px");
+            }
+    
+        });
+
+
+
     });
     return ( 
         <>
@@ -107,8 +126,8 @@ function SideHeader() {
                     </ul>
         </nav>
                 <div className={`mobilesidenavbutton ${sideHeadercss.mobilesidenavbtn}`}>
-                    <div className="mobilesidenavouter">
-                        <button className="btn btn-primary movilesidenavbuttonouterbtn shadow-none">Side Bar</button>
+                    <div className={sideHeadercss.mobilesidenavouter}>
+                        <button className={`btn btn-primary shadow-none movilesidenavbuttonouterbtn ${sideHeadercss.movilesidenavbuttonouterbutton}`}>Side Bar</button>
                     </div>
                 </div>
 

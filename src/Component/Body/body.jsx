@@ -12,8 +12,8 @@ function Body() {
                  
                 </div>
                 <div className="col-lg-11 col-sm-11">
-                <div className="row"> <SecondSubHeader></SecondSubHeader> </div>
-                <div className="row"> <MiddleMenu></MiddleMenu></div>
+                <div className="row gx-0"> <SecondSubHeader></SecondSubHeader> </div>
+                <div className="row gx-0"> <MiddleMenu></MiddleMenu></div>
                
                 </div>
             </div>
