@@ -12,7 +12,7 @@ function SideHeader() {
         screenWidth <= 992 ? $(".mobilesidenavbutton").show() : $(".mobilesidenavbutton").hide();
 
 
-
+     
         $(".mobilesidenav").on('click',()=>{
             $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width()-32}px`);
         })

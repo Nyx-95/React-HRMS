@@ -73,7 +73,7 @@ function Header() {
                     <div className="dropDownContainer">
                         <div onClick={toggling} className={headercss.dropDownHeader}><i className="ri-menu-line"></i></div>
                         {isOpen && (
-                            <div className={headercss.dropDownListContainer}>
+                            <div className={`dropDownListContain ${headercss.dropDownListContainer}`}>
                                 <div className={headercss.DropDownList}>
                                     <div className={headercss.ListItem}>
                                         <div className={headercss.headertime}>
