@@ -1,0 +1,77 @@
+.componentMain{
+    border: 1px solid #f0f0f0;
+    padding: 12px 18px 12px 18px;
+    border-radius: 15px;
+    width: 100%;
+    min-width: 20vw;
+    margin-top: 20px;
+}
+.componentMainInner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.componentPicture{
+    width: 25%;
+}
+.componentPicture img{
+    width: 100%;
+}
+.componentInfo{
+    width: 75%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.componentInfo h6{
+    margin-bottom: 0;
+}
+.componentInfo p{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight:500;
+    color: #9322cc;
+}
+.secondLowerDiv{
+ display: flex;
+ 
+}
+.secondLowerDiv2{
+    margin-left: 80px;
+}
+.thirdLowerDiv{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.firstLowerDiv h6{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.secondLowerDiv h6{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.thirdLowerDiv h6{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.firstLowerDiv label{
+    color: #aeaeae;
+    font-size: 13px;
+}
+
+.secondLowerDiv label{
+    color: #aeaeae;
+    font-size: 13px;
+}
+.thirdLowerDiv label{
+    margin-top: 10px;
+    color: #aeaeae;
+    font-size: 13px;
+}
