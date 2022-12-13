@@ -107,7 +107,8 @@ function Header() {
                                     <div className={headercss.ListItem}>
                                         <a href="#">
                                             <div className={headercss.menuIconName}><i className="ri-settings-3-line"></i>
-                                                <span>Settings</span></div>
+                                                <span>Settings</span>
+                                            </div>
                                         </a>
                                     </div>
                                 </div>

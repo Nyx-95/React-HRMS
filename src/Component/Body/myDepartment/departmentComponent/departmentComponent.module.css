@@ -75,3 +75,31 @@
     color: #aeaeae;
     font-size: 13px;
 }
+
+@media (min-width: 320px) {
+    .componentMain{
+ 
+        width: 90%;
+  
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .componentMain{
+ 
+        width: 95%;
+  
+    }
+  }
+  
+  @media (min-width: 992px) {
+   
+  }
+  
+  @media (min-width: 1200px) {
+    
+  }
+  
+  @media (min-width: 1400px) {
+  
+  }

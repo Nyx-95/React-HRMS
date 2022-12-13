@@ -7,7 +7,7 @@
     height: 36px;
     text-align: center;
     vertical-align: middle;
-    font-size: 28px;
+    font-size: 24px;
 }
 .mainMenu span {
     position: relative;
@@ -64,8 +64,9 @@ nav.mainMenu.expanded {
 }
 .profileicontab a span{
     margin-left: 20px;
- 
-
+}
+.profileicontab a img{
+    width: 23%;
 }
 
 .profileicon {
@@ -76,7 +77,9 @@ nav.mainMenu.expanded {
     border-bottom: 2px solid #faf6fc;
 }
 
-
+.leftBarProfilePic{
+    width: 50%;
+}
 
 
 

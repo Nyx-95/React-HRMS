@@ -16,7 +16,15 @@ const myDepartment = () => {
                         <div className={departmentCss.searchIconMain}><a href='#'><i className="ri-search-line"></i></a></div>
                     </div>
                 </div>
-                <div className={`row ${departmentCss.myDepartmentMain}`}>
+                <div className={`row gx-0 ${departmentCss.myDepartmentMain}`}>
+                    <DepartmentComponent></DepartmentComponent>
+                    <DepartmentComponent></DepartmentComponent>
+                    <DepartmentComponent></DepartmentComponent>
+                    <DepartmentComponent></DepartmentComponent>
+                    <DepartmentComponent></DepartmentComponent>
+                    <DepartmentComponent></DepartmentComponent>
+                    <DepartmentComponent></DepartmentComponent>
+                    <DepartmentComponent></DepartmentComponent>
                     <DepartmentComponent></DepartmentComponent>
                 </div>
         </div>

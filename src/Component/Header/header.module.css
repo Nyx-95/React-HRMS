@@ -314,7 +314,9 @@ text-decoration: none;
 }
 
 @media (min-width: 1200px) {
-  
+  .thirdinnerdiv{
+    width: 70%;
+  }
 }
 
 @media (min-width: 1400px) {

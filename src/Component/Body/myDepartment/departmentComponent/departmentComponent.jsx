@@ -5,7 +5,7 @@ import componentProfilePic from "../../../../assets/lowerseconddivprofilepic.png
 const departmentComponent = () => {
     return (
         <>
-            <div className='col-xl-3'>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3'>
                 <div className={DepartmentComponentCss.componentMain}>
                     <div className={DepartmentComponentCss.componentMainInner}>
                         <div className={DepartmentComponentCss.componentPicture}>
