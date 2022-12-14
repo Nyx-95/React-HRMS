@@ -1,0 +1,41 @@
+.headingInner {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.headingWrapper h4 {
+    margin-bottom: 0;
+}
+
+.editDetailInner{
+    margin-left: 20px;
+    width: 95%;
+    border: 1px solid #bbbbc0;
+    border-radius: 25px;
+    padding: 10px 40px 10px 40px;
+}
+
+.editDetailInner table{
+    table-layout : fixed;
+    width: 100%;
+
+}
+
+.editDetailInner table thead tr th{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #bbbbc0;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
+.editDetailInner table tbody tr td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    
+  
+}
