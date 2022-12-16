@@ -1,9 +1,5 @@
 import headercss from "./header.module.css";
 import Logo from "../../assets/logo.png"
-import Menuicon1 from "../../assets/menuicon1.png"
-import Menuicon2 from "../../assets/menuicon2.png"
-import Menuicon3 from "../../assets/menuicon3.png"
-import Menuicon4 from "../../assets/menuicon4.png"
 import { useState, useEffect } from 'react';
 import * as React from 'react';
 import $ from 'jquery'
@@ -20,8 +16,6 @@ function Header() {
         screenWidth <= 992 ? $(".monitornav").hide() : $(".monitornav").show();
         screenWidth <= 992 ? $(".mobilenav").show() : $(".mobilenav").hide();
     });
-
-
 
     const [isOpen, setIsOpen] = useState(false);
     const toggling = () => setIsOpen(!isOpen);

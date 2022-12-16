@@ -16,44 +16,56 @@ const educationalDetail = () => {
 
                     </div>
                 </div>
-                <div className={`row gx-0 ${educationalDetailCss.editDetailMain}`}>
-                    <div className={educationalDetailCss.editDetailInner}>
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Qualification</th>
-                                    <th scope="col">Year</th>
-                                    <th scope="col">Degree Detail</th>
-                                    <th scope="col">Subject</th>
-                                    <th scope="col">Grade</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Graduation</td>
-                                    <td>2018</td>
-                                    <td>lorem lpsum</td>
-                                    <td>Eng-Business</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr>
-                                <td>Graduation</td>
-                                    <td>2018</td>
-                                    <td>lorem lpsum</td>
-                                    <td>Eng-Business</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr>
-                                <td>Graduation</td>
-                                    <td>2018</td>
-                                    <td>lorem lpsum</td>
-                                    <td>Eng-Business</td>
-                                    <td>A</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div className="row">
+                        <div className={`${educationalDetailCss.UserDetailsMenuTable} ${educationalDetailCss.DepartmentTable}`}>
+                            <div className={educationalDetailCss.UserDetailsMenuTableInner}>
+                                <table className="table">
+                                    <thead className="thead-dark">
+                                        <tr>
+
+                                            <th scope="col">
+                                                Qualification
+                                            </th>
+                                            <th scope="col">
+                                                Year
+                                            </th>
+                                            <th scope="col">
+                                            Degree Detail
+                                            </th>
+                                            <th scope="col">
+                                                Subject
+                                            </th>
+                                            <th scope="col">
+                                                Grade
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td>Graduation</td>
+                                            <td>2017</td>
+                                            <td>Lorem lypsum</td>
+                                            <td>Eng - Business</td>
+                                            <td>A</td>
+
+                                        </tr>
+                                        <tr>
+
+                                        <td>Graduation</td>
+                                            <td>2017</td>
+                                            <td>Lorem lypsum</td>
+                                            <td>Eng - Business</td>
+                                            <td>A</td>
+                                        </tr>
+                                        
+                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                </div>
             </div>
         </>
     )

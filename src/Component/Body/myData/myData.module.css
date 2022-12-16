@@ -1,0 +1,116 @@
+.headingInner {
+    margin-top: 25px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.headingWrapper h4 {
+    margin-bottom: 0;
+}
+
+
+.myDataBodyFirstRow {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.myDataPic {
+    width: 75%;
+}
+
+.myDataPic img {
+    width: 100%;
+}
+
+.myDataInfo label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.myDataInfo p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b0b0b6;
+}
+
+.subHeadingWrapper {
+    margin-bottom: 30px;
+}
+
+.subHeadingWrapper h4 {
+    margin-bottom: 0;
+}
+
+
+@media (min-width: 320px) {
+    .myDataPic {
+        margin-bottom: 20px;
+    }
+
+    .myDataBodyInner {
+        margin-left: 30px;
+    }
+
+    .headingInner {
+        margin-left: 30px;
+    }
+
+    .myDataBodyFirstRow {
+        margin-left: 10px;
+        margin-bottom: 50px;
+        padding-top: 20px;
+        border: 1px solid #f1f1f1;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 576px) {
+    .myDataPic {
+        width: 40%;
+
+        margin-bottom: 40px;
+        margin-left: 90px;
+    }
+
+    .myDataBodyInner {
+        margin-left: 0px;
+    }
+
+    .headingInner {
+        margin-left: 0px;
+    }
+
+    .myDataBodyFirstRow {
+        margin-left: 0px;
+        margin-bottom: 45px;
+        padding-top: 20px;
+        border: 1px solid #f1f1f1;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .myDataPic {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    }
+    .myDataBodyFirstRow {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        border: 0px;
+        border-radius: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .myDataPic {
+        width: 70%;
+   
+        }
+}
+
+@media (min-width: 1400px) {}

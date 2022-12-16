@@ -1,0 +1,71 @@
+{
+    "name": "Affan Mehmood",
+    "attributes": {
+      "jobPosition":"Sr.Manager-Ecommerce",
+      "email":"mehwish@legendesk.com",
+      "cnicNo":"41524355152379",
+      "cnicExpire":"11-11-2020",
+      "dateOfBirth":"11-11-2000",
+      "dateOfJoining":"11-11-2022",
+      "martialStatus":"Single",
+      "childrens":"2"
+    },
+    "children": [
+      {
+        "name": "Nancy Rose",
+        "attributes": {
+            "jobPosition":"Sr.Manager-Ecommerce",
+            "email":"mehwish@legendesk.com",
+            "cnicNo":"41524355152379",
+            "cnicExpire":"11-11-2020",
+            "dateOfBirth":"11-11-2000",
+            "dateOfJoining":"11-11-2022",
+            "martialStatus":"Single",
+            "childrens":"2"
+        },
+        "children": [
+          {
+            "name": "Nancy Rose",
+            "attributes": {
+                "jobPosition":"Sr.Manager-Ecommerce",
+                "email":"mehwish@legendesk.com",
+                "cnicNo":"41524355152379",
+                "cnicExpire":"11-11-2020",
+                "dateOfBirth":"11-11-2000",
+                "dateOfJoining":"11-11-2022",
+                "martialStatus":"Single",
+                "childrens":"2"
+            }
+          },
+          {
+            "name": "Heath Rose",
+            "attributes": {
+                "jobPosition":"Sr.Manager-Ecommerce",
+                "email":"mehwish@legendesk.com",
+                "cnicNo":"41524355152379",
+                "cnicExpire":"11-11-2020",
+                "dateOfBirth":"11-11-2000",
+                "dateOfJoining":"11-11-2022",
+                "martialStatus":"Single",
+                "childrens":"2"
+            }
+          },
+          {
+            "name": "Roger Rose",
+            "attributes": {
+                "jobPosition":"Sr.Manager-Ecommerce",
+                "email":"mehwish@legendesk.com",
+                "cnicNo":"41524355152379",
+                "cnicExpire":"11-11-2020",
+                "dateOfBirth":"11-11-2000",
+                "dateOfJoining":"11-11-2022",
+                "martialStatus":"Single",
+                "childrens":"2"
+            }
+          }
+        ]
+      }
+     
+    ]
+  }
+  

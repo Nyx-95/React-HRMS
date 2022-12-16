@@ -37,7 +37,7 @@ const PreviousWork = () => {
                     {components.map((item, keyid) => (
                         <div  key={keyid}>
                             <PreviousComponent text={item} />
-                            <div className={`row ${previousWorkCss.editProfileDeleteButton}`}>
+                            <div className={`row gx-0 ${previousWorkCss.editProfileDeleteButton}`}>
                                 <div className={previousWorkCss.deleteButton}><button className='btn btn-danger' onClick={handleServiceDelete}>Delete</button></div>
                             </div>
                         </div>
