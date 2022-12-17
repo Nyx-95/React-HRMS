@@ -3,9 +3,12 @@ import previousWorkCss from "./previousWork.module.css"
 import headingpicture from "../../../../assets/AllUserbankDetails/headingLinePicture.png"
 import PreviousComponent from './PreviousWorkComponent/previousComponent'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import {ROUTES} from "../../../../Utils/routes"
 
 
 const PreviousWork = () => {
+    const navigate = useNavigate();
 
     const [components, setComponents] = useState([""]);
 
@@ -47,10 +50,10 @@ const PreviousWork = () => {
 
                 <div className={`row ${previousWorkCss.editProfileDiv4}`}>
                     <div className={`col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ${previousWorkCss.editProfileDiv4Inner1}`}>
-                        <button className='btn btn-primary formBackButton'> Back </button>
+                        <button className='btn btn-primary formBackButton' onClick={()=>navigate(ROUTES.ACADEMIC_DETAIL)}> Back </button>
                     </div>
                     <div className={`col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ${previousWorkCss.editProfileDiv4Inner2}`}>
-                        <button className='btn btn-primary formBackButton'> Next </button>
+                        <button className='btn btn-primary formBackButton' > Save </button>
                     </div>
                 </div>
             </div>

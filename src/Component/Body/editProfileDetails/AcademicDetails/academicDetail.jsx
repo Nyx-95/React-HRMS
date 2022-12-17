@@ -1,8 +1,11 @@
 import React from 'react'
 import editProfileCss from "./academicDetail.module.css"
 import headingpicture from "../../../../assets/AllUserbankDetails/headingLinePicture.png"
+import { useNavigate } from 'react-router-dom';
+import {ROUTES} from "../../../../Utils/routes"
 
 const AcademicDetail = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={`row ${editProfileCss.editProfileMain}`}>
@@ -102,10 +105,10 @@ const AcademicDetail = () => {
         </div>
         <div className={`row ${editProfileCss.editProfileDiv4}`}>
               <div className={`col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ${editProfileCss.editProfileDiv4Inner1}`}>
-                <button className='btn btn-primary formBackButton'> Back </button>
+                <button className='btn btn-primary formBackButton' onClick={()=>navigate(ROUTES.EMPLOYEE_DATA)}> Back </button>
               </div>
               <div className={`col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ${editProfileCss.editProfileDiv4Inner2}`}>
-                <button className='btn btn-primary formBackButton'> Next </button>
+                <button className='btn btn-primary formBackButton' onClick={()=>navigate(ROUTES.PREVIOUS_WORK)}> Next </button>
               </div>
             </div>
       </div>

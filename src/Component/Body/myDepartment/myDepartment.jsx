@@ -20,12 +20,6 @@ const myDepartment = () => {
                     <DepartmentComponent></DepartmentComponent>
                     <DepartmentComponent></DepartmentComponent>
                     <DepartmentComponent></DepartmentComponent>
-                    <DepartmentComponent></DepartmentComponent>
-                    <DepartmentComponent></DepartmentComponent>
-                    <DepartmentComponent></DepartmentComponent>
-                    <DepartmentComponent></DepartmentComponent>
-                    <DepartmentComponent></DepartmentComponent>
-                    <DepartmentComponent></DepartmentComponent>
                 </div>
         </div>
     </>

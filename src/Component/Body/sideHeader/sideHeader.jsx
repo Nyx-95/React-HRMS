@@ -2,6 +2,8 @@ import sideHeadercss from "./sideHeader.module.css";
 import leftBarProfilePic from "../../../assets/leftbarprofilepic.png";
 import { useState, useEffect } from 'react';
 import $ from 'jquery';
+import { NavLink } from "react-router-dom";
+import { ROUTES } from "../../../Utils/routes";
 
 
 function SideHeader() {
@@ -44,12 +46,12 @@ function SideHeader() {
                     </div>
                     <ul>
                         <li>
-                            <a href="#">
+                            <NavLink to={ROUTES.HOME}>
                             <i className="ri-dashboard-line"></i>                      
                                 <span className="navText">
                                     Dashboard
                                 </span>
-                            </a>
+                            </NavLink>
 
                         </li>
                         <li className="has-subnav">
