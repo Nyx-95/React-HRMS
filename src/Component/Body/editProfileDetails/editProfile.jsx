@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 const EditProfile = () => {
   return (
     <>
-    <Outlet></Outlet>
+        <Outlet></Outlet>
     </>
   )
 }

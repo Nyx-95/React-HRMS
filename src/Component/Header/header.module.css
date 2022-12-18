@@ -9,7 +9,7 @@
 
 /*header image*/
 .headerimage {
-    margin: 10% 10% 10% 10%;
+
 
 }
 
@@ -54,7 +54,6 @@
 .headertime {
     width: 90%;
 
-    margin: 16% 5% 10% 5%;
 }
 
 
@@ -128,9 +127,9 @@
 /*menubar header*/
 
 .headermenu {
-    margin: 14% 5% 14% 0%;
-    height: 44%;
-    width: 75%;
+   
+    
+    width: 100%;
 }
 
 .headermenu ul {
@@ -239,8 +238,12 @@ text-decoration: none;
     margin: 25px 10px 25px 10px;
  }
  .headerimage img{
-    width: 100%;
+    width: 90px;
  }
+ .headertime {
+    width: 90%;
+    margin: 16% 10px 10% 10px;
+}
  .headersearch{
 
     margin: 20px 0px 20px 0px;
@@ -267,7 +270,7 @@ text-decoration: none;
     margin: 25px 10px 25px 10px;
  }
  .headerimage img{
-    width: 100%;
+    width: 100px;
  }
  .headersearch{
 
@@ -288,10 +291,14 @@ text-decoration: none;
 @media (min-width: 992px) {
     .headerimage{
         width: 90%;
-        margin: 25px 10px 25px 10px;
+       margin: 0;
+        padding: 25px 50px 20px 30px;
+        border-right: 1px solid red;
+        
      }
+   
      .headerimage img{
-        width: 100%;
+        width: 140px;
      }
      .headersearch{
     
@@ -308,15 +315,57 @@ text-decoration: none;
         padding-left: 40px;
      }
      .headertime{
-        margin: 9% 5% 10% 5%;
+        width: 100%;
+        margin: 25px 0px 20px 0px;
+     }
+     .thirdinnerdiv{
+        width: 100%;
+     }
+     .Timeindiv label {
+        margin-left: 10px;
+        font-size: 1vw;
+        color: #000000;
+    }
+     .headermenu{
+        margin: 20px 0px 0px 25px;
+        width: 70%;
+     }
+     .headermenu ul li{
+        margin: 0;
      }
    
 }
 
 @media (min-width: 1200px) {
-  .thirdinnerdiv{
-    width: 70%;
-  }
+    .headerimage{
+        width: 90%;
+        margin: 0;
+        padding: 25px 0px 25px 30px;
+        border-right: 1px solid red;
+     }
+     .headerimage img{
+        width: 180px;
+     }
+     .headertime{
+        margin: 30px 50px 20px 30px;
+     }
+     .thirdinnerdiv{
+        width: 100%;
+     }
+     
+     .headersearch{
+    
+        margin: 25px 0px 20px 0px;
+        width: 100%;
+     }
+     .headermenu{
+        margin: 25px 0px 20px 25px;
+        width: 80%;
+     }
+     .headermenu ul li{
+        margin: 0;
+     }
+  
 }
 
 @media (min-width: 1400px) {

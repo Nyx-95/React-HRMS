@@ -46,12 +46,12 @@ function SideHeader() {
                     </div>
                     <ul>
                         <li>
-                            <NavLink to={ROUTES.HOME}>
+                            <a href="#">
                             <i className="ri-dashboard-line"></i>                      
                                 <span className="navText">
                                     Dashboard
                                 </span>
-                            </NavLink>
+                            </a>
 
                         </li>
                         <li className="has-subnav">
@@ -64,12 +64,12 @@ function SideHeader() {
 
                         </li>
                         <li className="has-subnav">
-                            <a href="#">
+                        <NavLink to={ROUTES.HOME}>
                             <i className="ri-user-3-line"></i>  
                                 <span className="navText">
                                     Users
                                 </span>
-                            </a>
+                            </NavLink>
 
                         </li>
                         <li className="has-subnav">

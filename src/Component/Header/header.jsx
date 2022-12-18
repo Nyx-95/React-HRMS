@@ -13,8 +13,8 @@ import $ from 'jquery'
 function Header() {
     useEffect(() => {
         let screenWidth = window.innerWidth;
-        screenWidth <= 992 ? $(".monitornav").hide() : $(".monitornav").show();
-        screenWidth <= 992 ? $(".mobilenav").show() : $(".mobilenav").hide();
+        screenWidth <= 991 ? $(".monitornav").hide() : $(".monitornav").show();
+        screenWidth <= 991 ? $(".mobilenav").show() : $(".mobilenav").hide();
     });
 
     const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +25,14 @@ function Header() {
         <>
 
             <div className={` row ${headercss.headerrow}`}>
-                <div className="col-lg-2 col-sm-3 col-4">
+                <div className="col-xl-3 col-lg-3 col-sm-3 col-4">
                     <div className={headercss.headerimage}>
-                        <img src={Logo}></img>
+        
+                            <img src={Logo}></img>
+                 
                     </div>
                 </div>
-                <div className="col-lg-5 col-sm-7 col-6">
+                <div className="col-xl-4 col-lg-4 col-sm-7 col-6">
                     <div className={headercss.headersearch}>
                         <div className={headercss.headersearchinner}>
                             <button type="submit"><i className="ri-search-line"></i></button>
@@ -40,18 +42,18 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-sm-0 col-0 monitornav">
+                <div className="col-xl-2 col-lg-2 col-sm-0 col-0 monitornav">
                     <div className={headercss.headertime}>
                         <div className={headercss.thirdinnerdiv}>
-                            <div className={headercss.Timeindiv}> <label>Time In</label> </div>
+                            <div className={headercss.Timeindiv}> <label>12:00 pm</label> </div>
                             <div className={headercss.switch}>
                                 <button type="button" className="btn btn-outline-primary shadow-none"
-                                    data-bs-toggle="button" autoComplete="off"> <label>Check Out</label></button>
+                                    data-bs-toggle="button" autoComplete="off"> Check Out </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-2 col-sm-0 col-0 monitornav">
+                <div className="col-xl-3 col-lg-3 col-sm-0 col-0 monitornav">
                     <div className={headercss.headermenu}>
                         <ul className={headercss.headermenuUl}>
                             <li className={headercss.menuiconli}><a href="#"><i className="ri-function-line"></i></a> </li>

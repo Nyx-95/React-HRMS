@@ -64,7 +64,7 @@ const workExpierence = () => {
                         </table>
                     </div>
                 </div>
-            </div>
+        </div>
     </div>
 </>
   )
