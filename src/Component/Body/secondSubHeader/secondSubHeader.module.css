@@ -17,6 +17,7 @@
     align-items: flex-start;
 }
 .UserMenuTopHeader li{
+    margin-bottom: 2px;
     text-align: center;
     min-width: 90px;
     padding: 0% 1% 1% 1%;
@@ -100,7 +101,7 @@
     }
 
     .UserMenuTopHeader li {
-        padding: 0% 0% 1% 0%;
+        padding: 0% 0% 0% 0%;
         width: 100%;
    
     }

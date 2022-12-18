@@ -6,12 +6,17 @@ import { useEffect, useState } from 'react'
 
 
 const MyAttendance = () => {
+    let screenWidth = window.innerWidth;
+    
+    const [hideLightbox, setHideLightbox] = useState(true);
+
     useEffect(() => {
-        let screenWidth = window.innerWidth;
+      
         screenWidth <= 992 ? $(".entrieSelectWrapperJQ").hide() : $(".entrieSelectWrapperJQ").show();
         screenWidth <= 992 ? $(".searchIconMainJQ").hide() : $(".searchIconMainJQ").show();
         screenWidth <= 992 ? $(".hamburgerMenu").show() : $(".hamburgerMenu").hide();
     });
+ 
     const [isOpen, setIsOpen] = useState(false);
     const toggling = () => setIsOpen(!isOpen);
     return (
@@ -24,7 +29,7 @@ const MyAttendance = () => {
                             <h4> My Attendance Report</h4>
                             <img src={headingpicture}></img>
                         </div>
-                        <div className={`col-lg-3 col-xl-3 entrieSelectWrapperJQ ${AttendanceCss.entrieSelectWrapper}`}>
+                        <div className={`col-lg-3 col-xl-3 entrieSelectWrapperJQ ${AttendanceCss.entrieSelectWrapper}`} >
                             <label>Show</label>
                             <select name="selectEntries" id="selectEntries">
                                 <option value="1">1</option>
