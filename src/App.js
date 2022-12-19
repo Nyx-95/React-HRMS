@@ -15,6 +15,7 @@ import EducationalDetail from './Component/Body/educationalDetails/educationalDe
 import MyData from './Component/Body/myData/myData';
 import WorkExpierence from './Component/Body/workExperience/workExperience';
 import EditProfile from './Component/Body/editProfileDetails/editProfile';
+import MyDocument from './Component/Body/myDocument/myDocument';
 import { ROUTES } from './Utils/routes';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path={ROUTES.MY_ATTENDANCE} element={<MyAttendance />}></Route>
             <Route path={ROUTES.WORK_EXPERIENCE} element={<WorkExpierence />}></Route>
             <Route path={ROUTES.EDUCATIONAL_DETAIL} element={<EducationalDetail />}></Route>
+            <Route path={ROUTES.MY_DOCUMENT} element={<MyDocument />}></Route>
             <Route element={<EditProfile/>}>
               <Route path={ROUTES.FAMILY_DETAIL} element={<FamilyDetail />}/>
               <Route path={ROUTES.PREVIOUS_WORK} element={<PreviousWork />}/>

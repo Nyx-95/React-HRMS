@@ -293,7 +293,7 @@ text-decoration: none;
         width: 90%;
        margin: 0;
         padding: 25px 50px 20px 30px;
-        border-right: 1px solid red;
+        border-right: 1px solid #f1f1f1;
         
      }
    
@@ -341,7 +341,7 @@ text-decoration: none;
         width: 90%;
         margin: 0;
         padding: 25px 0px 25px 30px;
-        border-right: 1px solid red;
+        border-right: 1px solid #f1f1f1;
      }
      .headerimage img{
         width: 180px;

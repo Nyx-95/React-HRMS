@@ -1,0 +1,195 @@
+.headingInner {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 68%;
+}
+
+.headingWrapper h4 {
+    margin-bottom: 0;
+}
+
+.uploadPic input{
+    display: none;
+}
+
+
+
+.editProfileInner {
+    margin-left: 20px;
+    width: 70%;
+}
+
+.editProfileDiv1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.editProfileDiv1 h3{
+    margin-left: 15px;
+}
+
+.editProfileDiv1 label {
+    margin-bottom:5px ;
+    margin-left: 20px;
+}
+
+
+.editProfileDiv1 .uploadPic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+    width: 90%;
+    height: 45px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.editProfileDiv1 .uploadPic #documentImage{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-indent:-9999px;
+    transition: transform .2s;
+}
+.modalImage{
+    width: 100%;
+}
+
+.editProfileDiv4 {
+
+    margin-top: 20px;
+    margin-bottom: 70px;
+    width: 98%;
+}
+
+.editProfileDiv4 .editProfileDiv4Inner1 button {
+    width: 125px;
+    border-radius: 25px;
+
+    --bs-btn-color: #f2e5f9;
+    --bs-btn-bg: #8300c7;
+    --bs-btn-border-color: #8300c7;
+    --bs-btn-hover-color: #f2e5f9;
+    --bs-btn-hover-bg: #8300c7;
+    --bs-btn-hover-border-color: #8300c7;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #f2e5f9;
+    --bs-btn-active-bg: #8300c7;
+    --bs-btn-active-border-color: #8300c7;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+
+
+
+@media only screen and (min-width: 320px) {
+    .headingInner{
+        margin-left: 50px;
+        width: 90%;
+    }
+     .editProfileInner{
+        margin-left: 50px;
+        width: 90%;
+    }
+    .editProfileDiv2 input {
+        width: 90%;
+       
+    }
+    .editProfileDiv3 input {
+        width: 90%;
+       
+    }
+    .editProfileDiv4{
+ 
+        margin-left: 20px;
+        width: 100%;
+       
+    }
+}
+
+@media only screen and (min-width: 576px) {
+  
+    .editProfileDiv4{
+        width: 91%;
+       
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .headingInner{
+        margin-left: 20px;
+    }
+     .editProfileInner{
+        margin-left: 20px;
+        width: 90%;
+    }
+    .editProfileDiv2 input {
+        width: 95%;
+       
+    }
+    .editProfileDiv3 input {
+        width: 90%;
+       
+    }
+    .editProfileDiv4{
+        width: 91%;
+        margin-left: 0px;
+       
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .headingInner{
+        margin-left: 20px;
+        width: 68.5%;
+    }
+    .editProfileInner{
+        margin-left: 20px;
+        width: 70%;
+    }
+    .editProfileDiv4{
+        width: 71%;
+       
+    }
+}
+
+@media only screen and (min-width: 1200px) {}
+
+/*
+.editProfileDiv1 .uploadPic img:active{
+        border-radius: 0px;
+        margin-left: auto;
+        transform: scale(10);
+    }*/
+
+.uploadButton{
+    border: none;
+    background-color: #8300c7;
+    color: white;
+    padding: 5px 8px 2px 8px;
+    border-radius: 50%;
+}
+
+.editProfileDiv1 select {
+    border: 1px solid #f1f1f1;
+    ;
+    width: 90%;
+    margin-bottom: 15px;
+    height: 45px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+
+}

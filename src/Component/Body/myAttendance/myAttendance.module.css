@@ -138,7 +138,7 @@
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 15px;
+    border-radius: 15dropDownHeaderpx;
     box-shadow: 0px 0px 15px 5px #8100c62c;
     
 }
@@ -297,6 +297,15 @@
 /*Pagination ends*/
 
 @media (min-width: 320px) {
+    .dropDownHeader{
+        display: flex;
+    }
+    .searchIconMain{
+        display: none;
+    }
+    .entrieSelectWrapper{
+        display: none;
+    }
     .headingInner{
         padding-left: 40px;
     }
@@ -340,10 +349,23 @@
   
   @media (min-width: 992px) {
    
-   
+ 
   }
   
   @media (min-width: 1200px) {
+
+    .dropDownHeader{
+
+        display: none;
+     
+    }
+    .searchIconMain{
+        display: block;
+    }
+    .entrieSelectWrapper{
+        display: block;
+    }
+
     .UserDetailsMenuTableInner{
       
         -ms-overflow-style: none; /* for Internet Explorer, Edge */

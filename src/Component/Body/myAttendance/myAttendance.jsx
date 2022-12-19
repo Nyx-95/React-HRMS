@@ -8,13 +8,11 @@ import { useEffect, useState } from 'react'
 const MyAttendance = () => {
     let screenWidth = window.innerWidth;
     
-    const [hideLightbox, setHideLightbox] = useState(true);
+
 
     useEffect(() => {
       
-        screenWidth <= 992 ? $(".entrieSelectWrapperJQ").hide() : $(".entrieSelectWrapperJQ").show();
-        screenWidth <= 992 ? $(".searchIconMainJQ").hide() : $(".searchIconMainJQ").show();
-        screenWidth <= 992 ? $(".hamburgerMenu").show() : $(".hamburgerMenu").hide();
+      
     });
  
     const [isOpen, setIsOpen] = useState(false);
