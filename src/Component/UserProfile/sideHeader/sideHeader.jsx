@@ -38,10 +38,10 @@ function SideHeader() {
         <nav className={`mobilesidenav ${sideHeadercss.mainMenu} `}>
                     <div className={sideHeadercss.profileicon}>
                         <div className={sideHeadercss.profileicontab}>
-                            <a href="#">
+                        <NavLink to={ROUTES.HOME}>
                                 <img src={leftBarProfilePic}/>
                                 <span>S. Osama Ali</span>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                     <ul>
@@ -64,12 +64,12 @@ function SideHeader() {
 
                         </li>
                         <li className="has-subnav">
-                        <NavLink to={ROUTES.HOME}>
+                            <a href="#">
                             <i className="ri-user-3-line"></i>  
                                 <span className="navText">
                                     Users
                                 </span>
-                            </NavLink>
+                                </a>
 
                         </li>
                         <li className="has-subnav">
