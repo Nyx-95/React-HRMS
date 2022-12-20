@@ -107,12 +107,12 @@ const MyDocument = () => {
                                 <label>CNIC Front Picture</label> <br />
                                 <div className={myDocumentCss.uploadPic}>
 
-                                    <img id={myDocumentCss.documentImage} src={cnicFrontfile} alt="Cnic Front Copy" data-toggle="modal" data-target="#cnicFrontImage" />
+                                {cnicFrontfile ? <img id={myDocumentCss.documentImage} src={cnicFrontfile} alt="Cnic Front Copy" data-toggle="modal" data-target="#cnicFrontImage" />: <label>Upload CNIC Front Picture</label> }
                                     <div className="modal fade" id="cnicFrontImage" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div className="modal-dialog modal-dialog-centered" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
-                                        </button>
+                                        <div className="modal-dialog modal-dialog-centered" role="document">
+                                           
                                             <img className={myDocumentCss.modalImage} src={cnicFrontfile} alt="Cnic Front Copy" />
+                                           
                                         </div>
                                     </div>
 
@@ -125,10 +125,13 @@ const MyDocument = () => {
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <label>CNIC Back picture</label> <br />
                                 <div className={myDocumentCss.uploadPic}>
-                                    <img id={myDocumentCss.documentImage} src={cnicBackFile} alt="Cnic Back Copy" data-toggle="modal" data-target="#cnicBackImage" />
+                               
+                                {cnicBackFile ?  <img id={myDocumentCss.documentImage} src={cnicBackFile} alt="Cnic Back Copy" data-toggle="modal" data-target="#cnicBackImage" /> : <label> Upload CNIC Back Picture</label> }
+                            
                                     <div className="modal fade" id="cnicBackImage" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered" role="document">
-                                            <img className={myDocumentCss.modalImage} src={cnicBackFile} alt="Cnic Front Copy" />
+                                          <img className={myDocumentCss.modalImage} src={cnicBackFile} alt="Cnic Front Copy" />
+                                           
                                         </div>
                                     </div>
 
@@ -145,7 +148,10 @@ const MyDocument = () => {
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <label>Upload Resume</label> <br />
                                 <div className={myDocumentCss.uploadPic}>
-                                    <img id={myDocumentCss.documentImage} src={resumeFile} alt="Cnic Front Copy" data-toggle="modal" data-target="#ResumeImage" />
+                                    {
+                                        resumeFile ?  <img id={myDocumentCss.documentImage} src={resumeFile} alt="Cnic Front Copy" data-toggle="modal" data-target="#ResumeImage" /> : <label> Upload Resume Picture</label>
+                                    }
+                                   
                                     <div className="modal fade" id="ResumeImage" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered" role="document">
                                             <img className={myDocumentCss.modalImage} src={resumeFile} alt="Cnic Front Copy" />
@@ -160,7 +166,8 @@ const MyDocument = () => {
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <label>Experience Certificate</label> <br />
                                 <div className={myDocumentCss.uploadPic}>
-                                    <img id={myDocumentCss.documentImage} src={expCertificateFile} alt="Cnic Back Copy" data-toggle="modal" data-target="#expCertificateImage" />
+                                    { expCertificateFile ?    <img id={myDocumentCss.documentImage} src={expCertificateFile} alt="Cnic Back Copy" data-toggle="modal" data-target="#expCertificateImage" /> : <label> Upload Experience Certificate </label> }
+                                 
 
                                     <div className="modal fade" id="expCertificateImage" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered" role="document">
@@ -180,7 +187,10 @@ const MyDocument = () => {
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <label>Degree / Transcript</label> <br />
                                 <div className={myDocumentCss.uploadPic}>
-                                    <img id={myDocumentCss.documentImage} src={degreeFile} alt="Cnic Front Copy" data-toggle="modal" data-target="#DegreeImage" />
+                                    {
+                                        degreeFile ? <img id={myDocumentCss.documentImage} src={degreeFile} alt="Cnic Front Copy" data-toggle="modal" data-target="#DegreeImage" /> : <label> Uploade Degree </label>
+                                    }
+                                    
                                     <div className="modal fade" id="DegreeImage" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered" role="document">
                                             <img className={myDocumentCss.modalImage} src={degreeFile} alt="Cnic Front Copy" />
@@ -196,7 +206,10 @@ const MyDocument = () => {
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <label>Experience Certificate</label> <br />
                                 <div className={myDocumentCss.uploadPic}>
-                                    <img id={myDocumentCss.documentImage} src={marriageCertificateFile} alt="Cnic Back Copy" data-toggle="modal" data-target="#marriageCertificateImage" />
+                                    {
+                                        marriageCertificateFile ?  <img id={myDocumentCss.documentImage} src={marriageCertificateFile} alt="Cnic Back Copy" data-toggle="modal" data-target="#marriageCertificateImage" /> : <label>Upload Marriage Certificate</label>
+                                    }
+                                   
 
                                     <div className="modal fade" id="marriageCertificateImage" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered" role="document">
@@ -216,7 +229,10 @@ const MyDocument = () => {
                             <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <label>B-Form/Birth Certificates of children</label> <br />
                                 <div className={myDocumentCss.uploadPic}>
-                                    <img id={myDocumentCss.documentImage} src={birthForm} alt="Cnic Front Copy" data-toggle="modal" data-target="#birthFormImage" />
+                                    {
+                                        birthForm ?   <img id={myDocumentCss.documentImage} src={birthForm} alt="Cnic Front Copy" data-toggle="modal" data-target="#birthFormImage" /> : <label>Upload Birth form</label>
+                                    }
+                                  
                                     <div className="modal fade" id="birthFormImage" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered" role="document">
                                             <img className={myDocumentCss.modalImage} src={birthForm} alt="Cnic Front Copy" />
