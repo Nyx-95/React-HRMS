@@ -1,5 +1,5 @@
 export const ROUTES = {
-    HOME: "/",
+    USER_PROFILE: "/",
     MY_DEPARTMENT: "my-department",
     FAMILY_TREE:"family-tree",
     WORK_EXPERIENCE:"work-experience",
@@ -11,5 +11,8 @@ export const ROUTES = {
     PREVIOUS_WORK:"/previous-work",
     EMPLOYEE_DATA:"/employee-data",
     ACADEMIC_DETAIL:"/academic-detail",
+
+
+    DASHBOARD: "/dashboard"
 
 }

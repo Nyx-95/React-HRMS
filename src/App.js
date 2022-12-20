@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { ROUTES } from './Utils/routes';
-import Body from './Component/UserProfile/body';
+import UserProfile from './Component/UserProfile/body';
 import DashboardLayout from './Component/Layout/DashboardLayout';
 import MyDepartment from './Component/UserProfile/myDepartment/myDepartment';
 import FamilyDetail from './Component/UserProfile/editProfileDetails/FamilyDetails/familyDetail';
@@ -15,14 +15,18 @@ import MyData from './Component/UserProfile/myData/myData';
 import WorkExpierence from './Component/UserProfile/workExperience/workExperience';
 import EditProfile from './Component/UserProfile/editProfileDetails/editProfile';
 import MyDocument from './Component/UserProfile/myDocument/myDocument';
+import DashBoard from './Component/DashBoard/dashBoard';
 
 
 function App() {
   return (
     <div className="App">
+
+
+
       <Routes>
-        <Route path={ROUTES.HOME} element={<DashboardLayout />}>
-          <Route path={ROUTES.HOME} element={<Body></Body>}>
+        <Route element={<DashboardLayout />}>
+          <Route path={ROUTES.USER_PROFILE} element={<UserProfile></UserProfile>}>
             <Route path={ROUTES.MY_DEPARTMENT} element={<MyDepartment />}></Route>
             <Route path={ROUTES.FAMILY_TREE} element={<FamilyTree />}></Route>
             <Route path={ROUTES.MY_DATA} element={<MyData />}></Route>
@@ -37,9 +41,14 @@ function App() {
               <Route path={ROUTES.ACADEMIC_DETAIL} element={<AcademicDetail />}/>
             </Route>
           </Route>
+   
+          
         </Route>
 
+    
       </Routes>
+
+    
 
     </div>
   );

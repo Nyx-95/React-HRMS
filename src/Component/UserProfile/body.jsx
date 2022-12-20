@@ -1,5 +1,6 @@
 import SideHeader from "./sideHeader/sideHeader";
 import MiddleMenu from "./middleMenu/middleMenu";
+import DashBoard from "../DashBoard/dashBoard";
 import SecondSubHeader from "./secondSubHeader/secondSubHeader";
 import bodyCss from "./body.module.css"
 import { Outlet, useMatch } from "react-router-dom";

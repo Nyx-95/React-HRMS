@@ -18,6 +18,9 @@ else if (screenWidth <= 1200){
 else if (screenWidth <= 1400){
     Xis=500;
 }
+else if (screenWidth >= 1401){
+    Xis=500;
+}
 console.log(Xis)
 
 
