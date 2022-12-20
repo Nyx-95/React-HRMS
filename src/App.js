@@ -1,22 +1,21 @@
-import Header from './Component/Header/header';
-import Body from './Component/Body/body';
-import DashboardLayout from './Component/Layout/DashboardLayout';
-import Footer from './Component/Footer/footer';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import MyDepartment from './Component/Body/myDepartment/myDepartment';
-import FamilyDetail from './Component/Body/editProfileDetails/FamilyDetails/familyDetail';
-import PreviousWork from './Component/Body/editProfileDetails/PreviousWork/PreviousWork';
-import EmployeeData from './Component/Body/editProfileDetails/EmployeeData/employeeData';
-import AcademicDetail from './Component/Body/editProfileDetails/AcademicDetails/academicDetail';
-import FamilyTree from './Component/Body/familyTree/familyTree';
-import MyAttendance from './Component/Body/myAttendance/myAttendance';
-import EducationalDetail from './Component/Body/educationalDetails/educationalDetail';
-import MyData from './Component/Body/myData/myData';
-import WorkExpierence from './Component/Body/workExperience/workExperience';
-import EditProfile from './Component/Body/editProfileDetails/editProfile';
-import MyDocument from './Component/Body/myDocument/myDocument';
 import { ROUTES } from './Utils/routes';
+import Body from './Component/UserProfile/body';
+import DashboardLayout from './Component/Layout/DashboardLayout';
+import MyDepartment from './Component/UserProfile/myDepartment/myDepartment';
+import FamilyDetail from './Component/UserProfile/editProfileDetails/FamilyDetails/familyDetail';
+import PreviousWork from './Component/UserProfile/editProfileDetails/PreviousWork/PreviousWork';
+import EmployeeData from './Component/UserProfile/editProfileDetails/EmployeeData/employeeData';
+import AcademicDetail from './Component/UserProfile/editProfileDetails/AcademicDetails/academicDetail';
+import FamilyTree from './Component/UserProfile/familyTree/familyTree';
+import MyAttendance from './Component/UserProfile/myAttendance/myAttendance';
+import EducationalDetail from './Component/UserProfile/educationalDetails/educationalDetail';
+import MyData from './Component/UserProfile/myData/myData';
+import WorkExpierence from './Component/UserProfile/workExperience/workExperience';
+import EditProfile from './Component/UserProfile/editProfileDetails/editProfile';
+import MyDocument from './Component/UserProfile/myDocument/myDocument';
+
 
 function App() {
   return (
