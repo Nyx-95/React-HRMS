@@ -107,7 +107,7 @@ const MyDocument = () => {
                                 <label>CNIC Front Picture</label> <br />
                                 <div className={myDocumentCss.uploadPic}>
 
-                                {cnicFrontfile ? <img id={myDocumentCss.documentImage} src={cnicFrontfile} alt="Cnic Front Copy" data-toggle="modal" data-target="#cnicFrontImage" />: <label>Upload CNIC Front Picture</label> }
+                                    <img id={myDocumentCss.documentImage} src={cnicFrontfile} alt="Cnic Front Copy" data-toggle="modal" data-target="#cnicFrontImage" />
                                     <div className="modal fade" id="cnicFrontImage" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered" role="document">
                                            

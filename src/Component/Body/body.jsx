@@ -2,16 +2,6 @@ import SideHeader from "./sideHeader/sideHeader";
 import MiddleMenu from "./middleMenu/middleMenu";
 import SecondSubHeader from "./secondSubHeader/secondSubHeader";
 import bodyCss from "./body.module.css"
-import MyDepartment from "./myDepartment/myDepartment";
-import FamilyDetail from "./editProfileDetails/FamilyDetails/familyDetail";
-import AcademicDetail from "./editProfileDetails/AcademicDetails/academicDetail";
-import EmployeeData from "./editProfileDetails/EmployeeData/employeeData";
-import EducationalDetail from "./educationalDetails/educationalDetail";
-import PreviousWork from "./editProfileDetails/PreviousWork/PreviousWork";
-import MyAttendance from "./myAttendance/myAttendance";
-import WorkExpierence from "./workExperience/workExperience";
-import MyData from "./myData/myData";
-import FamilyTree from "./familyTree/familyTree";
 import { Outlet, useMatch } from "react-router-dom";
 
 
