@@ -1,4 +1,4 @@
-import SideHeader from "./sideHeader/sideHeader";
+import SideHeader from "../sideHeader/sideHeader"
 import MiddleMenu from "./middleMenu/middleMenu";
 import DashBoard from "../DashBoard/dashBoard";
 import SecondSubHeader from "./secondSubHeader/secondSubHeader";

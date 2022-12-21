@@ -1,9 +1,9 @@
 import sideHeadercss from "./sideHeader.module.css";
-import leftBarProfilePic from "../../../assets/leftbarprofilepic.png";
+import leftBarProfilePic from "../../assets/leftbarprofilepic.png";
 import { useEffect } from 'react';
 import $ from 'jquery';
 import { NavLink } from "react-router-dom";
-import { ROUTES } from "../../../Utils/routes";
+import { ROUTES } from "../../Utils/routes";
 
 
 function SideHeader() {

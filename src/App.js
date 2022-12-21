@@ -15,7 +15,7 @@ import MyData from './Component/UserProfile/myData/myData';
 import WorkExpierence from './Component/UserProfile/workExperience/workExperience';
 import EditProfile from './Component/UserProfile/editProfileDetails/editProfile';
 import MyDocument from './Component/UserProfile/myDocument/myDocument';
-import DashBoard from './Component/DashBoard/dashBoard';
+import DashBoard from './Component/DashBoard/dashBoard'
 
 
 function App() {
@@ -41,7 +41,10 @@ function App() {
               <Route path={ROUTES.ACADEMIC_DETAIL} element={<AcademicDetail />}/>
             </Route>
           </Route>
-   
+
+          <Route path={ROUTES.DASHBOARD} element={<DashBoard></DashBoard>}>
+            
+          </Route>
           
         </Route>
 

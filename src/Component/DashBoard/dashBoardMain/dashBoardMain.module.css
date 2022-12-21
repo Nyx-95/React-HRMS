@@ -1,0 +1,891 @@
+.middlemenu {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 3%;
+
+}
+
+/*middle menu upper */
+.upper {
+    padding-top: 8%;
+    height: 50%;
+    width: 100%;
+
+}
+
+.upperinner {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 3%;
+
+
+}
+
+.lowerinner {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 3%;
+}
+
+/*firstupperdiv*/
+
+.firstupperdiv {
+
+    border-radius: 10% 10% 10% 10%;
+    min-width: 30vw;
+    height: 100%;
+
+}
+
+
+.firstupperIn {
+    padding: 0% 7% 0% 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.firstupperwrapper {
+    background-image: url('../../../assets/ecllispse2.png'), url('../../../assets/ecllispse1.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position-x: -200px, 100px;
+    background-position-y: -100px, -150px;
+    background-color: #8200c6;
+    height: 100%;
+    width: 90%;
+    border-radius: 24px 24px 50px 50px;
+    position: relative;
+    margin-left: 7%;
+}
+
+.firstupperinner {
+    display: flex;
+}
+
+.firstupperimage {
+    position: relative;
+    width: 50%;
+}
+
+.firstupperinner img {
+    top: -5%;
+    width: 270px;
+    position: absolute;
+}
+
+.upperinfo {
+    color: #ffffff;
+    width: 50%;
+    height: 70%;
+    padding: 5%;
+}
+
+.upperinfo img {
+    margin-left: 20%;
+}
+
+.upperinfo h2 {
+    font-size: 2.5rem;
+}
+
+.upperinfo p {
+    margin: 0%;
+
+}
+
+.upperinfo .Morningheading p {
+    font-size: 16px;
+    margin-bottom: 1%;
+}
+
+.upperinfo .Morningschedule p {
+    font-size: 12px;
+}
+
+.upperinfobutton {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.upperinfobutton button {
+    border-radius: 20px;
+    font-size: 12px;
+    width: 99px;
+    height: 37px;
+    color: #9c33d2;
+    font-weight: normal;
+
+}
+
+.stats {
+    background-color: white;
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    border-radius: 24px 24px 24px 24px;
+    border: 1px solid #f2f2f2;
+    bottom: 0;
+}
+
+.statsinnerdiv {
+    display: flex;
+    padding: 2% 0% 2% 2%;
+    height: 148px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.statscount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#statscount1id {
+    width: 30%;
+}
+
+#statscount2id {
+    width: 30%;
+}
+
+#statscount3id {
+    width: 30%;
+}
+
+#statscount4id {
+    width: 10%;
+    right: -0.5%;
+    top: 10%;
+    height: 100%;
+}
+
+#statscount4id button {
+    height: 30px;
+    width: 70px;
+}
+
+.statscount p {
+    margin: 0;
+}
+
+.statscountimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.statscountnumber {
+    font-size: 23px;
+}
+
+.statscountinfo {
+    font-size: 13px;
+    color: #949caa;
+}
+
+.statscountbutton {
+    position: absolute;
+    width: 100%;
+    rotate: -89.5deg;;
+}
+
+.statscountbutton button {
+    width: 100px;
+    border-radius: 12px 12px 0 0;
+
+    border: none;
+
+}
+
+.statscountbutton button:hover {
+    background-color: #6c01a1;
+}
+
+.statscountbutton button:focus {
+    background-color: #6c01a1;
+    box-shadow: none;
+}
+
+.statscountbutton button:active {
+    background-color: #6c01a1;
+    box-shadow: none;
+
+}
+
+.statscountbutton button {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8300c6;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6c01a1;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6c01a1;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c01a1;
+    --bs-btn-disabled-border-color: #6c01a1;
+}
+
+
+
+/*Second upper div*/
+
+.secondupperdiv {
+    padding-top: 1%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Notice Board Starts*/
+
+.mergeheadings{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.mergeheadings h5 {
+    font-size: 20px;
+
+}
+
+.mergeheadings img {
+    width: 80px;
+    margin: 0% 0% 15px 0.5%;
+}
+
+.Noticesboard {
+    min-width: 100%;
+    border-radius: 24px;
+    min-height: 170px;
+    position: relative;
+
+}
+
+.Noticesboardinner {
+    padding: 0% 0% 0% 0%;
+    margin-left: -1.5%;
+    margin-right: 10%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+
+}
+
+.noticeboardwrapper {
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+    padding: 2%;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    text-overflow: ellipsis;
+}
+
+
+.notificationbarouter {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.notificationbarinner {
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.innerbars {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.notificationbar {
+    display: flex;
+    width: 240px;
+    height: 100px;
+    background-color: #faf6fc;
+    padding: 2% 1% 0% 1%;
+    border-radius: 24px;
+}
+
+.notificationBarprofile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 20%;
+}
+
+.notificationBarmessage h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.notificationBarmessage {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.notificationBarmessage p{
+    font-size: 12px;
+    height: 50%;
+    overflow: hidden;
+    color: #a2a2a2;
+    text-overflow: ellipsis;}
+
+
+/*Notificationbarmessage ends*/
+
+/*myworkspace starts*/
+
+.myworkspace {
+
+    min-width: 100%;
+    border-radius: 24px;
+
+
+}
+
+.myworkspaceinner {
+    padding: 30px 0 0 0;
+    margin-left: -1.5%;
+    margin-right: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.workspacewrapper {
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+    padding: 2% 2% 0% 2%;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+
+.myworkspaceNotificationbarOuter {
+    height: 100%;
+
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.myworkspaceNotificationbar {
+    position: relative;
+    display: flex;
+    gap:5%;
+    width: 130px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2% 0% 0% 0%;
+    border-radius: 24px;
+}
+
+#myworkspaceNotificationbar3 {
+    margin-right: 3%;
+}
+
+.myworkspaceNotificationBarProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf6fc;
+    padding: 4% 4% 4% 4%;
+    border-radius: 25%;
+    margin-right: 0%;
+    margin-top: 2%;
+}
+
+
+
+.myworkspacenotificationIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-top: 5%;
+    width: 80%;
+}
+
+.myworkspacenotificationIcons h5 {
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+.myworkspacenotificationIcons p {
+    font-size: 11px;
+    color: #a2a2a2;
+}
+
+/*myworkspace ends*/
+
+/*thirdupperdiv*/
+
+.thirdupperdiv {
+    min-width: 20vw;
+    height: 100%;
+
+
+}
+
+.Mytickets {
+    height: 100%;
+    width: 100%;
+
+}
+
+.myticketsinner {
+    padding: 0% 2% 0% 3%;
+    height: 100%;
+    width: 100%;
+
+}
+
+.ticketwrapper {
+    padding: 5% 10% 2% 7%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #f2f2f2;
+    border-radius: 24px;
+    width: 90%;
+    height: 100%;
+}
+.mergeheadinginner{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ticketlisting ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.ticketlisting ul a{
+    color: #a1a1a1;
+    text-decoration: none;
+    
+}
+.ticketlisting ul a li{
+
+    padding: 5% 0% 5% 0%;
+    border-bottom: 1px solid #f2f2f2;
+    width: 100%;
+
+}
+
+
+.ticketlisting ul a li:hover{
+    background-color: #8300c7;
+    color: white;
+    border-radius: 25px;
+    padding-left:8%;
+}
+/*Middle menu lower*/
+.lower {
+    height: 50%;
+    width: 100%;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+.lowerinner {
+
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/*lower first div*/
+
+.ticketwrapper2{
+    padding: 5% 10% 2% 7%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #f2f2f2;
+    border-radius: 24px;
+    width: 95%;
+    height: 100%;
+    margin: 0px 0px 0px 20px;
+}
+
+/*lower first div end*/
+/*lower second div starts*/
+
+.secondlowerdiv{
+    min-width: 20vw;
+    height: 100%;
+}
+.secondlowerouter{
+    height: 100%;
+    width: 100%;
+}
+.secondlowerinner{
+    height: 100%;
+    width: 100%;
+}
+.profilewrapper{
+    border: 1px solid #f2f2f2;
+    border-radius: 24px;
+    position: relative;
+    height: 100%;
+    margin-left: 3%;
+    width: 95%;
+}
+.profilebackground {
+
+    background-image: url('../../../assets/profilesmokebackground.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    position: absolute;
+    background: #f2e5f9;
+    width: 100%;
+    border-radius: 24px 24px 0px 0px;
+    height: 60px;
+    z-index: 0;
+
+}
+.profileouterdiv {
+    top: 8%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #f2f2f2;
+}
+.secondlowerprofileicon {
+    width: 40%;
+    border-bottom: 0;
+    padding: 0% 5% 5% 7%;
+}
+.secondlowerprofileicon img{
+    width: 70px;
+}
+
+.profileinfo {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12% 0% 0% 0%;
+}
+
+.profileinfo h5 {
+    font-size: 18px;
+    font-weight: 550;
+    margin: 0;
+}
+
+.profileinfo p {
+    font-size: 12px;
+    font-weight: 550;
+    margin-bottom: 5px;
+    color: #8300c4;
+}
+
+.profileinfo button {
+    font-size: 12px;
+    border-radius: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8300c6;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6c01a1;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6c01a1;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c01a1;
+    --bs-btn-disabled-border-color: #6c01a1;
+}
+
+.profileinfo button:hover {
+    background-color: #6c01a1;
+}
+
+.profileinfo button:focus {
+    background-color: #6c01a1;
+    box-shadow: none;
+}
+
+.profileinfo button:active {
+    background-color: #6c01a1;
+    box-shadow: none;
+
+}
+.profileschedulemain{
+    margin-top:56% ;
+    height: 100%;
+    width: 100%;
+}
+
+.profilescheduleinner ul{
+    list-style: none;
+    padding-left: 25px;
+}
+.profilescheduleinner ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.profilescheduleinner ul li {
+    padding-top: 5%;
+    margin-right: 10%;
+    padding-bottom: 2.5%;
+    border-bottom: 1px solid #f2f2f2;
+}
+.profilescheduleinner ul li:last-child{
+    border: none;
+}
+
+.profileschedulemenu {
+    display: flex;
+}
+
+.profileschedulemenuicon i {
+    font-size: 20px;
+    color: #6c01a1;
+}
+
+.profileschedulemenuevening {
+    color: #a2a2a2;
+}
+
+.profileschedulemenuicon {
+
+    margin-right: 10px;
+}
+
+
+
+
+/*lower second div ends*/
+/*lower third div starts*/
+.thirdlowerdiv {
+    min-width: 20vw;
+    height: 100%;
+
+
+}
+
+.timetrackingoutter {
+    width: 100%;
+    height: 100%;
+
+}
+
+.timetrackinginner {
+
+    width: 100%;
+    height: 100%;
+}
+
+.timetrackingwrapper {
+
+
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f2f2f2;
+    padding: 5% 5% 2% 5%;
+    border-radius: 24px;
+
+
+}
+
+.timetrackingdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timetrackingdiv button
+{
+        --bs-btn-color: #b4b3b4;
+        --bs-btn-bg: #faf6fc;
+        --bs-btn-border-color: #b4b3b4;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #e0dfe0;
+        --bs-btn-hover-border-color: #565e64;
+        --bs-btn-focus-shadow-rgb: 130,138,145;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #565e64;
+        --bs-btn-active-border-color: #51585e;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #6c757d;
+        --bs-btn-disabled-border-color: #6c757d;
+
+}
+
+.timetrackingdiv .mergeheadings {
+    width: 70%;
+}
+
+.timetrackingdiv .dropdown {
+    width: 30%;
+}
+
+.timetrackingdiv .dropdown .dropdown-toggle {
+    background-color: #faf6fc;
+    font-size: 1vw;
+    color: #a2a2a2;
+    border: none;
+    width: 100%;
+    font-size: 12px;
+    --bs-btn-padding-x: 0rem;
+    --bs-btn-padding-y: 0.375rem;
+}
+
+#chartContainer{
+    height: 200px;
+    width: 100%;
+    margin-top: 13%;
+}
+
+.timetrackingmain {
+
+    margin: 10% 0px 0px 5%;
+    width: 90%;
+}
+
+.timetrackingouter {
+    display: flex;
+}
+
+.weeklyreport {
+    width: 65%;
+}
+
+.weeklyreport .p1 {
+    margin-bottom: 2%;
+    font-size: 13px;
+    color: #8200c6;
+}
+
+.weeklyreport .p2 {
+    font-size: 11px;
+}
+
+.timetrackingtime {
+    width: 35%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.timetrackingtime h5 {
+    font-size: 18px;
+
+}
+
+/*lower third div ends*/
+/*lower fouth div starts*/
+.fourthlowerdiv {
+
+    min-height: 100%;
+    min-width: 20vw;
+
+}
+
+.Employee {
+    width: 100%;
+    height: 100%;
+}
+
+.Employeeouter {
+    width: 100%;
+    height: 100%;
+}
+
+.Employeeinner {
+    width: 100%;
+    height: 100%;
+}
+
+.Employeewrapper {
+
+    margin-right: 5%;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #f2f2f2;
+    padding: 5% 5% 2% 5%;
+    border-radius: 24px;
+
+}
+
+#buttonGroupLfourdiv {
+    width: 100%;
+    margin: 5% 0% 0% 0%;
+
+}
+
+#buttonGroupLfourdiv button {
+    color: #cbcacb;
+    background-color: #fefdfe;
+    font-size: 12px;
+    border: none;
+}
+
+#buttonGroupLfourdiv button:focus {
+    color: #8300c7;
+    background-color: #faf6fc;
+    box-shadow: none;
+}
+
+.employeeprofileinner {
+    display: flex;
+
+}
+
+.employenamediv p {
+    margin: 0%;
+    color: black;
+    font-weight: 600;
+}
+
+.employeeprofilepicture {
+    margin-right: 5%;
+}
+
+.employeelisting ul {
+    color: #a1a1a1;
+    padding-left: 0;
+}
+
+.employeelisting li {
+    padding: 3% 0% 3% 0%;
+
+}
+
+.employeelistouter {
+
+    margin: 2% 0% 0% 0%;
+}
+
+/*lower fourth div ends*/
