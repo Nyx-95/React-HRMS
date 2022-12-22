@@ -134,12 +134,57 @@
 
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .noticeboardwrapper {
+        width: 75%;
+        margin-left: 11%;
+        height: 170px;
+        margin-top: 15px;
+    }
+}
 
 @media (min-width: 768px) {}
 
-@media (min-width: 991px) {}
+@media (min-width: 991px) {
+    .Noticesboardinner {
+        height: 90%;
+    }
 
-@media (min-width: 1200px) {}
+    .noticeboardwrapper {
+        width: 88%;
+        margin-left: 11%;
+        height: 170px;
+        margin-top: 0px;
+    }
+
+    .notificationbarouter {
+        width: 100%;
+    }
+
+    .notificationbarinner {
+        width: 80%;
+    }
+
+    .notificationbar {
+        width: 100%;
+    }
+
+    .notificationBarprofile {
+        width: 15%;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .noticeboardwrapper{
+        width: 95%;
+        margin-left: 5%;
+        height: 170px;
+        margin-top: 0px;
+    }
+    .notificationbarinner{
+        width: 90%;
+    }
+}
 
 @media (min-width: 1400px) {}

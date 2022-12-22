@@ -55,8 +55,16 @@
 }
 
 .timetrackingdiv .mergeheadings {
-    width: 70%;
+    width: 80%;
+ 
 }
+.timetrackingdiv .mergeheadings h5{
+    margin-bottom: 0;
+}
+.mergeheadingButton{
+    width: 20%;
+}
+
 
 .timetrackingdiv .dropdown {
     width: 30%;
@@ -129,34 +137,28 @@
     .timetrackinginner{  
         margin-left: 12.5%;
     }
-    
-    
-    
     }
     
     @media (min-width: 576px) {
     
         /*Lower First Container*/
-    .Employeeinner{
-        margin-left:8%;
-    }
-    
-    .timetrackinginner{
-    
-    }
-      
 
     
-   
-       
-        
+    .timetrackinginner{
+        margin-left: 8%;
+    }
+    .timetrackingwrapper{
+        width: 77.5%;
+    }
     }
     
     @media (min-width: 991px) {
        
-        .timetrackinginner{
-       
-         
+        .timetrackingwrapper{
+            width: 100%;
+        }
+        .timetrackinginner{  
+            margin-left: 0;
         }
         .weeklyreport .p2{
             font-size: 10px;

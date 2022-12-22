@@ -18,41 +18,41 @@
 
 }
 
-.ticketwrapper {
-    padding: 5% 10% 2% 7%;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid #f2f2f2;
-    border-radius: 24px;
-    width: 90%;
-    height: 100%;
-}
 
-.ticketwrapper2{
-    padding: 5% 10% 2% 7%;
+.ticketwrapper2 {
+    padding: 5% 5% 2% 5%;
     background-color: rgb(255, 255, 255);
     border: 1px solid #f2f2f2;
     border-radius: 24px;
     width: 95%;
-    height: 100%;
+
     margin: 0px 0px 0px 20px;
+    height: 100%;
 }
 
-.mergeheadinginner{
+.mergeheadinginner {
     display: flex;
     justify-content: space-between;
 }
 
+.ticketlisting {
+    overflow-y: scroll;
+    height: 250px;
+}
 
-.ticketlisting ul{
+
+.ticketlisting ul {
     list-style: none;
     padding-left: 0px;
 }
-.ticketlisting ul a{
+
+.ticketlisting ul a {
     color: #a1a1a1;
     text-decoration: none;
-    
+
 }
-.ticketlisting ul a li{
+
+.ticketlisting ul a li {
 
     padding: 3% 0% 3% 0%;
     border-bottom: 1px solid #f2f2f2;
@@ -61,37 +61,67 @@
 }
 
 
-.ticketlisting ul a li:hover{
+.ticketlisting ul a li:hover {
     background-color: #8300c7;
     color: white;
     border-radius: 25px;
-    padding-left:8%;
+    padding-left: 8%;
 }
 
 
 @media (min-width: 320px) {
-    .ticketwrapper2{
+    .ticketwrapper2 {
         width: 84%;
-        margin-left: 10%;  
+        margin-left: 10%;
         margin-top: 0px;
     }
-    .ticketwrapper2 h5{
+
+    .ticketwrapper2 h5 {
         margin-bottom: 0;
-        
-      }
-    .myticketsinner{
-        padding-bottom: 7%;
+
+    }
+
+    .myticketsinner {
+        padding-bottom: 4%;
     }
 
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .ticketwrapper2 {
+        width: 82%;
+        margin-left: 5%;
+
+    }
+
+}
 
 @media (min-width: 768px) {}
 
-@media (min-width: 991px) {}
+@media (min-width: 991px) {
+    .ticketwrapper2 {
+        width: 95%;
+        margin-left: 18%;
+        margin-top: 0px;
+    }
 
-@media (min-width: 1200px) {}
+    .ticketwrapper2 h5 {
+        margin-bottom: 0;
+
+    }
+
+    .myticketsinner {
+        padding-bottom: 0%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .ticketwrapper2 {
+        width: 95%;
+        margin-left: 8%;
+        margin-top: 0px;
+    }
+}
 
 @media (min-width: 1400px) {}
-

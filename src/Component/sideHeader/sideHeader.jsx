@@ -10,8 +10,8 @@ function SideHeader() {
     useEffect(() => {
         let screenWidth = window.innerWidth;
         console.log(screenWidth)
-        screenWidth <= 992 ? $(".mobilesidenav").hide() : $(".mobilesidenav").show();
-        screenWidth <= 992 ? $(".mobilesidenavbutton").show() : $(".mobilesidenavbutton").hide();
+        screenWidth <= 991 ? $(".mobilesidenav").hide() : $(".mobilesidenav").show();
+        screenWidth <= 991 ? $(".mobilesidenavbutton").show() : $(".mobilesidenavbutton").hide();
 
 
 

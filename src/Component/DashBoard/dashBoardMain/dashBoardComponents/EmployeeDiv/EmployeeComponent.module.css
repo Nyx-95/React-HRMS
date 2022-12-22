@@ -94,12 +94,29 @@
     }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .Employeewrapper{
+        width: 77.5%;
+        margin-left: 8%;
+        margin-top: 20px;
+    }
+}
 
 @media (min-width: 768px) {}
 
-@media (min-width: 991px) {}
+@media (min-width: 991px) {
+    .Employeewrapper{
+        width: 88%;
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+    
+}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .Employeewrapper{
+        width: 89%;
+    }
+}
 
 @media (min-width: 1400px) {}

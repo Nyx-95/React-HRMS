@@ -5,9 +5,9 @@ import OwlCarousel from "react-owl-carousel"
 import "owl.carousel/dist/assets/owl.carousel.min.css"
 import "owl.carousel/dist/assets/owl.theme.default.min.css"
 import trello from '../../../../../assets/workspace1.png'
-import skype from '../../../../../assets/workspace2.png'
-import slack from '../../../../../assets/workspace3.png'
-import thunderBird from '../../../../../assets/workspace4.png'
+import slack from '../../../../../assets/workspace2.png'
+import thunderBird from '../../../../../assets/workspace3.png'
+import skype from '../../../../../assets/workspace4.png'
 
 const options1 = {
     margin: 20,
@@ -18,14 +18,11 @@ const options1 = {
       0: {
         items: 2,
       },
-      400: {
-        items: 2,
-      },
-      600: {
-        items: 2,
+      576: {
+        items: 3,
       },
       700: {
-        items: 2,
+        items: 3,
       },
       1000: {
         items: 3,
@@ -65,15 +62,6 @@ const WorkPlaces = () => {
                             </div>
                           </div>
                           <div className={`item ${workPlaceCss.myworkspaceNotificationbar}`}
-                            id={workPlaceCss.myworkspaceNotificationbar3}>
-                            <div className={workPlaceCss.myworkspaceNotificationBarProfile}><img
-                              src={thunderBird} /></div>
-                            <div className={workPlaceCss.myworkspacenotificationIcons}>
-                              <h5>ThunderBird</h5>
-                              <p>All Units</p>
-                            </div>
-                          </div>
-                          <div className={`item ${workPlaceCss.myworkspaceNotificationbar}`}
                             id={workPlaceCss.myworkspaceNotificationbar4}>
                             <div className={workPlaceCss.myworkspaceNotificationBarProfile}>
                               <img
@@ -83,6 +71,16 @@ const WorkPlaces = () => {
                               <p>All Units</p>
                             </div>
                           </div>
+                          <div className={`item ${workPlaceCss.myworkspaceNotificationbar}`}
+                            id={workPlaceCss.myworkspaceNotificationbar3}>
+                            <div className={workPlaceCss.myworkspaceNotificationBarProfile}><img
+                              src={thunderBird} /></div>
+                            <div className={workPlaceCss.myworkspacenotificationIcons}>
+                              <h5>ThunderBird</h5>
+                              <p>All Units</p>
+                            </div>
+                          </div>
+                          
                         </OwlCarousel>
                       </div>
                     </div>

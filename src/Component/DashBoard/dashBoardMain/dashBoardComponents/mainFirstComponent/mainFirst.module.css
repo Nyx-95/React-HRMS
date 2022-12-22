@@ -291,16 +291,82 @@
 #statscount4id button{
     width: 80px;
 }
+#statscount4id{
+    right: -6px;
+}
     
 }
-@media (min-width: 768px) {}
+
+@media (min-width: 768px) {
+    .firstupperwrapper{
+        margin-top: 50px;
+    }
+    #statscount4id{
+        right: -11px;
+    }
+}
 
 @media (min-width: 991px) {
 
+    .firstupperinner {
+        display: flex;
+        height: 180px;
+    }
+    .upperinfo {
+        height: 100%;
+        padding: 10px 5px 5px 8%;
+    }
+    
+    .upperinfo h2{
+        font-size: 29px;
+    }
+    
+    .upperinfo .Morningheading p {
+        font-size: 15px;
+    }
+    
+    .firstupperimageInner{
+        width: 200px;
+    }
+    .firstupperwrapper{
+        margin-top: 0px;
+        width: 95%;
+        margin-left: 15%;
+        height: 300px;
+    }
+    .upperinfobutton {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .stats {
+        height: 130px;
+    }
+    #statscount4id{
+        right: 3px;
+    }
+    #statscount4id button{
+        width: 60px;
+    }
+    
 }
 
 @media (min-width: 1200px) {
-
+    .firstupperwrapper{
+        margin-top: 0px;
+      width: 100%;
+    margin-left: 8%;
+        height: 320px;
+    }
+    .upperinfo h2{
+        font-size: 38px;
+    }
+    .upperinfo{
+        margin-top: 7px;
+    }
+    .firstupperimageInner{
+        width: 220px;
+    }
+  
 }
 
 @media (min-width: 1400px) {

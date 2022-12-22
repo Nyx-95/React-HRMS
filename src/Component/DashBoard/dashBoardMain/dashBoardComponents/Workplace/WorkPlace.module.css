@@ -98,12 +98,39 @@
 
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .workspacewrapper{
+        width: 75%;
+        margin-left: 11%;
+      
+    }
+}
 
 @media (min-width: 768px) {}
 
-@media (min-width: 991px) {}
+@media (min-width: 991px) {
+    .workspacewrapper{
+        width: 88%;
+        margin-left: 11%;
+    }
+    .workspacewrapper h5{
+      margin-bottom: 0;
+      
+    }
+    .myworkspaceinner{
+        padding-top: 10px;
+    }
 
-@media (min-width: 1200px) {}
+}
+
+@media (min-width: 1200px) {
+    .workspacewrapper{
+        width: 95%;
+        margin-left: 5%;
+    }
+    .myworkspaceinner{
+        padding-top: 28px;
+    }
+}
 
 @media (min-width: 1400px) {}

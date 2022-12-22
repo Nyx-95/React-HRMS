@@ -25,7 +25,10 @@ const options = {
       700: {
         items: 2,
       },
-      1000: {
+      991:{
+        items: 1,
+      },
+      1200: {
         items: 2,
   
       }
