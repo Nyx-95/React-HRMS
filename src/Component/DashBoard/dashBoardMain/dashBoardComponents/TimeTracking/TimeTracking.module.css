@@ -1,0 +1,178 @@
+.thirdlowerdiv {
+    min-width: 20vw;
+    height: 100%;
+
+
+}
+
+.timetrackingoutter {
+    width: 100%;
+    height: 100%;
+
+}
+
+.timetrackinginner {
+
+    width: 100%;
+    height: 100%;
+}
+
+.timetrackingwrapper {
+
+
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f2f2f2;
+    padding: 5% 5% 2% 5%;
+    border-radius: 24px;
+
+
+}
+
+.timetrackingdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timetrackingdiv button
+{
+        --bs-btn-color: #b4b3b4;
+        --bs-btn-bg: #faf6fc;
+        --bs-btn-border-color: #e7e7e76e;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #e0dfe0;
+        --bs-btn-hover-border-color: #faf6fc;
+        --bs-btn-focus-shadow-rgb: 130,138,145;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #565e64;
+        --bs-btn-active-border-color: #51585e;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #6c757d;
+        --bs-btn-disabled-border-color: #6c757d;
+
+}
+
+.timetrackingdiv .mergeheadings {
+    width: 70%;
+}
+
+.timetrackingdiv .dropdown {
+    width: 30%;
+}
+
+.timetrackingdiv .dropdown .dropdown-toggle {
+    background-color: #faf6fc;
+    font-size: 1vw;
+    color: #a2a2a2;
+    border: none;
+    width: 100%;
+    font-size: 12px;
+    --bs-btn-padding-x: 0rem;
+    --bs-btn-padding-y: 0.375rem;
+}
+
+#chartContainer{
+    height: 200px;
+    width: 100%;
+    margin-top: 5px;
+
+}
+
+.timetrackingmain {
+
+    margin: 5px 0px 0px 0px;
+    width: 100%;
+}
+
+.timetrackingouter {
+    display: flex;
+}
+
+.weeklyreport {
+    width: 65%;
+}
+
+.weeklyreport .p1 {
+    margin-bottom: 2%;
+    font-size: 13px;
+    color: #8200c6;
+}
+
+.weeklyreport .p2 {
+    font-size: 11px;
+}
+
+.timetrackingtime {
+    width: 35%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.timetrackingtime h5 {
+    font-size: 18px;
+
+}
+
+/*lower third div ends*/
+
+
+
+@media (min-width: 320px) {
+ 
+    /*Lower First Container*/
+    .timetrackingwrapper{
+        width: 79%;
+    }
+    .timetrackinginner{  
+        margin-left: 12.5%;
+    }
+    
+    
+    
+    }
+    
+    @media (min-width: 576px) {
+    
+        /*Lower First Container*/
+    .Employeeinner{
+        margin-left:8%;
+    }
+    
+    .timetrackinginner{
+    
+    }
+      
+
+    
+   
+       
+        
+    }
+    
+    @media (min-width: 991px) {
+       
+        .timetrackinginner{
+       
+         
+        }
+        .weeklyreport .p2{
+            font-size: 10px;
+        }
+        
+        
+    }
+    
+    @media (min-width: 1200px) {
+    
+
+ 
+    }
+    
+    @media (min-width: 1400px) {
+    
+    }
+    
+    

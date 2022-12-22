@@ -1,24 +1,24 @@
 import React from 'react'
-import dashBoardCss from "../dashBoardMain.module.css"
-import heading from '../../../../assets/heading lines.png'
+import ticketingCss from "./Ticketing.module.css"
+import heading from '../../../../../assets/heading lines.png'
 
 const Ticketing = () => {
   return (
     <>
-       <div className={dashBoardCss.thirdupperdiv}>
-                  <div className={dashBoardCss.Mytickets}>
-                    <div className={dashBoardCss.myticketsinner}>
-                      <div className={dashBoardCss.ticketwrapper}>
-                        <div className={dashBoardCss.mergeheadings}>
-                          <div className={dashBoardCss.mergeheadinginner}>
+       <div className={ticketingCss.thirdupperdiv}>
+                  <div className={ticketingCss.Mytickets}>
+                    <div className={ticketingCss.myticketsinner}>
+                      <div className={ticketingCss.ticketwrapper}>
+                        <div className={ticketingCss.mergeheadings}>
+                          <div className={ticketingCss.mergeheadinginner}>
                             <h5>My Ticketing</h5>
                             <i className="fa-solid fa-ellipsis"></i>
                           </div>
                           <img src={heading} alt="heading"></img>
                         </div>
-                        <div className={`listouter ${dashBoardCss.ticketlistouter}`}>
-                          <div className={`listinner ${dashBoardCss.ticketlistinner}`}>
-                            <div className={`listing ${dashBoardCss.ticketlisting}`}>
+                        <div className={`listouter ${ticketingCss.ticketlistouter}`}>
+                          <div className={`listinner ${ticketingCss.ticketlistinner}`}>
+                            <div className={`listing ${ticketingCss.ticketlisting}`}>
                               <ul>
                                 <a href="#"> <li>Create A Ticket</li></a>
                                 <a href="#"><li>My All Tickets</li></a>

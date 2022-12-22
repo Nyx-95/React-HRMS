@@ -1,25 +1,25 @@
 import React from 'react'
-import dashBoardCss from "../dashBoardMain.module.css"
-import heading from '../../../../assets/heading lines.png'
+import generalQueryCss from "./GeneralQuery.module.css"
+import heading from '../../../../../assets/heading lines.png'
 
 const GeneralQueries = () => {
   return (
     <>
     
-    <div className={dashBoardCss.thirdupperdiv}>
-                  <div className={dashBoardCss.Mytickets}>
-                    <div className={dashBoardCss.myticketsinner}>
-                      <div className={dashBoardCss.ticketwrapper2}>
-                        <div className={dashBoardCss.mergeheadings}>
-                          <div className={dashBoardCss.mergeheadinginner}>
+    <div className={generalQueryCss.thirdupperdiv}>
+                  <div className={generalQueryCss.Mytickets}>
+                    <div className={generalQueryCss.myticketsinner}>
+                      <div className={generalQueryCss.ticketwrapper2}>
+                        <div className={generalQueryCss.mergeheadings}>
+                          <div className={generalQueryCss.mergeheadinginner}>
                             <h5>General Queries</h5>
                             <i className="fa-solid fa-ellipsis"></i>
                           </div>
                           <img src={heading} alt="heading"></img>
                         </div>
-                        <div className={`listouter ${dashBoardCss.ticketlistouter}`}>
-                          <div className={`listinner ${dashBoardCss.ticketlistinner}`}>
-                            <div className={`listing ${dashBoardCss.ticketlisting}`}>
+                        <div className={`listouter ${generalQueryCss.ticketlistouter}`}>
+                          <div className={`listinner ${generalQueryCss.ticketlistinner}`}>
+                            <div className={`listing ${generalQueryCss.ticketlisting}`}>
                               <ul>
                                 <a href="#"> <li>Feedback Form</li></a>
                                 <a href="#"><li>Leave Form</li></a>

@@ -1,0 +1,310 @@
+/*firstupperdiv*/
+
+.firstupperdiv {
+
+    border-radius: 10% 10% 10% 10%;
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.firstupperIn {
+    padding: 0% 7% 0% 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.firstupperwrapper {
+    background-image: url('../../../../../assets/ecllispse2.png'), url('../../../../../assets/ecllispse1.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position-x: -200px, 100px;
+    background-position-y: -100px, -150px;
+    background-color: #8200c6;
+    height: 335px;
+    width: 90%;
+    border-radius: 24px 24px 50px 50px;
+    position: relative;
+    margin-left: 7%;
+}
+
+.firstupperinner {
+    display: flex;
+    height: 60%;
+}
+
+.firstupperimage {
+    position: relative;
+    width: 50%;
+}
+
+.firstupperimageInner{
+    top: -5%;
+    width: 22vw;
+    left: -5%;
+    position: absolute;
+}
+.firstupperimageInner img {
+    width: 100%;
+}
+
+
+.upperinfo {
+    color: #ffffff;
+    width: 50%;
+    padding: 5%;
+}
+
+.upperinfo img {
+    margin-left: 20%;
+}
+
+.upperinfo h2 {
+    font-size: 2.5rem;
+}
+
+.upperinfo p {
+    margin: 0%;
+
+}
+
+.upperinfo .Morningheading p {
+    font-size: 16px;
+
+}
+
+.upperinfo .Morningschedule p {
+    font-size: 12px;
+}
+
+.upperinfobutton {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.upperinfobutton button {
+    border-radius: 20px;
+    font-size: 12px;
+    width: 99px;
+    height: 37px;
+    color: #9c33d2;
+    font-weight: normal;
+
+}
+
+.stats {
+    background-color: white;
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    border-radius: 24px 24px 24px 24px;
+    border: 1px solid #f2f2f2;
+    bottom: 0;
+}
+
+.statsinnerdiv {
+    display: flex;
+    padding: 2% 0% 2% 2%;
+    height: 148px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.statscount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#statscount1id {
+    width: 30%;
+}
+
+#statscount2id {
+    width: 30%;
+}
+
+#statscount3id {
+    width: 30%;
+}
+
+#statscount4id {
+    width: 10%;
+    right: -0.5%;
+    top: 10px;
+    height: 100%;
+}
+
+#statscount4id button {
+    height: 30px;
+    width: 70px;
+}
+
+.statscount p {
+    margin: 0;
+}
+
+.statscountimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.statscountnumber {
+    font-size: 23px;
+}
+
+.statscountinfo {
+    font-size: 13px;
+    color: #949caa;
+}
+
+.statscountbutton {
+    position: absolute;
+    width: 100%;
+    rotate: -89.5deg;;
+}
+
+.statscountbutton button {
+    width: 100px;
+    border-radius: 12px 12px 0 0;
+
+    border: none;
+
+}
+
+.statscountbutton button:hover {
+    background-color: #6c01a1;
+}
+
+.statscountbutton button:focus {
+    background-color: #6c01a1;
+    box-shadow: none;
+}
+
+.statscountbutton button:active {
+    background-color: #6c01a1;
+    box-shadow: none;
+
+}
+
+.statscountbutton button {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8300c6;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6c01a1;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6c01a1;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c01a1;
+    --bs-btn-disabled-border-color: #6c01a1;
+}
+
+@media (min-width: 320px) {
+
+.firstupperinner {
+    display: flex;
+    height: 180px;
+}
+.upperinfo {
+    height: 100%;
+    padding: 10px 5px 5px 5%;
+}
+
+.upperinfo h2{
+    font-size: 29px;
+}
+
+.upperinfo .Morningheading p {
+    font-size: 15px;
+}
+
+.firstupperimageInner{
+    width: 200px;
+}
+.firstupperwrapper{
+    margin-top: 80px;
+    width: 85%;
+    margin-left: 14%;
+    height: 300px;
+}
+.upperinfobutton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.stats {
+    height: 130px;
+}
+#statscount4id{
+    right: 3px;
+}
+#statscount4id button{
+    width: 60px;
+}
+}
+@media (min-width: 576px) {
+    
+.firstupperinner {
+    display: flex;
+    height: 180px;
+}
+.upperinfo {
+    height: 100%;
+    padding: 10px 5px 5px 10%;
+}
+
+.upperinfo h2{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.upperinfo .Morningheading p {
+    font-size: 20px;
+}
+.firstupperimageInner{
+    left: 10%;
+    width: 270px;
+}
+.firstupperwrapper{
+    margin-top: 80px;
+    width: 85%;
+    margin-left: 8%;
+    height: 320px;
+}
+
+.upperinfobutton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.stats {
+    height: 130px;
+}
+#statscount4id button{
+    width: 80px;
+}
+    
+}
+@media (min-width: 768px) {}
+
+@media (min-width: 991px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+    
+
+}

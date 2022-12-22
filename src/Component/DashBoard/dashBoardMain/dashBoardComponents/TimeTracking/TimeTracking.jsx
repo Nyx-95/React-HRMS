@@ -1,6 +1,6 @@
 import React from 'react'
-import dashBoardCss from "../dashBoardMain.module.css"
-import heading from '../../../../assets/heading lines.png'
+import timeTrackingCss from "./TimeTracking.module.css"
+import heading from '../../../../../assets/heading lines.png'
 import { ResponsiveContainer, AreaChart, Area, CartesianGrid, XAxis, Tooltip } from 'recharts';
 
 
@@ -35,22 +35,22 @@ const TimeTracking = () => {
       );
   return (
     <>
-    <div className={dashBoardCss.thirdlowerdiv}>
-                  <div className={dashBoardCss.timetrackingoutter}>
-                    <div className={dashBoardCss.timetrackinginner}>
-                      <div className={dashBoardCss.timetrackingwrapper}>
-                        <div className={dashBoardCss.timetrackingoutterdiv}>
-                          <div className={dashBoardCss.timetrackingdiv}>
-                            <div className={dashBoardCss.mergeheadings}>
+    <div className={timeTrackingCss.thirdlowerdiv}>
+                  <div className={timeTrackingCss.timetrackingoutter}>
+                    <div className={timeTrackingCss.timetrackinginner}>
+                      <div className={timeTrackingCss.timetrackingwrapper}>
+                        <div className={timeTrackingCss.timetrackingoutterdiv}>
+                          <div className={timeTrackingCss.timetrackingdiv}>
+                            <div className={timeTrackingCss.mergeheadings}>
                               <h5>My Time Tracking</h5>
                             </div>
                             <button type="button" className="btn btn-secondary  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span className="sr-only"></span>
                             </button>
                             <div className="dropdown-menu">
-                              <a className="dropdown-item" href="#">Action</a>
-                              <a className="dropdown-item" href="#">Another action</a>
-                              <a className="dropdown-item" href="#">Something else here</a>
+                              <a className="dropdown-item" href="#">Monthly hrs</a>
+                              <a className="dropdown-item" href="#">Weekly hrs</a>
+                              <a className="dropdown-item" href="#">Daily hrs</a>
                               <div className="dropdown-divider"></div>
                               <a className="dropdown-item" href="#">Separated link</a>
                             </div>
@@ -58,16 +58,16 @@ const TimeTracking = () => {
                           </div>
                           <img src={heading} alt="heading"></img>
                         </div>
-                        <div id={dashBoardCss.chartContainer}>
+                        <div id={timeTrackingCss.chartContainer}>
                           {renderLineChart}
                         </div>
-                        <div className={dashBoardCss.timetrackingmain}>
-                          <div className={dashBoardCss.timetrackingouter}>
-                            <div className={dashBoardCss.weeklyreport}>
-                              <p className={dashBoardCss.p1}>Avg Working Hours</p>
-                              <p className={dashBoardCss.p2}>Nov 07 - Nov 11 (4 days left)</p>
+                        <div className={timeTrackingCss.timetrackingmain}>
+                          <div className={timeTrackingCss.timetrackingouter}>
+                            <div className={timeTrackingCss.weeklyreport}>
+                              <p className={timeTrackingCss.p1}>Avg Working Hours</p>
+                              <p className={timeTrackingCss.p2}>Nov 07 - Nov 11 (4 days left)</p>
                             </div>
-                            <div className={dashBoardCss.timetrackingtime}>
+                            <div className={timeTrackingCss.timetrackingtime}>
                               <h5>
                                 0h 0m 0s
                               </h5>

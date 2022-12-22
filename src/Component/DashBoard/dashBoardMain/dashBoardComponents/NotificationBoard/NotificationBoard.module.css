@@ -1,0 +1,145 @@
+/* Notice Board Starts*/
+
+.mergeheadings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mergeheadings h5 {
+    font-size: 20px;
+
+}
+
+.mergeheadings img {
+    width: 80px;
+    margin: 0% 0% 15px 0.5%;
+}
+
+.Noticesboard {
+    min-width: 100%;
+    border-radius: 24px;
+    min-height: 170px;
+    position: relative;
+
+}
+
+.Noticesboardinner {
+    padding: 0% 0% 0% 0%;
+    margin-left: -1.5%;
+    margin-right: 10%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+
+}
+
+.noticeboardwrapper {
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+    padding: 2%;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    text-overflow: ellipsis;
+}
+
+
+.notificationbarouter {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.notificationbarinner {
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.innerbars {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.notificationbar {
+    display: flex;
+    width: 240px;
+    height: 100px;
+    background-color: #faf6fc;
+    padding: 2% 1% 0% 1%;
+    border-radius: 24px;
+}
+
+.notificationBarprofile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 20%;
+}
+
+.notificationBarmessage h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.notificationBarmessage {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.notificationBarmessage p {
+    font-size: 12px;
+    height: 50%;
+    overflow: hidden;
+    color: #a2a2a2;
+    text-overflow: ellipsis;
+}
+
+
+/*Notificationbarmessage ends*/
+
+@media (min-width: 320px) {
+    .Noticesboardinner {
+        height: 90%;
+    }
+
+    .noticeboardwrapper {
+        width: 74%;
+        margin-left: 17%;
+        height: 170px;
+        margin-top: 15px;
+    }
+
+    .notificationbarouter {
+        width: 100%;
+    }
+
+    .notificationbarinner {
+        width: 70%;
+    }
+
+    .notificationbar {
+        width: 100%;
+    }
+
+    .notificationBarprofile {
+        width: 15%;
+
+    }
+
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 991px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
