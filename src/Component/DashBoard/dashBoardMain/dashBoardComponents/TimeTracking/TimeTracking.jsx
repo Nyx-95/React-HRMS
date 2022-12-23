@@ -49,7 +49,7 @@ const TimeTracking = () => {
                       <span className="sr-only"></span>
                     </button>
                     
-                    <div className="dropdown-menu">
+                    <div className={`dropdown-menu ${timeTrackingCss.dropDownMenu}`}>
                       <a className="dropdown-item" href="#">Monthly hrs</a>
                       <a className="dropdown-item" href="#">Weekly hrs</a>
                       <a className="dropdown-item" href="#">Daily hrs</a>

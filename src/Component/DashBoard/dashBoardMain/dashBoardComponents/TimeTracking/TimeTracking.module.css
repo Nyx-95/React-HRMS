@@ -69,6 +69,9 @@
 .timetrackingdiv .dropdown {
     width: 30%;
 }
+.dropDownMenu{
+    left: -130px !important;
+}
 
 .timetrackingdiv .dropdown .dropdown-toggle {
     background-color: #faf6fc;
@@ -137,6 +140,9 @@
     .timetrackinginner{  
         margin-left: 12.5%;
     }
+    .dropDownMenu{
+        left: -18% !important;
+    }
     }
     
     @media (min-width: 576px) {
@@ -150,6 +156,21 @@
     .timetrackingwrapper{
         width: 77.5%;
     }
+    .dropDownMenu{
+        left: -23% !important;
+    }
+    }
+    @media (min-width: 650px) {
+    
+    .dropDownMenu{
+        left: -19% !important;
+    }
+    }
+    @media (min-width: 796px) {
+    
+        .dropDownMenu{
+            left: -16% !important;
+        }
     }
     
     @media (min-width: 991px) {
@@ -163,7 +184,9 @@
         .weeklyreport .p2{
             font-size: 10px;
         }
-        
+        .dropDownMenu{
+            left: 0 !important;
+        }
         
     }
     
@@ -174,7 +197,7 @@
     .timetrackingwrapper{
         width: 97.5%;
     }
-
+   
  
     }
     

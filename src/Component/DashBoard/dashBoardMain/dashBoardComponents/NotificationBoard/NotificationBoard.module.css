@@ -65,15 +65,20 @@
     height: 100%;
     width: 100%;
 }
-
-.notificationbar {
+.innerbars button{
+text-align: left;
+    border: none;
     display: flex;
     width: 240px;
     height: 100px;
     background-color: #faf6fc;
     padding: 2% 1% 0% 1%;
     border-radius: 24px;
+  
+
 }
+
+
 
 .notificationBarprofile {
     display: flex;
@@ -84,7 +89,7 @@
 
 .notificationBarmessage h5 {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .notificationBarmessage {
@@ -98,6 +103,10 @@
     overflow: hidden;
     color: #a2a2a2;
     text-overflow: ellipsis;
+}
+.notificationBarmessage p label{
+    color: black;
+    font-weight: 500;
 }
 
 
@@ -184,6 +193,9 @@
     }
     .notificationbarinner{
         width: 93%;
+    }
+    .notificationBarprofile{
+        width: 20%;
     }
 }
 

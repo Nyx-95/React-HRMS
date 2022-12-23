@@ -36,7 +36,6 @@
 .profileouterdiv {
     top: 8%;
     position: absolute;
-    z-index: 1;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -95,16 +94,16 @@
     --bs-btn-disabled-border-color: #6c01a1;
 }
 
-.profileinfo button:hover {
+.profileinfo .buttprofileInfoMarkBreakon:hover {
     background-color: #6c01a1;
 }
 
-.profileinfo button:focus {
+.profileinfo .buttprofileInfoMarkBreakon:focus {
     background-color: #6c01a1;
     box-shadow: none;
 }
 
-.profileinfo button:active {
+.profileinfo .buttprofileInfoMarkBreakon:active {
     background-color: #6c01a1;
     box-shadow: none;
 
@@ -150,11 +149,145 @@
 
     margin-right: 10px;
 }
-
-
-
-
 /*lower second div ends*/
+
+/*Modal starts*/
+.modalHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modalRow{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 6%;
+    padding: 15px 0px 15px 0px;
+}
+.modalRow button{
+ 
+}
+.modalRow button:hover{
+
+    border: 1px solid #8300c4;
+ 
+}
+.profileinfo button:focus {
+    color: white;
+    background-color:  #8300c4;
+    box-shadow: none;
+}
+
+.profileinfo button:active {
+    color: white;
+    background-color: #6c01a1;
+    box-shadow: none;
+
+}
+.modalRowInner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.modalRowbutton1{
+    background-image: url('../../../../../assets/break.png');
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 70px 15px 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    outline: 0;
+}
+.modalRowbutton1:focus {
+    background-image: url('../../../../../assets/breakWhite.png');
+    color: white;
+    background-color:  #8300c4;
+}
+.modalRowbutton2{
+    background-image: url('../../../../../assets/lunch.png');
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 70px 15px 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    outline: 0;
+}
+.modalRowbutton2:focus {
+    background-image: url('../../../../../assets/lunchWhite.png');
+    color: white;
+    background-color:  #8300c4;
+}
+.modalRowbutton3{
+    background-image: url('../../../../../assets/general.png');
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 70px 15px 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    outline: 0;
+}
+.modalRowbutton3:focus {
+    background-image: url('../../../../../assets/GeneralWhite.png');
+    color: white;
+    background-color:  #8300c4;
+}
+.modalRowbutton4{
+    background-image: url('../../../../../assets/Smoke.png');
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 70px 15px 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    outline: 0;
+}
+.modalRowbutton4:focus {
+    background-image: url('../../../../../assets/smokeWhite.png');
+    color: white;
+    background-color:  #8300c4;
+}
+.modalRowbutton5{
+    background-image: url('../../../../../assets/masjid.png');
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 70px 15px 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    outline: 0;
+}
+.modalRowbutton5:focus {
+    background-image: url('../../../../../assets/masjidWhite.png');
+    color: white;
+    background-color:  #8300c4;
+}
+
+
+/*Modal Ends*/
+/*Modal Two Starts*/
+.modal2Main{
+    background-image: url('');
+}
+.modalRow img{
+    width: 55%;
+}
+.modalRowbutton6{
+    background-color: #8300c4;
+    color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+    outline: 0;
+    font-size: 12px;
+}
+
+/*Modal Two Ends*/
 
 
 @media (min-width: 320px) {
