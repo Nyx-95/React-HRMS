@@ -48,8 +48,7 @@ const TimeTracking = () => {
                     <button type="button" className="btn btn-secondary  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span className="sr-only"></span>
                     </button>
-
-
+                    
                     <div className="dropdown-menu">
                       <a className="dropdown-item" href="#">Monthly hrs</a>
                       <a className="dropdown-item" href="#">Weekly hrs</a>

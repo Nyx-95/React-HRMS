@@ -1,3 +1,22 @@
-/*.row{
-    --bs-gutter-x: 0 !important;
-}*/
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#8300c4 ; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6c01a1; 
+  }

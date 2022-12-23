@@ -168,7 +168,12 @@
     }
     
     @media (min-width: 1200px) {
-    
+    .mergeheadingButton{
+        width: 10%;
+    }
+    .timetrackingwrapper{
+        width: 97.5%;
+    }
 
  
     }

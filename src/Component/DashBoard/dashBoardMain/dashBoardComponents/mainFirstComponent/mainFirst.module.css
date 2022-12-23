@@ -354,7 +354,7 @@
     .firstupperwrapper{
         margin-top: 0px;
       width: 100%;
-    margin-left: 8%;
+      margin-left: 10px;
         height: 320px;
     }
     .upperinfo h2{
@@ -364,7 +364,7 @@
         margin-top: 7px;
     }
     .firstupperimageInner{
-        width: 220px;
+        width: 230px;
     }
   
 }

@@ -125,8 +125,8 @@
 
 @media (min-width: 1200px) {
     .workspacewrapper{
-        width: 95%;
-        margin-left: 5%;
+        width: 98%;
+        margin-left: 8px;
     }
     .myworkspaceinner{
         padding-top: 28px;

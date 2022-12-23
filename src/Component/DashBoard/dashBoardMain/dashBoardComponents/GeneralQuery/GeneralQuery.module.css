@@ -1,3 +1,4 @@
+    
 .thirdupperdiv {
     min-width: 20vw;
     height: 100%;
@@ -39,6 +40,7 @@
     overflow-y: scroll;
     height: 250px;
 }
+
 
 
 .ticketlisting ul {
@@ -119,8 +121,12 @@
 
     .ticketwrapper2 {
         width: 95%;
-        margin-left: 8%;
+        margin-left: 2px;
         margin-top: 0px;
+    }
+    .ticketlisting {
+        overflow-y: hidden;
+        height: 300px;
     }
 }
 

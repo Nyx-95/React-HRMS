@@ -62,16 +62,16 @@
     background-color: rgb(255, 255, 255);
 }
 
-/*lower first div*/
-
-
-/*lower first div end*/
-/*lower second div starts*/
-
-
-/*lower second div ends*/
-/*lower third div starts*/
-
-/*lower fouth div starts*/
-
-/*lower fourth div ends*/
+@media (min-width: 1200px) {
+    .upper {
+        padding-top: 85px;
+        height: 50%;
+        width: 100%;
+    }
+    .profileInfoPadding{
+        padding-left: 0;
+    }
+    .TimeTrackingPadding{
+        padding-left: 2px;
+    }
+}

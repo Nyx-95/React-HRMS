@@ -42,10 +42,10 @@ const dashBoardMain = () => {
               <div className="col-12 col-sm-12 col-lg-3 col-xl-3">
                 <GeneralQueries></GeneralQueries>
               </div>
-              <div className="col-12 col-sm-12 col-lg-3 col-xl-3">
+              <div className={`col-12 col-sm-12 col-lg-3 col-xl-3 ${dashBoardCss.profileInfoPadding}`}>
                 <ProfileInfo></ProfileInfo>
               </div>
-              <div className="col-12 col-sm-12 col-lg-3 col-xl-3">
+              <div className={`col-12 col-sm-12 col-lg-3 col-xl-3 ${dashBoardCss.TimeTrackingPadding}`}>
                
               <TimeTracking></TimeTracking>
 
