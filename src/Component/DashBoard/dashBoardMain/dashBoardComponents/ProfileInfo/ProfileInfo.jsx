@@ -50,8 +50,8 @@ const ProfileInfo = () => {
                     content: {
                       position: 'absolute',
                       top: '120px',
-                      left: '30%',
-                      right: '70%',
+                      left: '35%',
+                      right: '55%',
                       bottom: '40px',
                       border: '1px solid #ccc',
                       width:'450px',

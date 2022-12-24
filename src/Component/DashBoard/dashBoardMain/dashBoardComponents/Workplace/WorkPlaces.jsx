@@ -41,7 +41,7 @@ const WorkPlaces = () => {
                           <h5>My Work Space</h5>
                           <img src={heading} alt="heading"></img>
                         </div>
-                        <OwlCarousel className={`owl-theme ${workPlaceCss.myworkspaceNotificationbarOuter} `} {...options1}>
+                        <OwlCarousel className={`owl-theme ${workPlaceCss.myworkspaceNotificationbarOuter} `} {...options1} style={{zIndex: '0'}}>
                           <div className={`item ${workPlaceCss.myworkspaceNotificationbar}`}
                             id={workPlaceCss.myworkspaceNotificationbar1}>
                             <div className={workPlaceCss.myworkspaceNotificationBarProfile}><img

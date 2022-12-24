@@ -10,6 +10,7 @@ import NotificationMessage from './Notification/notificationMessage'
 import NotificationBirthday from './Notification/notificationBirthday'
 import NortificationAnniversary from './Notification/nortificationAnniversary'
 
+
 const options = {
     margin: 10,
     responsiveClass: true,
@@ -51,7 +52,7 @@ const NotificationBoard = () => {
                         <div className={notificationBoardCss.notificationbarouter}>
                           <div className={notificationBoardCss.notificationbarinner}>
                             <div className={notificationBoardCss.innerbars}>
-                              <OwlCarousel className="owl-theme" {...options}>
+                              <OwlCarousel className="owl-theme" {...options} style={{zIndex: '0'}}>
                                <NotificationMessage></NotificationMessage>
                                 <NotificationBirthday></NotificationBirthday>
                                 <NortificationAnniversary></NortificationAnniversary>
