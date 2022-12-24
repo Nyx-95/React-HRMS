@@ -39,6 +39,9 @@ const NotificationMessage = () => {
       >
         
         <div className={notificationBoardCss.notificationModal1} >
+          <div className={notificationBoardCss.notificationModal1Button} onClick={() => setBreakModal(false)}>
+            <button><i className="ri-close-line"></i></button>
+          </div>
           <div className={notificationBoardCss.notificationModal1Image}>
             <img src={notificationPic1}></img>
           </div>
