@@ -51,7 +51,7 @@ const NotificationBirthday = () => {
             Dear Employee
           </div>
           <div className={notificationBoardCss.notificationModal1Body}>
-           <textarea name="" id=""></textarea>
+          <textarea type='text' placeholder="Type Something..."></textarea>
           </div>
           
         </div>

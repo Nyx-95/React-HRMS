@@ -1,41 +1,72 @@
 import sideHeadercss from "./sideHeader.module.css";
 import leftBarProfilePic from "../../assets/leftbarprofilepic.png";
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import $ from 'jquery';
 import { NavLink } from "react-router-dom";
 import { ROUTES } from "../../Utils/routes";
 
 
 function SideHeader() {
+    const sideNavRef=useRef(null);
+    const [isMobile, setIsMobile] = useState(false)
+    const [isNav, setIsNav] = useState({isOpen:false, width:null})
+   
+    const sideBarButton = (isOpen, width) =>{
+        console.log(width,'nigga')
+       setIsNav({isOpen,width:$(".mobilesidenav").width()})
+       console.log($(".mobilesidenav").width() )
+        // if(isOpen){
+        //     $(".movilesidenavbuttonouterbtn").css("left", `${ sideNavRef.current.offsetWidth - 32}px`);
+        // }
+        // else{
+        //     $(".movilesidenavbuttonouterbtn").css("left", "-35px");
+        // }
+        // if ($(".mobilesidenav").is(":visible")) {
+        //     $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
+        // }
+        // else {
+        //     $(".movilesidenavbuttonouterbtn").css("left", "-35px");
+        // }
+    }
+
+    const onNavClick = () =>{
+        $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
+    }
+
     useEffect(() => {
         let screenWidth = window.innerWidth;
         console.log(screenWidth)
-        screenWidth <= 991 ? $(".mobilesidenav").hide() : $(".mobilesidenav").show();
-        screenWidth <= 991 ? $(".mobilesidenavbutton").show() : $(".mobilesidenavbutton").hide();
+        setIsMobile(screenWidth <= 991)
+        
+
+        // screenWidth <= 991 ? $(".mobilesidenav").hide() : $(".mobilesidenav").show();
+        // screenWidth <= 991 ? $(".mobilesidenavbutton").show() : $(".mobilesidenavbutton").hide();
 
 
 
-        $(".mobilesidenav").on('click', () => {
-            $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
-        })
-        $(".movilesidenavbuttonouterbtn").on('click', function () {
-            $(".mobilesidenav").toggle();
-            if ($(".mobilesidenav").is(":visible")) {
-                $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
-            }
-            else {
-                $(".movilesidenavbuttonouterbtn").css("left", "-35px");
-            }
+        // $(".mobilesidenav").on('click', () => {
+        //     $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
+        // })
 
-        });
+        // $(".movilesidenavbuttonouterbtn").on('click', function () {
+        //     $(".mobilesidenav").toggle();
+        //     if ($(".mobilesidenav").is(":visible")) {
+        //         $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
+        //     }
+        //     else {
+        //         $(".movilesidenavbuttonouterbtn").css("left", "-35px");
+        //     }
 
+        // });
 
+        
+        
 
-    });
+    },[]);
     return (
         <>
-
-            <nav className={`mobilesidenav ${sideHeadercss.mainMenu} `}>
+            {(!isMobile || isNav.isOpen) &&
+            <nav className={`mobilesidenav ${sideHeadercss.mainMenu} `} onClick={onNavClick} ref={sideNavRef}>
                 <div className={sideHeadercss.profileicon}>
                     <div className={sideHeadercss.profileicontab}>
                         <NavLink to={ROUTES.USER_PROFILE}>
@@ -127,11 +158,13 @@ function SideHeader() {
 
                 </ul>
             </nav>
-            <div className={`mobilesidenavbutton ${sideHeadercss.mobilesidenavbtn}`}>
+}
+
+            {isMobile && <div className={`mobilesidenavbutton ${sideHeadercss.mobilesidenavbtn}`}>
                 <div className={sideHeadercss.mobilesidenavouter}>
-                    <button className={`btn btn-primary shadow-none movilesidenavbuttonouterbtn ${sideHeadercss.movilesidenavbuttonouterbutton}`}>Side Bar</button>
+                    <button className={`btn btn-primary shadow-none movilesidenavbuttonouterbtn ${sideHeadercss.movilesidenavbuttonouterbutton}`} onClick={()=> sideBarButton(!isNav.isOpen)} style={{left:`${isNav.isOpen ? `${ isNav.width - 32}px`: "-35px"}`}}>Side Bar</button>
                 </div>
-            </div>
+            </div>}
 
         </>
     );
