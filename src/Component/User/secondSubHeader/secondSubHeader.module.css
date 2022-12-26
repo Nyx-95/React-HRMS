@@ -136,13 +136,15 @@
     }
     .UserMenuTopHeader ul{
         padding-left: 0%;
-        width: 80%;
+        width: 100%;
         gap: 0;
         font-size: 11px;
+        display: flex;
+        justify-content: center;
     }
    
     .UserMenuTopHeader ul a li{
-        min-width: 140px;
+        min-width: 120px;
         padding: 0% 1% 5% 1%;
     }
 }

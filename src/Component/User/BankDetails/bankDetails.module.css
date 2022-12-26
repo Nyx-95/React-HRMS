@@ -1,38 +1,336 @@
-.headingInner{
-    margin-top: 25px;
-    
-    display: flex;
 
+.UserDetailsMenuHeader{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.UserDetailsMainHeading{
+    width: 60%;
+}
+.UserDetailsMainHeadingRightButton{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.DetailsHeadingRightSelectNumber{
+    border-radius: 15px;
+    border-color: #dcdcdc;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 8%;
+    
+    font-size: 1vw;
+}
+.DetailsHeadingRightSelectNumber option:focus{
+    background-color: #8200c6;
+}
+.DetailsHeadingRightSelectNumber:focus{
+    border-color: #8200c6;
+}
+
+.DetailsMenuImportButtonInner{
+
+    border: 1px solid #dcdcdc;
+    border-radius: 25px;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DetailsMenuShowButton{
+    width: 40%;
+    padding-left: 25px;
+}
+.DetailsMenuShowButton label{
+    font-size: 1vw;
+    margin-right:3px;
+    margin-left: 2px;
+}
+.DetailsMenuImportButton{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+i.fa-solid.fa-download {
+    font-size: 13px;
+}
+.DetailsMenuSearchIcon{
+
+    width: 20%;
+}
+.DetailsMenuSearchIcon a{
+    padding: 4px 5px 2px 5px;
+    background-color: #8200c6;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+}
+i.fa-solid.fa-magnifying-glass {
+    font-size: 13px;
+}
+
+.DetailsMenuImportButton label{
+    margin-right: 5%;
+}
+.DetailsMenuImportButtonInner label{
+    padding-left: 10%;
+    font-size: 1vw;
+    display: flex;
     align-items: center;
 }
-
-.headingWrapper h4{
-    margin-bottom: 0;
-}
-.headingWrapper h4{
-    margin-bottom: 0;
-}
-
-.entrieSelectWrapper label{
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.entrieSelectWrapper select{
-    outline: none;
-    width: 30%;
-    min-width: 70px;
-    border-radius: 25px;
-    border: 1px solid #f1f1f1;
-    padding-left: 20px;
-}
-.searchIconMain a{
-    text-decoration: none;
- }
-.searchIconMain i{
+.DetailsMenuImportButtonInner a{
     color: white;
-    background-color: #8300c7;
-    padding: 5px;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    background-color: #8200c6;
     border-radius: 50%;
+}
+.DetailsMenuImportButtonInner a:hover{
+    color: white;
+  
+}
+
+.UserDetailsdropbtn {
+    background-color: #ffffff;
+    color: rgb(48, 48, 48);
+    padding: 16px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .UserDetailsdropbtn:hover, .dropbtn:focus {
+    background-color: #f1f1f1;
+  }
+  
+  .UserDetailsdropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .userDetailsdropdownContent {
+    display: none;
+    right: 20%;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .userDetailsdropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .UserDetailsdropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+
+  .DetailsMenuShowButtonDropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .DetailsMenuShowButtonDropdown label{
+    font-size: 11px;
+  }
+  .DetailsMenuShowButtonDropdown select{
+    font-size: 11px;
+  }
+  .DetailsHeadingRightSelectNumberDropdown{
+    border-radius: 25px;
+  }
+  
+ .userDetailsdropdown-contentInner{
+    padding:10%;
+ }
+
+  .DetailsMenuImportButtonInnerDropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid grey;
+    border-radius: 25px;
+    font-size: 2vw;
+  }
+  .DetailsMenuImportButtonInnerDropdown label{
+    margin-left: 10px;
+    font-size: 2vw;
+  }
+  .DetailsMenuImportButtonInnerDropdown i{
+    color: white;
+    background-color: #8200c6;
+    padding: 5%;
+    border-radius: 50%;
+  }
+
+  .searchUserDetailsDropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid grey;
+    border-radius: 25px;
+    font-size: 2vw;
+  }
+  .searchUserDetailsDropdown label{
+    margin-left: 10px;
+    font-size: 2vw;
+  }
+  .searchUserDetailsDropdown i{
+    color: white;
+    background-color: #8200c6;
+    padding: 5%;
+    border-radius: 50%;
+  }
+  
+/*User Detail Menu Table Starts*/
+
+.UserDetailsMenuTable{
+    padding: 3% 0% 2% 0%;
+    width: 100%;
+    
+}
+.UserDetailsMenuTableInner{
+    height: 100%;
+    min-height: 500px;
+    border-radius: 25px;
+   
+    width: 100%;
+    box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.02);
+}
+
+.UserDetailsMenuTable table{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.UserDetailsMenuTable table thead th p{
+    border-right: 1px solid grey;
+    padding-right: 10px;
+    margin: 0;
+}
+.UserDetailsMenuTable table thead tr{
+    color: #a2a2a2 !important;
+    font-weight: 300 !important;
+}
+.UserDetailsMenuTable table input{
+    accent-color: #8200c6;
+}
+.UserDetailsMenuTable table thead .flexCheckDefault{
+    margin-top: 10px;
+
+}
+.flexCheckDefault:checked {
+  
+    background-color: #8200c6 !important;
+    border-color: #8200c6 !important;
+}
+
+.UserDetailsMenuTable table thead th:last-child p{
+    border-right: 0px;
+}
+
+
+
+.UserDetailsMenuTable tbody > tr:last-child > td {
+    border-bottom: 0;
+}
+
+
+
+  /*Pagination Row Starts*/
+  .UserBankDetailsTablePagination{
+    margin-bottom: 50px;
+ 
+  }
+  
+
+  .UserBankDetailsTablePagination .pagination {
+    --bs-pagination-padding-x: 11px;
+    --bs-pagination-padding-y: 4px;
+    --bs-pagination-font-size: 11px;
+    --bs-pagination-color: #fcf7fa;
+    --bs-pagination-bg: #fff;
+    --bs-pagination-border-width: 1px;
+    --bs-pagination-border-radius: 10px;
+    --bs-pagination-border-color: #dee2e6;
+    --bs-pagination-border-radius: 10px;
+    --bs-pagination-hover-color: var(--bs-link-hover-color);
+    --bs-pagination-hover-bg: #e9ecef;
+    --bs-pagination-hover-border-color: #dee2e6;
+    --bs-pagination-focus-color: var(--bs-link-hover-color);
+    --bs-pagination-focus-bg: #8200c6;
+    --bs-pagination-focus-box-shadow: 0 0 5px 4px rgba(247, 4, 255, 0.151);
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: #8200c6;
+    --bs-pagination-active-border-color: #8200c6;
+}
+
+.UserDetailsMenuTableInner .form-check-input:focus{
+    box-shadow: none !important;
+}
+
+.pageLink{
+    border-radius: 8px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.DetailsHeadingRightSelectNumberLastRow{
+    padding-left: 10px;
+}
+
+  .UserBankDetailsTablePagination .pagination .pageLink{
+    color: black;
+  }
+  .UserBankDetailsTablePagination .pagination .pageLink:focus{
+    color: white;
+  }
+  
+  .UserBankDetailsTablePagination .pagination li{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+  nav .pagination{
+    display: flex;
+    justify-content: center;
+  }
+
+.DetailsMenuShowButtonLastRow{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 20%;
+}
+.DetailsMenuShowButtonLastRow label{
+    margin-right:3px;
+    margin-left: 2px;
+    font-size: 1vw;
+}
+.DetailsMenuShowButtonLastRow option{
+    font-size: 1vw;
+}
+.DetailsMenuShowButtonLastRow select{
+    border-radius: 25px;
+    font-size: 1vw;
+}
+.DetailsMenuShowButtonLastRow select:focus{
+    border-color: #8200c6;
+    color: #8200c6;
 }
 
 /*Hamburger*/
@@ -99,282 +397,226 @@
    border-radius: 50%;
    padding: 2px 6px 2px 6px;
 }
+.dropDownHeader{
 
-/*Table Header starts*/
-.tableHeader{
-    background-color: #fbfbfb;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 22px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.dropDownHeader a{
+    color: black;
+    text-decoration: none;
+}
+.dropDownHeader i{
+    font-size: 40px;
 }
 
-.attendanceTable thead tr th p{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.dropDownListContainer{
+    position: absolute;
+    right: 5%;
+    width:200px;
 }
-.attendanceTable tbody tr td{
+
+.DropDownList{
+    border:2px #f1f1f1 solid;
+    background: #ffffff;
+    padding-left:0px;
     padding-top: 20px;
-    padding-bottom: 20px;
 }
 
-
-.tableHeaderInner{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ListItem{
+    list-style: none;
+    margin-bottom: 0.8em;
 }
-.tableHeaderDivs{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
- 
-}
-.tableHeaderDiv1{
-    width: 50%;
-    min-width: 150px;
-    display: flex;
-    justify-content: flex-start;
-    background-color: #8200c6;
-    color: white;
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px 5px #8100c62c;
-    
-}
-.tableHeaderDiv1Icon{
-    background-color:#901acd;
+.ListItem label{
     margin-left: 10px;
     margin-right: 10px;
-    padding: 4px 8px 4px 8px;
-    border-radius: 10px;
 }
-
-.tableHeaderDiv1Label{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+.ListItem select{
+   border-radius: 25px;
 }
-.tableHeaderDiv1Label label{
-  font-size: 12px;
-}
-
-.tableHeaderDivslabel{
-    margin-left: 15px;
-}
-
-/*Table Header ends*/
-
-/* Attendance Table */
-
-
-
-.UserDetailsMenuTable{
-    padding: 3% 0% 2% 0%;
-    width: 100%;
-    
-}
-.UserDetailsMenuTableInner{
-    height: 100%;
-    min-height: 500px;
-    border-radius: 25px;
-    overflow-x: scroll;
-    width: 100%;
-    border: 1px solid #bbbbc0;
-}
-
-.UserDetailsMenuTable table{
-    text-align: center;
-    table-layout : fixed;
-    width: 100%;
-}
-
-.UserDetailsMenuTable table thead{
-    padding-right: 30px;
-    border-bottom: 1px solid black;
-}
-.UserDetailsMenuTable table thead th p{
-    border-right: 1px solid #eeeeee;
-    padding-right: 10px;
-    color: #a2a2a2;
-    font-weight: 400;
-    margin: 0;
-}
-.UserDetailsMenuTable table tbody tr td a{
-   color: #8200c6;
-   text-decoration: none;
-   border-bottom: 1px solid #8200c6;
-}
-.UserDetailsMenuTable table thead th:last-child p{
-    border-right: 0px;
-}
-
-
-
-.UserDetailsMenuTable tbody > tr:last-child > td {
-    border-bottom: 0;
-}
-
-/*Attendance table ends*/
-
-/*Pagination starts*/
-.UserBankDetailsTablePagination{
-    margin-top: 10px;
-    margin-bottom: 50px;
- 
-  }
-  
-
-  .UserBankDetailsTablePagination .pagination {
-    --bs-pagination-padding-x: 11px;
-    --bs-pagination-padding-y: 4px;
-    --bs-pagination-font-size: 11px;
-    --bs-pagination-color: #fcf7fa;
-    --bs-pagination-bg: #fff;
-    --bs-pagination-border-width: 1px;
-    --bs-pagination-border-radius: 10px;
-    --bs-pagination-border-color: #dee2e6;
-    --bs-pagination-border-radius: 10px;
-    --bs-pagination-hover-color: var(--bs-link-hover-color);
-    --bs-pagination-hover-bg: #e9ecef;
-    --bs-pagination-hover-border-color: #dee2e6;
-    --bs-pagination-focus-color: var(--bs-link-hover-color);
-    --bs-pagination-focus-bg: #8200c6;
-    --bs-pagination-focus-box-shadow: 0 0 5px 4px rgba(247, 4, 255, 0.151);
-    --bs-pagination-active-color: #fff;
-    --bs-pagination-active-bg: #8200c6;
-    --bs-pagination-active-border-color: #8200c6;
-}
-
-.UserDetailsMenuTableInner .form-check-input:focus{
-    box-shadow: none !important;
-}
-
-.pageLink{
-    border-radius: 8px;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-
-#DetailsHeadingRightSelectNumberLastRow{
-    padding-left: 10px;
-}
-
-  .UserBankDetailsTablePagination .pagination .pageLink{
+.ListItem a{
+    text-decoration: none;
     color: black;
-  }
-  .UserBankDetailsTablePagination .pagination .pageLink:focus{
-    color: white;
-  }
-  
-  .UserBankDetailsTablePagination .pagination li{
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-  }
-  nav .pagination{
-    margin-left: 40%;
-  }
-  .DetailsMenuShowButtonLastRow{
+}
+.menuIconName{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
-  .DetailsMenuShowButtonLastRow label{
-    margin-right: 20px;
-    margin-left: 20px;
+    justify-content: space-between;
 }
-.DetailsMenuShowButtonLastRow select{
-    outline: none;
-    width: 7%;
-    min-width: 60px;
-    border-radius: 25px;
-    border: 1px solid #f1f1f1;
-    padding-left: 20px;
+.menuIconName span{
+    margin-left: 10px;
+}
+.menuIconName i{
+   margin-right: 20px;
+   background-color: #8200c6;
+   color: white;
+   border-radius: 50%;
+   padding: 2px 6px 2px 6px;
 }
 
-/*Pagination ends*/
 
 @media (min-width: 320px) {
-    .dropDownHeader{
-        display: flex;
+    
+
+ /* ALL USER DETAILS START  */
+
+ .UserMenuTopHeader{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 60px !important;
+    width: 100% !important;
+    padding-top: 0%;
+}
+
+
+.UserMenuTopHeader::-webkit-scrollbar {
+    display: none;
+}
+
+.UserMenuTopHeader ul li a{
+    font-size: 10px;
+}
+
+.UserMenuTopHeader li {
+    padding: 0% 0% 1% 0%;
+    width: 100%;
+    min-width: 120px;
+}
+.UserDetailsMenuHeader{
+    padding-top: 30px;
+
+}
+.UserDetailsMainHeading {
+   margin-left: 30px;
+}
+.UserDetailsdropdown{
+    margin-right: 20px;
+}
+.UserDetailsMenuTable {
+    margin-left: 15%;
+    width: 80%;
+}
+.UserDetailsMenuTableInner {
+    overflow-x:scroll;
+
+}
+.UserDetailsMenuTable .table{
+    font-size: 8px;
+}
+
+
+.DetailsMenuShowButtonLastRow {
+    margin: 10px 30px 15px 0px
+}
+.DetailsMenuShowButtonLastRow label{
+    font-size: 11px
+}
+.DetailsMenuShowButtonLastRow select{
+    font-size: 11px;
+    margin-left: 5px;
+    margin-right:5px
+}
+.DetailsMenuShowButtonLastRow option{
+    font-size: 11px
+}
+.dropDownHeader{
+    display: flex;
+}
+.UserDetailsMainHeadingRightButton{
+    display: none;
+}
+
+}
+
+@media (min-width: 576px){
+    /* ALL USER DETAILS START  */
+
+
+    .UserMenuTopHeader{
+    
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-top: 20vh !important;
+        width: 100% !important;
+        padding-top: 0%;    
+        padding-left: 0 !important; 
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
-    .searchIconMain{
+    .UserMenuTopHeader::-webkit-scrollbar {
         display: none;
     }
-    .entrieSelectWrapper{
-        display: none;
-    }
-    .headingInner{
-        padding-left: 40px;
-    }
- 
-    .UserDetailsMenuTableInner{
-
-        margin-left: 40px;
     
+    .UserMenuTopHeader ul li a{
+        font-size: 10px;
     }
-    .tableHeader{
-        width: 100%;
-        min-width: 900px;
-    }
-    .attendanceTable{
-        width: 100%;
-        min-width: 900px;
-    }
-  
 
-  }
-  
-  @media (min-width: 576px) {
-    .headingInner{
-        padding-left: 20px;
+    .UserMenuTopHeader li {
+        padding: 0% 0% 1% 0%;
+        width: 100%;
+        min-width: 120px;
     }
-    .UserDetailsMenuTableInner{
 
-        margin-left: 20px;
-    
+    .UserDetailsMenuHeader{
+        padding-top: 30px;
+        margin-left: 4%;
     }
-    .tableHeader{
-        width: 100%;
-        min-width: 900px;
+    .UserDetailsMainHeading{
+        width: 85vh;
+        margin-left: 0px;
     }
-    .attendanceTable{
-        width: 100%;
-        min-width: 900px;
+    .UserDetailsMenuTable {
+        margin-left: 4%;
+        width: 95%;
     }
-   
-  }
   
-  @media (min-width: 992px) {
-   
+    .UserDetailsMenuTable .table{
+        font-size: 8px;
+    }
+
+    .DetailsMenuShowButtonLastRow {
+        margin: 10px 10px 15px 0px
+    }
+    .DetailsMenuShowButtonLastRow label{
+        font-size: 11px
+    }
+    .DetailsMenuShowButtonLastRow select{
+        font-size: 11px;
+    }
+    .DetailsMenuShowButtonLastRow option{
+        font-size: 11px;
+    }
+}
+@media (min-width: 991px) {
+.UserDetailsMenuHeader{
+
+    margin-left: 0%;}
+    .UserDetailsMenuTable {
+        margin-left: 2%;
  
-  }
-  
-  @media (min-width: 1200px) {
+    }
+    .UserDetailsMenuTableInner {
+        overflow-x:auto;
+      
+    }
+}
+@media (min-width: 1200px) {
 
     .dropDownHeader{
 
         display: none;
      
     }
-    .searchIconMain{
-        display: block;
-    }
-    .entrieSelectWrapper{
-        display: block;
+    .UserDetailsMainHeadingRightButton{
+        display: flex;
     }
 
-    .UserDetailsMenuTableInner{
+    .UserDetailsMenuTableInner {
+        overflow-x:auto;
       
-        -ms-overflow-style: none; /* for Internet Explorer, Edge */
-        scrollbar-width: none; /* for Firefox */
-        overflow-y: scroll; 
-       
-    }
-    .UserDetailsMenuTableInner::-webkit-scrollbar {
-        display: none; /* for Chrome, Safari, and Opera */
     }
     
   }

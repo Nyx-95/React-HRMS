@@ -7,14 +7,7 @@ import { useEffect, useState } from 'react'
 
 const MyAttendance = () => {
     let screenWidth = window.innerWidth;
-    
 
-
-    useEffect(() => {
-      
-      
-    });
- 
     const [isOpen, setIsOpen] = useState(false);
     const toggling = () => setIsOpen(!isOpen);
     return (
