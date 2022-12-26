@@ -95,6 +95,10 @@ nav.mainMenu.expanded {
     margin-top: 10px;
 }
 
+.isHidden{
+    display: none;
+}
+
 .mainMenu li>a {
     position: relative;
     display: table;

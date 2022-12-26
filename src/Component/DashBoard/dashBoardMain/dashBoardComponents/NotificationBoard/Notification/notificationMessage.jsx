@@ -19,7 +19,8 @@ const NotificationMessage = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(255, 255, 255, 0.75)',
+            zIndex:3000,
+            backgroundColor: 'rgba(0, 0, 0, 0.75)',
           },
           content: {
             position: 'absolute',
@@ -61,6 +62,7 @@ const NotificationMessage = () => {
             <p>best regards</p>
             <p>human resource</p>
           </div>
+        
         </div>
       </Modal>
       <button className={` item  ${notificationBoardCss.notificationbar}`} onClick={() => setBreakModal(true)}>
@@ -72,6 +74,7 @@ const NotificationMessage = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem ab ullam. Consectetur sapiente itaque alias excepturi? Animi ea adipisci, voluptates quas perspiciatis quis deleniti qui consequuntur voluptatem corrupti praesentium cum facilis. In cupiditate voluptate officiis eligendi, saepe obcaecati ad esse possimus. Velit, cum sint ipsa reiciendis alias, rem ipsam illo id voluptates maiores ea placeat debitis totam provident! Iste a ipsa dignissimos consectetur minus, eum vero quisquam perferendis commodi tempore cumque iusto asperiores quam totam aliquid quaerat nostrum modi tenetur maiores nemo ullam optio unde! Non, ab ducimus maiores praesentium nobis eaque, minus dolor magnam incidunt fuga autem!
           </p>
         </div>
+        
       </button>
 
     </>

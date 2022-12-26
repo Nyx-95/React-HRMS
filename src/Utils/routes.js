@@ -12,7 +12,10 @@ export const ROUTES = {
     EMPLOYEE_DATA:"/employee-data",
     ACADEMIC_DETAIL:"/academic-detail",
 
+    DASHBOARD: "/dashboard",
 
-    DASHBOARD: "/dashboard"
+    USER_BODY: "/user-Body",
+    BANK_DETAILS: "bank_Details",
+    
 
 }

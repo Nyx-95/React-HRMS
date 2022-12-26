@@ -95,15 +95,19 @@
 .notificationBarmessage {
     margin-top: 10px;
     width: 80%;
+    margin-right: 10px;
+
 }
 
 .notificationBarmessage p {
     font-size: 12px;
     height: 50%;
     overflow: hidden;
+    flex-direction: row;
     color: #a2a2a2;
     text-overflow: ellipsis;
 }
+
 
 .notificationBarmessage p label {
     color: black;
@@ -120,12 +124,11 @@
     bottom: 40px;
     border: 1px solid #ccc;
     max-width: 561px;
-    max-height: 425px;
+    max-height: 429px;
     background: #fff;
     border-radius: 35px;
     outline: none;
     padding: 0px;
-
 }
 
 
@@ -139,6 +142,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #efd0ff;
+    border-radius: 35px;
     background-image: url('../../../../../assets/notificationModal.png');
     background-repeat: no-repeat;
     background-size: auto;
@@ -188,22 +193,72 @@
     margin-bottom: 10px;
     height: 160px;
     font-size: 14px;
+    width: 100%;
     overflow-y: auto;
+}
+
+.notificationModal2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #efd0ff;
+    border-radius: 35px;
+    background-image: url('../../../../../assets/birthdayModalBackground.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 50%;
+}
+.notificationModal3{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #efd0ff;
+    border-radius: 35px;
+    background-image: url('../../../../../assets/anniversaryModal.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 50%;
+}
+.notificationModal1Para p{
+    margin-bottom: 0;
 }
 
 
 .notificationModal1Body textarea {
-    width: 300px;
+    width: 65%;
     border: none;
     border-radius: 10px;
-    height: 100%;
+    height: 95%;
     padding-top: 10px;
     padding-left: 10px;
     resize: none;
-    background-color: rgba(225,225,225, 0.436);
+    background-color: #f6e8fd;
     color: rgb(0, 0, 0);
+    outline: none;    
+}
+.notificationModal1Btn button{
+    background-color: #8300c8;
+    border: none;
+    color: white;
     outline: none;
-    
+    border-radius: 25px;
+    padding: 6px 10px 6px 10px;
+    font-size: 13px;
+}
+.notificationModal1Btn img{
+    width: 15%;
+    margin-left: 10px;
+    margin-bottom: 2px;
 }
 
 

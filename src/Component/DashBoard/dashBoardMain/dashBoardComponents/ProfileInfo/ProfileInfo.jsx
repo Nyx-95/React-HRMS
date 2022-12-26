@@ -45,7 +45,8 @@ const ProfileInfo = () => {
                       left: 0,
                       right: 0,
                       bottom: 0,
-                      backgroundColor: 'rgba(255, 255, 255, 0.75)',
+                      zIndex:3000,
+                      backgroundColor: 'rgba(0, 0, 0, 0.75)',
                     },
                     content: {
                       position: 'absolute',
@@ -80,6 +81,7 @@ const ProfileInfo = () => {
                   <Modal 
                     isOpen={breakModal} 
                     onRequestClose={() => setBreakModal(false)}
+                    className={profileInfoCss.breakModal}
                     style={{
                       overlay: {
                         position: 'fixed',
@@ -87,7 +89,8 @@ const ProfileInfo = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        backgroundColor: 'rgba(255, 255, 255, 0.75)',
+                        zIndex:3000,
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)',
                       },
                       content: {
                         position: 'absolute',

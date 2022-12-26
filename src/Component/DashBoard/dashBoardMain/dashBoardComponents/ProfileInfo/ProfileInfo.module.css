@@ -299,6 +299,11 @@
     .secondlowerinner{
         padding-bottom: 9%;
     }
+    .breakModal{
+            top: 120px;
+            left: 15% !important;
+            width: 75% !important;
+    }
 }
 
 @media (min-width: 576px) {

@@ -16,6 +16,8 @@ import WorkExpierence from './Component/UserProfile/workExperience/workExperienc
 import EditProfile from './Component/UserProfile/editProfileDetails/editProfile';
 import MyDocument from './Component/UserProfile/myDocument/myDocument';
 import DashBoard from './Component/DashBoard/dashBoard'
+import UserBody from './Component/User/userBody';
+import BankDetails from './Component/User/BankDetails/bankDetails';
 
 
 function App() {
@@ -42,9 +44,15 @@ function App() {
             </Route>
           </Route>
 
-          <Route path={ROUTES.DASHBOARD} element={<DashBoard></DashBoard>}>
+          <Route path={ROUTES.DASHBOARD} element={<DashBoard></DashBoard>}/>
             
-          </Route>
+        
+
+          <Route path={ROUTES.USER_BODY} element={<UserBody></UserBody>}>
+          <Route path={ROUTES.BANK_DETAILS} element={<BankDetails />}></Route>
+            </Route>
+
+          
           
         </Route>
 

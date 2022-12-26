@@ -1,72 +1,35 @@
 import sideHeadercss from "./sideHeader.module.css";
 import leftBarProfilePic from "../../assets/leftbarprofilepic.png";
-import { useEffect, useState, useRef } from 'react';
+import {useEffect, useState, useRef} from 'react';
 import $ from 'jquery';
 import { NavLink } from "react-router-dom";
 import { ROUTES } from "../../Utils/routes";
 
 
 function SideHeader() {
-    const sideNavRef=useRef(null);
+    const sideNavRef= useRef(null)
     const [isMobile, setIsMobile] = useState(false)
-    const [isNav, setIsNav] = useState({isOpen:false, width:null})
-   
-    const sideBarButton = (isOpen, width) =>{
-        console.log(width,'nigga')
-       setIsNav({isOpen,width:$(".mobilesidenav").width()})
-       console.log($(".mobilesidenav").width() )
-        // if(isOpen){
-        //     $(".movilesidenavbuttonouterbtn").css("left", `${ sideNavRef.current.offsetWidth - 32}px`);
-        // }
-        // else{
-        //     $(".movilesidenavbuttonouterbtn").css("left", "-35px");
-        // }
-        // if ($(".mobilesidenav").is(":visible")) {
-        //     $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
-        // }
-        // else {
-        //     $(".movilesidenavbuttonouterbtn").css("left", "-35px");
-        // }
-    }
+    const [isNav, setIsNav] = useState(false)
+    const [navWidth,setNavWidth] = useState(0)
 
-    const onNavClick = () =>{
-        $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
+    const sideBarButton = (isOpen) =>{
+        setIsNav(isOpen)
     }
+    useEffect(()=>{
+        setNavWidth(sideNavRef.current.offsetWidth)
+    },[isNav])
+
+    // const onNavClick = () =>{
+    //     $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
+    // }
 
     useEffect(() => {
         let screenWidth = window.innerWidth;
-        console.log(screenWidth)
         setIsMobile(screenWidth <= 991)
-        
-
-        // screenWidth <= 991 ? $(".mobilesidenav").hide() : $(".mobilesidenav").show();
-        // screenWidth <= 991 ? $(".mobilesidenavbutton").show() : $(".mobilesidenavbutton").hide();
-
-
-
-        // $(".mobilesidenav").on('click', () => {
-        //     $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
-        // })
-
-        // $(".movilesidenavbuttonouterbtn").on('click', function () {
-        //     $(".mobilesidenav").toggle();
-        //     if ($(".mobilesidenav").is(":visible")) {
-        //         $(".movilesidenavbuttonouterbtn").css("left", `${$(".mobilesidenav").width() - 32}px`);
-        //     }
-        //     else {
-        //         $(".movilesidenavbuttonouterbtn").css("left", "-35px");
-        //     }
-
-        // });
-
-        
-        
-
     },[]);
     return (
         <>
-            {(!isMobile || isNav.isOpen) &&
-            <nav className={`mobilesidenav ${sideHeadercss.mainMenu} `} onClick={onNavClick} ref={sideNavRef}>
+            <nav className={`mobilesidenav ${sideHeadercss.mainMenu} ${(!isMobile || isNav) ? '' : sideHeadercss.isHidden}`} ref={sideNavRef}>
                 <div className={sideHeadercss.profileicon}>
                     <div className={sideHeadercss.profileicontab}>
                         <NavLink to={ROUTES.USER_PROFILE}>
@@ -95,12 +58,12 @@ function SideHeader() {
 
                     </li>
                     <li className="has-subnav">
-                        <a href="#">
+                        <NavLink to={ROUTES.USER_BODY}>
                             <i className="ri-user-3-line"></i>
                             <span className="navText">
                                 Users
                             </span>
-                        </a>
+                        </NavLink>
 
                     </li>
                     <li className="has-subnav">
@@ -158,11 +121,11 @@ function SideHeader() {
 
                 </ul>
             </nav>
-}
+
 
             {isMobile && <div className={`mobilesidenavbutton ${sideHeadercss.mobilesidenavbtn}`}>
                 <div className={sideHeadercss.mobilesidenavouter}>
-                    <button className={`btn btn-primary shadow-none movilesidenavbuttonouterbtn ${sideHeadercss.movilesidenavbuttonouterbutton}`} onClick={()=> sideBarButton(!isNav.isOpen)} style={{left:`${isNav.isOpen ? `${ isNav.width - 32}px`: "-35px"}`}}>Side Bar</button>
+                    <button className={`btn btn-primary shadow-none movilesidenavbuttonouterbtn ${sideHeadercss.movilesidenavbuttonouterbutton}`} onClick={()=> sideBarButton(!isNav)} style={{left:`${isNav ? `${ navWidth - 32}px`: "-35px"}`}}>Side Bar</button>
                 </div>
             </div>}
 

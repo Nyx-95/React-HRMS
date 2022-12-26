@@ -1,6 +1,4 @@
 import React from 'react'
-import notificationPic from '../../../../../assets/notifcationbar2.png'
-import notificationPic2 from '../../../../../assets/HR.png'
 import notificationBoardCss from "./NotificationBoard.module.css"
 import heading from '../../../../../assets/heading lines.png'
 import OwlCarousel from "react-owl-carousel"
@@ -9,6 +7,7 @@ import "owl.carousel/dist/assets/owl.theme.default.min.css"
 import NotificationMessage from './Notification/notificationMessage'
 import NotificationBirthday from './Notification/notificationBirthday'
 import NortificationAnniversary from './Notification/nortificationAnniversary'
+
 
 
 const options = {

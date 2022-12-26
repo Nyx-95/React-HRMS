@@ -1,0 +1,152 @@
+.UserMenuTopHeader{
+    border-bottom: 2px solid #faf6fc;
+    z-index: 2;
+    background-color: white;
+}
+.UserDetailsMainHeadingInner img{
+    width: 12%;
+}
+.UserMenuTopHeader ul {
+    gap: 20px;
+    margin-bottom: 0;
+    font-size: 0.8vw;
+    display: flex;
+    padding-left: 15%;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.UserMenuTopHeader li{
+
+    text-align: center;
+    min-width: 90px;
+    padding: 0% 1% 1% 1%;
+    border-bottom: 3px solid white;
+}
+.UserMenuTopHeader li:hover{
+
+    border-bottom: 3px solid #8200c6;
+}
+.UserMenuTopHeader a{
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+.UserMenuTopHeader a:hover{
+    text-decoration: none;
+    color: #8200c6;
+}
+
+.subHeaderLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subHeaderLink p{
+    margin-left: 8px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+
+@media (min-width: 320px) {
+ 
+    /*Second Sub Header*/
+
+    .UserMenuTopHeader{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100% !important;
+        padding-top: 85px ;
+    }
+
+    
+    .UserMenuTopHeader::-webkit-scrollbar {
+        display: none;
+    }
+    .UserMenuTopHeader ul {
+        font-size: 10px;
+    }
+
+   
+
+    .UserMenuTopHeader li {
+        padding: 0% 0% 5% 0%;
+        width: 100%;
+        min-width: 110px;
+       
+    }
+ 
+   
+}
+
+@media (min-width: 576px) {
+
+     /*Second Sub Header*/
+
+     .UserMenuTopHeader{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100% !important;
+        padding-top: 90px;
+    }
+
+    
+    .UserMenuTopHeader::-webkit-scrollbar {
+        display: none;
+    }
+    .UserMenuTopHeader ul{
+        padding-left: 30px;
+    }
+  
+    .UserMenuTopHeader ul li a{
+        font-size: 10px;
+    }
+
+    .UserMenuTopHeader li {
+        padding: 0% 0% 5% 0%;
+        width: 100%;
+   
+    }
+   
+    
+}
+
+@media (min-width: 992px) {
+   
+    .UserMenuTopHeader{
+        padding-top: 90px;
+    }
+    .UserMenuTopHeader ul{
+        padding-left: 30px;
+        width: 80%;
+    }
+    .UserMenuTopHeader li {
+        padding: 0% 0% 5% 0%;
+        
+   
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .UserMenuTopHeader{
+        padding-top: 100px;
+        justify-content: center;
+    }
+    .UserMenuTopHeader ul{
+        padding-left: 0%;
+        width: 80%;
+        gap: 0;
+        font-size: 11px;
+    }
+   
+    .UserMenuTopHeader ul a li{
+        min-width: 140px;
+        padding: 0% 1% 5% 1%;
+    }
+}
+
+@media (min-width: 1400px) {
+
+}
