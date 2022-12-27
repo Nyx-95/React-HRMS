@@ -18,6 +18,7 @@ import MyDocument from './Component/UserProfile/myDocument/myDocument';
 import DashBoard from './Component/DashBoard/dashBoard'
 import UserBody from './Component/User/userBody';
 import BankDetails from './Component/User/BankDetails/bankDetails';
+import UserDirectory from './Component/User/userDirectory/userDirectory';
 
 
 function App() {
@@ -36,30 +37,28 @@ function App() {
             <Route path={ROUTES.WORK_EXPERIENCE} element={<WorkExpierence />}></Route>
             <Route path={ROUTES.EDUCATIONAL_DETAIL} element={<EducationalDetail />}></Route>
             <Route path={ROUTES.MY_DOCUMENT} element={<MyDocument />}></Route>
-            <Route element={<EditProfile/>}>
-              <Route path={ROUTES.FAMILY_DETAIL} element={<FamilyDetail />}/>
-              <Route path={ROUTES.PREVIOUS_WORK} element={<PreviousWork />}/>
-              <Route path={ROUTES.EMPLOYEE_DATA} element={<EmployeeData />}/>
-              <Route path={ROUTES.ACADEMIC_DETAIL} element={<AcademicDetail />}/>
+            <Route element={<EditProfile />}>
+              <Route path={ROUTES.FAMILY_DETAIL} element={<FamilyDetail />} />
+              <Route path={ROUTES.PREVIOUS_WORK} element={<PreviousWork />} />
+              <Route path={ROUTES.EMPLOYEE_DATA} element={<EmployeeData />} />
+              <Route path={ROUTES.ACADEMIC_DETAIL} element={<AcademicDetail />} />
             </Route>
           </Route>
 
-          <Route path={ROUTES.DASHBOARD} element={<DashBoard></DashBoard>}/>
-            
-        
+          <Route path={ROUTES.DASHBOARD} element={<DashBoard></DashBoard>} />
+
+
 
           <Route path={ROUTES.USER_BODY} element={<UserBody></UserBody>}>
-          <Route path={ROUTES.BANK_DETAILS} element={<BankDetails />}></Route>
-            </Route>
-
-          
-          
+            <Route path={ROUTES.BANK_DETAILS} element={<BankDetails />}></Route>
+            <Route path={ROUTES.USER_DIRECTORY} element={<UserDirectory />}></Route>
+          </Route>
         </Route>
 
-    
+
       </Routes>
 
-    
+
 
     </div>
   );

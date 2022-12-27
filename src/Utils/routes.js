@@ -16,6 +16,6 @@ export const ROUTES = {
 
     USER_BODY: "/user-Body",
     BANK_DETAILS: "bank_Details",
-    
+    USER_DIRECTORY: "user_directory",
 
 }

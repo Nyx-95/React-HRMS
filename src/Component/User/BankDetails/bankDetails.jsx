@@ -1,21 +1,28 @@
 import React from 'react'
 import BankDetailsCss from "./bankDetails.module.css"
 import headingpicture from "../../../assets/AllUserbankDetails/headingLinePicture.png"
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
+import data from './data/data.json';
+import Pagination from '../BankDetails/bankDetailsPagination'
 
+let PageSize = 10;
 
 const BankDetails = () => {
-    let screenWidth = window.innerWidth;
-    useEffect(() => {
-    });
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const currentTableData = useMemo(() => {
+        const firstPageIndex = (currentPage - 1) * PageSize;
+        const lastPageIndex = firstPageIndex + PageSize;
+        return data.slice(firstPageIndex, lastPageIndex);
+    }, [currentPage]);
 
     const [isOpen, setIsOpen] = useState(false);
     const toggling = () => setIsOpen(!isOpen);
 
 
     return (
-        
-     
+
+
 
         <>
             <div className="row">
@@ -28,40 +35,40 @@ const BankDetails = () => {
                         </div>
                     </div>
                     <div className={BankDetailsCss.UserDetailsdropdown}>
-                        
-                        
-                  
-                         <div onClick={toggling} className={BankDetailsCss.dropDownHeader}><a href='#'><i className="ri-arrow-drop-down-fill"></i></a>   </div>
-                         {isOpen && (
-                          <div className={`dropDownListContain ${BankDetailsCss.dropDownListContainer}`}>
-                          <div className={BankDetailsCss.DropDownList}>
-                              <div className={BankDetailsCss.ListItem}>
-                                  <label>Show</label>
-                                  <select name="selectEntries" id="selectEntries">
-                                      <option value="1">1</option>
-                                      <option value="2">20</option>
-                                      <option value="3">300</option>
-                                  </select>
-                                  <label>Entries</label>
-                              </div>
-                              <div className={BankDetailsCss.ListItem}>
-                                  <a href="#">
-                                      <div className={BankDetailsCss.menuIconName}>
-                                          <span>Import to Excel</span>
-                                          <i className="ri-download-2-line"></i>
-                                      </div>
-                                  </a>
-                              </div>
-                              <div className={BankDetailsCss.ListItem}>
-                                  <a href="#">
-                                      <div className={BankDetailsCss.menuIconName}>
-                                          <span>Search</span>
-                                          <i className="ri-search-line"></i>
-                                      </div>
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
+
+
+
+                        <div onClick={toggling} className={BankDetailsCss.dropDownHeader}><a href='#'><i className="ri-arrow-drop-down-fill"></i></a>   </div>
+                        {isOpen && (
+                            <div className={`dropDownListContain ${BankDetailsCss.dropDownListContainer}`}>
+                                <div className={BankDetailsCss.DropDownList}>
+                                    <div className={BankDetailsCss.ListItem}>
+                                        <label>Show</label>
+                                        <select name="selectEntries" id="selectEntries">
+                                            <option value="1">1</option>
+                                            <option value="2">20</option>
+                                            <option value="3">300</option>
+                                        </select>
+                                        <label>Entries</label>
+                                    </div>
+                                    <div className={BankDetailsCss.ListItem}>
+                                        <a href="#">
+                                            <div className={BankDetailsCss.menuIconName}>
+                                                <span>Import to Excel</span>
+                                                <i className="ri-download-2-line"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div className={BankDetailsCss.ListItem}>
+                                        <a href="#">
+                                            <div className={BankDetailsCss.menuIconName}>
+                                                <span>Search</span>
+                                                <i className="ri-search-line"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         )}
                     </div>
                     <div className={BankDetailsCss.UserDetailsMainHeadingRightButton}>
@@ -127,196 +134,29 @@ const BankDetails = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <div className="form-check">
-                                            <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                        </div>
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    <td>Individual -
-                                        Salaried/Employed</td>
-                                    <td>Aaron Cecil</td>
-                                    <td>Cecil John</td>
-                                    <td>Male</td>
-                                    <td>Married</td>
-                                </tr>
+                                {currentTableData.map((item, keyid) => {
+                                    return (
+                                        <tr key={keyid}>
+                                            <td scope="row">
+                                                <div className="form-check">
+                                                    <input className={`form-check-input shadow-none ${BankDetailsCss.flexCheckDefault}`} type="checkbox" value=""
+                                                        id="flexCheckDefault" />
+                                                </div>
+                                            </td>
+                                            <td><p> {item.email} </p></td>
+                                            <td><p>{item.cnic_number}</p></td>
+                                            <td><p>{item.education}</p></td>
+                                            <td><p>{item.designation}</p></td>
+                                            <td><p>{item.customer_category}</p></td>
+                                            <td><p>{item.first_last_name}</p></td>
+                                            <td><p>{item.father_husband_name}</p></td>
+                                            <td><p>{item.gender}</p></td>
+                                            <td><p>{item.martial_status}</p></td>
+                                        </tr>
+                                    );
+                                })}
+
+
                             </tbody>
                         </table>
                     </div>
@@ -339,26 +179,13 @@ const BankDetails = () => {
             </div>
             <div className="row">
                 <div className={BankDetailsCss.UserBankDetailsTablePagination}>
-                    <div className="col-lg-12 ">
-                        <nav aria-label="Page navigation example">
-                            <ul className={`pagination ${BankDetailsCss.pagination}`}>
-                                <li className={`page-item shadow-none ${BankDetailsCss.pageItem}`}>
-                                    <a className={`page-link ${BankDetailsCss.pageLink}`} href="#" aria-label="Previous">
-                                        <span aria-hidden="true">
-                                        <i className="ri-arrow-left-s-line"></i></span>
-                                    </a>
-                                </li>
-                                <li className="page-item focus"><a className={`page-link ${BankDetailsCss.pageLink}`} href="#">1</a></li>
-                                <li className="page-item"><a className={`page-link ${BankDetailsCss.pageLink}`} href="#">2</a></li>
-                                <li className="page-item"><a className={`page-link ${BankDetailsCss.pageLink}`} href="#">3</a></li>
-                                <li className="page-item">
-                                    <a className={`page-link ${BankDetailsCss.pageLink}`} href="#" aria-label="Next">
-                                        <span aria-hidden="true"><i className="ri-arrow-right-s-line"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <Pagination
+                        className="pagination-bar"
+                        currentPage={currentPage}
+                        totalCount={data.length}
+                        pageSize={PageSize}
+                        onPageChange={page => setCurrentPage(page)}
+                    />
                 </div>
             </div>
         </>
