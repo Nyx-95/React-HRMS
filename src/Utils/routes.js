@@ -14,8 +14,10 @@ export const ROUTES = {
 
     DASHBOARD: "/dashboard",
 
+  
     USER_BODY: "/user-Body",
-    BANK_DETAILS: "bank_Details",
-    USER_DIRECTORY: "user_directory",
+    ALL_USER: "all-user",
+    BANK_DETAILS: "bank-Details",
+    USER_DIRECTORY: "user-directory",
 
 }

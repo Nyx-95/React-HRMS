@@ -1,0 +1,455 @@
+.UserDetailsMenuHeader{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.UserDetailsMainHeading{
+    width: 60%;
+}
+.UserDetailsMainHeadingRightButton{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.DetailsHeadingRightSelectNumber{
+    border-radius: 15px;
+    border-color: #dcdcdc;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 8%;
+    
+    font-size: 1vw;
+}
+.DetailsHeadingRightSelectNumber option:focus{
+    background-color: #8200c6;
+}
+.DetailsHeadingRightSelectNumber:focus{
+    border-color: #8200c6;
+}
+
+.DetailsMenuImportButtonInner{
+
+    border: 1px solid #dcdcdc;
+    border-radius: 25px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DetailsMenuShowButton{
+    width: 40%;
+    padding-left: 25px;
+    display: none;
+}
+.DetailsMenuShowButton label{
+    font-size: 1vw;
+    margin-right:3px;
+    margin-left: 2px;
+}
+.DetailsMenuImportButton{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+i.fa-solid.fa-download {
+    font-size: 13px;
+}
+.DetailsMenuSearchIcon{
+
+    width: 20%;
+}
+.DetailsMenuSearchIcon a{
+    padding: 4px 5px 2px 5px;
+    background-color: #8200c6;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+}
+i.fa-solid.fa-magnifying-glass {
+    font-size: 13px;
+}
+
+.DetailsMenuImportButton label{
+    margin-right: 5%;
+}
+.DetailsMenuImportButtonInner label{
+    padding-left: 10%;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+}
+.DetailsMenuImportButtonInner a{
+    color: white;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    background-color: #8200c6;
+    border-radius: 50%;
+}
+.DetailsMenuImportButtonInner a:hover{
+    color: white;
+  
+}
+
+.UserDetailsdropbtn {
+    background-color: #ffffff;
+    color: rgb(48, 48, 48);
+    padding: 16px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .UserDetailsdropbtn:hover, .dropbtn:focus {
+    background-color: #f1f1f1;
+  }
+  
+  .UserDetailsdropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .userDetailsdropdownContent {
+    display: none;
+    right: 20%;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .userDetailsdropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .UserDetailsdropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+
+  .DetailsMenuShowButtonDropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .DetailsMenuShowButtonDropdown label{
+    font-size: 11px;
+  }
+  .DetailsMenuShowButtonDropdown select{
+    font-size: 11px;
+  }
+  .DetailsHeadingRightSelectNumberDropdown{
+    border-radius: 25px;
+  }
+  
+ .userDetailsdropdown-contentInner{
+    padding:10%;
+ }
+
+  .DetailsMenuImportButtonInnerDropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid grey;
+    border-radius: 25px;
+    font-size: 2vw;
+  }
+  .DetailsMenuImportButtonInnerDropdown label{
+    margin-left: 10px;
+    font-size: 2vw;
+  }
+  .DetailsMenuImportButtonInnerDropdown i{
+    color: white;
+    background-color: #8200c6;
+    padding: 5%;
+    border-radius: 50%;
+  }
+
+  .searchUserDetailsDropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid grey;
+    border-radius: 25px;
+    font-size: 2vw;
+  }
+  .searchUserDetailsDropdown label{
+    margin-left: 10px;
+    font-size: 2vw;
+  }
+  .searchUserDetailsDropdown i{
+    color: white;
+    background-color: #8200c6;
+    padding: 5%;
+    border-radius: 50%;
+  }
+  
+    .AllUsersTopHeaderButton{
+        padding-top: 30px;
+    }
+
+    .AllUsersTopHeaderButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .AllUsersTopHeaderButtonInnerOne{
+        padding:10px 20px 10px 20px;
+        background-color: #8200c6;
+        width: 20%;
+        min-width: 160px;
+        border-radius: 20px;
+    }
+    .AllUsersTopHeaderButtonInnerATag{
+        display: flex;
+        text-decoration: none;
+        gap: 20px;
+        color: white;
+        
+    }
+    .AllUsersTopHeaderButtonInnerOne .AllUsersTopHeaderButtonInnerATag:hover{
+        color: white;
+    }
+    .AllUsersTopHeaderButtonInnerTwo .AllUsersTopHeaderButtonInnerATag:hover{
+        color: white;
+    }
+
+
+
+    .AllUsersTopHeaderIconDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .AllUsersTopHeaderIconDiv i{
+        padding: 8px 13px 8px 13px;
+        border-radius: 10px;
+        background-color: #911ace;
+    }
+    .AllUsersTopHeaderInfoDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .AllUsersTopHeaderInfoDiv h6{
+        margin-bottom: 0;
+    }
+    .AllUsersTopHeaderInfoDiv label{
+        font-size: 12px;
+    }
+    .AllUsersTopHeaderButtonInnerTwo{
+        padding:10px 20px 10px 20px;
+        border-radius: 20px;
+        width: 20%;
+        min-width: 160px;
+        background-color: #fbf6fc;
+    }
+    .AllUsersTopHeaderIconDivTwo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AllUsersTopHeaderIconDivTwo i{
+        padding: 8px 13px 8px 13px;
+        border-radius: 10px;
+        background-color: #edddf7;
+    }
+    .AllUsersTopHeaderInfoDivTwo h6{
+        margin-bottom: 0;
+        color: #000000;
+    }
+    .AllUsersTopHeaderInfoDivTwo label{
+        font-size: 12px;
+        color: #b2b0b3;
+    }
+    
+
+    /*All User Component*/
+    .allUserComponentMain{
+        margin-bottom: 30px;
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .AllUserMainDivInner{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+ 
+    .AllUserClassComponentInner{
+       
+        border: 1px solid #f1f1f1;
+        border-radius: 25px;
+        padding: 20px 10px 20px 10px;
+        margin: 0px 8px 0px 8px;
+        box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.1);
+    }
+    .AllUserProfilepic img{
+        width: 70px;
+    }
+    .AllUserProfleInfo h6{ 
+       margin-bottom: 0px;
+       margin-top: 10px;
+    }
+    .AllUserProfleInfo label{ 
+        color: #8200c6;
+        font-size: 11px;
+    }
+    .AllUserProfleInfo p{ 
+        font-size: 11px;
+        margin-bottom: 0px;
+        color: #858585;
+    }
+    .AllUserProfleDetails{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .AllUserProfleDetails label{
+        font-size: 11px;
+        color: #a2a2a2;
+        background-color: #faf6fc;
+        padding: 4px 7px 4px 7px;
+        Margin: 5px 0px 5px 0px;
+        border-radius: 8px;
+    }
+    .AllUserProfleDetailButton button{
+        font-size: 11px;
+        padding: 7px 23px 7px 23px;
+        
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #8200c6;
+        --bs-btn-border-color: #8200c6;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #8200c6;
+        --bs-btn-hover-border-color: #8200c6;
+        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #8200c6;
+        --bs-btn-active-border-color: #8200c6;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #8200c6;
+        --bs-btn-disabled-border-color: #8200c6;
+
+        border-radius: 25px;
+    }
+    .AllUserProfleDetailButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AllUserProfleSalaryButton button{
+        font-size: 11px;
+        padding: 7px 23px 7px 23px;
+
+        --bs-btn-color: #8200c6;
+        --bs-btn-bg: white;
+        --bs-btn-border-color: #e6ccf4;
+        --bs-btn-hover-color: #8200c6;
+        --bs-btn-hover-bg: white;
+        --bs-btn-hover-border-color: #8200c6;
+        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-active-color: #8200c6;
+        --bs-btn-active-bg: white;
+        --bs-btn-active-border-color: #8200c6;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: white;
+        --bs-btn-disabled-border-color: #8200c6;
+        border-radius: 25px;
+    }
+    .AllUserProfleSalaryButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+@media (min-width: 320px) {
+    
+   .dropDownHeader{
+       display: flex;
+   }
+   .UserDetailsMainHeadingRightButton{
+       display: none;
+   }
+
+
+   .AllUserMainDivInner{
+    justify-content: center;
+}
+
+   .AllUsersTopHeaderIconDiv{
+    display: none;
+   }
+   .AllUsersTopHeaderIconDivTwo{
+    display: none;
+   }
+   .AllUsersTopHeaderButtonInnerOne{
+    min-width: 100px;
+   }
+   .AllUsersTopHeaderButtonInnerTwo{
+    min-width: 100px;
+   }
+   .UserDetailsMainHeading{
+    margin-left: 40px;
+   }
+
+}
+   
+   @media (min-width: 576px){
+     
+   }
+   @media (min-width: 991px) {
+    
+   .AllUsersTopHeaderIconDiv{
+    display: flex;
+   }
+   .AllUsersTopHeaderIconDivTwo{
+    display: flex;
+   }
+   .UserDetailsMainHeading{
+    margin-left: 40px;
+   }
+  
+   }
+   @media (min-width: 1200px) {
+   
+       .dropDownHeader{
+   
+           display: none;
+        
+       }
+       .UserDetailsMainHeadingRightButton{
+           display: flex;
+       }
+       .AllUserMainDivInner{
+        justify-content: flex-start;
+    }
+    .UserDetailsMainHeading{
+        margin-left: 20px;
+       }
+   
+       
+     }
+     
+     @media (min-width: 1400px) {
+     
+     }

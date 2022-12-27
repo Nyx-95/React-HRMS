@@ -19,6 +19,7 @@ import DashBoard from './Component/DashBoard/dashBoard'
 import UserBody from './Component/User/userBody';
 import BankDetails from './Component/User/BankDetails/bankDetails';
 import UserDirectory from './Component/User/userDirectory/userDirectory';
+import AllUser from './Component/User/AllUser/allUser'
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path={ROUTES.USER_BODY} element={<UserBody></UserBody>}>
             <Route path={ROUTES.BANK_DETAILS} element={<BankDetails />}></Route>
             <Route path={ROUTES.USER_DIRECTORY} element={<UserDirectory />}></Route>
+            <Route path={ROUTES.ALL_USER} element={<AllUser />}></Route>
           </Route>
         </Route>
 

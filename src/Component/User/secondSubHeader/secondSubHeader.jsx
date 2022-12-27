@@ -8,7 +8,7 @@ function secondSubHeader() {
 
             <div className={subHeadercss.UserMenuTopHeader}>
                 <ul>
-                <NavLink to={ROUTES.MY_DEPARTMENT}><li><div className={subHeadercss.subHeaderLink} ><i className="ri-user-line"></i><p>All Users</p></div></li></NavLink>
+                <NavLink to={ROUTES.ALL_USER}><li><div className={subHeadercss.subHeaderLink} ><i className="ri-user-line"></i><p>All Users</p></div></li></NavLink>
                      <NavLink to={ROUTES.BANK_DETAILS}><li><div className={subHeadercss.subHeaderLink} ><i className="ri-file-list-line"></i><p>Bank Details</p></div></li></NavLink>
                    <NavLink to={ROUTES.USER_DIRECTORY}> <li><div className={subHeadercss.subHeaderLink} ><i className="ri-team-line"></i><p>User Directory</p></div></li></NavLink>
                    <NavLink to={ROUTES.EDUCATIONAL_DETAIL}> <li><div className={subHeadercss.subHeaderLink} ><i className="ri-book-line"></i><p>Departments</p></div></li></NavLink>

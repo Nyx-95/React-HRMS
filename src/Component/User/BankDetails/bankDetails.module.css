@@ -11,7 +11,7 @@
 .UserDetailsMainHeadingRightButton{
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
 }
@@ -36,7 +36,7 @@
 
     border: 1px solid #dcdcdc;
     border-radius: 25px;
-    width: 83%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
@@ -44,6 +44,7 @@
 .DetailsMenuShowButton{
     width: 40%;
     padding-left: 25px;
+    display: none;
 }
 .DetailsMenuShowButton label{
     font-size: 1vw;
@@ -543,6 +544,12 @@ i.fa-solid.fa-magnifying-glass {
     display: none;
 }
 
+.UserBankDetailsTablePagination{
+ 
+    margin-left: 5%;
+
+
+  }
 }
 
 @media (min-width: 576px){
@@ -616,6 +623,12 @@ i.fa-solid.fa-magnifying-glass {
         overflow-x:auto;
       
     }
+    .UserBankDetailsTablePagination{
+ 
+        margin-left: 0;
+    
+    
+      }
 }
 @media (min-width: 1200px) {
 

@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useRef, useState, useMemo } from 'react'
 import BankDetailsCss from "./bankDetails.module.css"
 import headingpicture from "../../../assets/AllUserbankDetails/headingLinePicture.png"
-import { useEffect, useState, useMemo } from 'react'
 import data from './data/data.json';
-import Pagination from '../BankDetails/bankDetailsPagination'
+import Pagination from './Pagination'
+import { useDownloadExcel } from 'react-export-table-to-excel';
 
-let PageSize = 10;
+let PageSize = 8;
 
 const BankDetails = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -17,13 +17,17 @@ const BankDetails = () => {
     }, [currentPage]);
 
     const [isOpen, setIsOpen] = useState(false);
-    const toggling = () => setIsOpen(!isOpen);
+    const toggling = () => setIsOpen(!isOpen)
 
+    const tableRef = useRef(null);
+    
+    const { onDownload } = useDownloadExcel({
+        currentTableRef: tableRef.current,
+        filename: 'Users table',
+        sheet: 'Users'
+    })
 
     return (
-
-
-
         <>
             <div className="row">
                 <div className={BankDetailsCss.UserDetailsMenuHeader}>
@@ -31,26 +35,14 @@ const BankDetails = () => {
                         <div className={BankDetailsCss.UserDetailsMainHeadingInner}>
                             <h3>All Users Bank Details</h3>
                             <img src={headingpicture} />
-
                         </div>
                     </div>
                     <div className={BankDetailsCss.UserDetailsdropdown}>
-
-
-
                         <div onClick={toggling} className={BankDetailsCss.dropDownHeader}><a href='#'><i className="ri-arrow-drop-down-fill"></i></a>   </div>
                         {isOpen && (
                             <div className={`dropDownListContain ${BankDetailsCss.dropDownListContainer}`}>
                                 <div className={BankDetailsCss.DropDownList}>
-                                    <div className={BankDetailsCss.ListItem}>
-                                        <label>Show</label>
-                                        <select name="selectEntries" id="selectEntries">
-                                            <option value="1">1</option>
-                                            <option value="2">20</option>
-                                            <option value="3">300</option>
-                                        </select>
-                                        <label>Entries</label>
-                                    </div>
+                                
                                     <div className={BankDetailsCss.ListItem}>
                                         <a href="#">
                                             <div className={BankDetailsCss.menuIconName}>
@@ -72,20 +64,14 @@ const BankDetails = () => {
                         )}
                     </div>
                     <div className={BankDetailsCss.UserDetailsMainHeadingRightButton}>
-                        <div className={BankDetailsCss.DetailsMenuShowButton}>
-                            <label>Show</label>
-                            <select id="DetailsHeadingRightSelectNumber" className={BankDetailsCss.DetailsHeadingRightSelectNumber} >
-                                <option value="1">1</option>
-                                <option value="2">20</option>
-                                <option value="3">300</option>
-                            </select>
-                            <label>Entries</label>
-                        </div>
+                        
                         <div className={BankDetailsCss.DetailsMenuImportButton}>
 
                             <div className={BankDetailsCss.DetailsMenuImportButtonInner}>
-                                <label>Import to Excel</label>
-                                <a href="#"> <i className="ri-download-2-line"></i></a>
+                                <label>Export to Excel</label>
+                          
+                                    <a href='#' onClick={onDownload}> <i className="ri-download-2-line"></i></a>
+                             
                             </div>
                         </div>
                         <div className={BankDetailsCss.DetailsMenuSearchIcon}> <a href="#"> <i className="ri-search-line"></i></a></div>
@@ -95,7 +81,7 @@ const BankDetails = () => {
             <div className="row">
                 <div className={BankDetailsCss.UserDetailsMenuTable}>
                     <div className={BankDetailsCss.UserDetailsMenuTableInner}>
-                        <table className="table">
+                        <table className="table" ref={tableRef}>
                             <thead className="thead-dark">
                                 <tr>
                                     <th scope="col">

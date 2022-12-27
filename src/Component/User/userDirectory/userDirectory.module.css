@@ -1,3 +1,4 @@
+
 .UserDetailsMenuHeader{
     display: flex;
     justify-content: space-between;
@@ -214,11 +215,20 @@ i.fa-solid.fa-magnifying-glass {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
+    table-layout: fixed ;
+
+  
 }
 
 
 .UserDetailsMenuTable table thead th p{
     border-right: 1px solid #eeeeee;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.UserDetailsMenuTable table tbody tr td p{
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -231,8 +241,8 @@ i.fa-solid.fa-magnifying-glass {
 .UserDetailsMenuTable table input{
     accent-color: #8200c6;
 }
-.UserDetailsMenuTable table thead .flexCheckDefault{
-    margin-top: 10px;
+.UserDetailsMenuTable table tbody .flexCheckDefault{
+    margin-top: 15px;
 
 }
 .flexCheckDefault:checked {
@@ -256,7 +266,10 @@ i.fa-solid.fa-magnifying-glass {
   /*Pagination Row Starts*/
   .UserBankDetailsTablePagination{
     margin-bottom: 50px;
- 
+    padding-left: 0;
+    margin-left: 5%;
+    margin-right: 0;
+
   }
   
 
@@ -505,7 +518,7 @@ i.fa-solid.fa-magnifying-glass {
 }
 .UserDetailsMenuTableInner {
     overflow-x:scroll;
-
+    
 }
 .UserDetailsMenuTable .table{
     font-size: 8px;

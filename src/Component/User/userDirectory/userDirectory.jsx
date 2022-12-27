@@ -1,60 +1,60 @@
 import React from 'react'
 import userDirectoryCss from "./userDirectory.module.css"
 import headingpicture from "../../../assets/AllUserbankDetails/headingLinePicture.png"
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
+import data from './data/data.json';
+import Pagination from './Pagination'
 
+let PageSize = 8;
 
-const UserDirectory = () => {
-    let screenWidth = window.innerWidth;
-    useEffect(() => {
-    });
+const BankDetails = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const currentTableData = useMemo(() => {
+        const firstPageIndex = (currentPage - 1) * PageSize;
+        const lastPageIndex = firstPageIndex + PageSize;
+        return data.slice(firstPageIndex, lastPageIndex);
+    }, [currentPage]);
 
     const [isOpen, setIsOpen] = useState(false);
-    const toggling = () => setIsOpen(!isOpen);
+    const toggling = () => setIsOpen(!isOpen)
 
 
     return (
-        
-     
-
         <>
             <div className="row">
                 <div className={userDirectoryCss.UserDetailsMenuHeader}>
                     <div className={userDirectoryCss.UserDetailsMainHeading}>
                         <div className={userDirectoryCss.UserDetailsMainHeadingInner}>
-                            <h3>User Directory</h3>
+                            <h3>All Users Bank Details</h3>
                             <img src={headingpicture} />
-
                         </div>
                     </div>
                     <div className={userDirectoryCss.UserDetailsdropdown}>
-                        
-                        
-                  
-                         <div onClick={toggling} className={userDirectoryCss.dropDownHeader}><a href='#'><i className="ri-arrow-drop-down-fill"></i></a>   </div>
-                         {isOpen && (
-                          <div className={`dropDownListContain ${userDirectoryCss.dropDownListContainer}`}>
-                          <div className={userDirectoryCss.DropDownList}>
-                              <div className={userDirectoryCss.ListItem}>
-                                  <label>Show</label>
-                                  <select name="selectEntries" id="selectEntries">
-                                      <option value="1">1</option>
-                                      <option value="2">20</option>
-                                      <option value="3">300</option>
-                                  </select>
-                                  <label>Entries</label>
-                              </div>
-                           
-                              <div className={userDirectoryCss.ListItem}>
-                                  <a href="#">
-                                      <div className={userDirectoryCss.menuIconName}>
-                                          <span>Search</span>
-                                          <i className="ri-search-line"></i>
-                                      </div>
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
+                        <div onClick={toggling} className={userDirectoryCss.dropDownHeader}><a href='#'><i className="ri-arrow-drop-down-fill"></i></a> </div>
+                        {isOpen && (
+                            <div className={`dropDownListContain ${userDirectoryCss.dropDownListContainer}`}>
+                                <div className={userDirectoryCss.DropDownList}>
+                                    <div className={userDirectoryCss.ListItem}>
+                                        <label>Show</label>
+                                        <select name="selectEntries" id="selectEntries">
+                                            <option value="1">1</option>
+                                            <option value="2">20</option>
+                                            <option value="3">300</option>
+                                        </select>
+                                        <label>Entries</label>
+                                    </div>
+                                    
+                                    <div className={userDirectoryCss.ListItem}>
+                                        <a href="#">
+                                            <div className={userDirectoryCss.menuIconName}>
+                                                <span>Search</span>
+                                                <i className="ri-search-line"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         )}
                     </div>
                     <div className={userDirectoryCss.UserDetailsMainHeadingRightButton}>
@@ -67,7 +67,7 @@ const UserDirectory = () => {
                             </select>
                             <label>Entries</label>
                         </div>
-                
+         
                         <div className={userDirectoryCss.DetailsMenuSearchIcon}> <a href="#"> <i className="ri-search-line"></i></a></div>
                     </div>
                 </div>
@@ -78,6 +78,7 @@ const UserDirectory = () => {
                         <table className="table">
                             <thead className="thead-dark">
                                 <tr>
+                                   
                                     <th scope="col">
                                         <p>User Name</p>
                                     </th>
@@ -97,116 +98,21 @@ const UserDirectory = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                  
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                  
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                  
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                   
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                   
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                    
-                                </tr>
-                                <tr>
-                                <td scope="row">
-                                        Aaron Cecil
-                                    </td>
-                                    <td>aaron.cecil@legendesk.com </td>
-                                    <td>4120131084195</td>
-                                    <td>Intermediate</td>
-                                    <td>Senior Sales
-                                        Executive</td>
-                                   
-                                </tr>
+                                {currentTableData.map((item, keyid) => {
+                                    return (
+                                        <tr key={keyid}>
+                                            
+                                            <td><p>{item.first_last_name}</p></td>
+                                            <td><p> {item.email} </p></td>
+                                            <td><p>{item.gender}</p></td>
+                                            
+                                            <td><p>{item.designation}</p></td>
+                                            <td><p>{item.department}</p></td>
+                                        </tr>
+                                    );
+                                })}
+
+
                             </tbody>
                         </table>
                     </div>
@@ -229,30 +135,17 @@ const UserDirectory = () => {
             </div>
             <div className="row">
                 <div className={userDirectoryCss.UserBankDetailsTablePagination}>
-                    <div className="col-lg-12 ">
-                        <nav aria-label="Page navigation example">
-                            <ul className={`pagination ${userDirectoryCss.pagination}`}>
-                                <li className={`page-item shadow-none ${userDirectoryCss.pageItem}`}>
-                                    <a className={`page-link ${userDirectoryCss.pageLink}`} href="#" aria-label="Previous">
-                                        <span aria-hidden="true">
-                                        <i className="ri-arrow-left-s-line"></i></span>
-                                    </a>
-                                </li>
-                                <li className="page-item focus"><a className={`page-link ${userDirectoryCss.pageLink}`} href="#">1</a></li>
-                                <li className="page-item"><a className={`page-link ${userDirectoryCss.pageLink}`} href="#">2</a></li>
-                                <li className="page-item"><a className={`page-link ${userDirectoryCss.pageLink}`} href="#">3</a></li>
-                                <li className="page-item">
-                                    <a className={`page-link ${userDirectoryCss.pageLink}`} href="#" aria-label="Next">
-                                        <span aria-hidden="true"><i className="ri-arrow-right-s-line"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <Pagination
+                        className="pagination-bar"
+                        currentPage={currentPage}
+                        totalCount={data.length}
+                        pageSize={PageSize}
+                        onPageChange={page => setCurrentPage(page)}
+                    />
                 </div>
             </div>
         </>
     )
 }
 
-export default UserDirectory
+export default BankDetails
