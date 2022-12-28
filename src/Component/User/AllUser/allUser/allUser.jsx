@@ -1,14 +1,16 @@
-import React, { useState, useMemo, useRef } from 'react'
+import React, { useState, useMemo} from 'react'
 import allUserCss from "./allUser.module.css"
-import MyDataProfilePic from "../../../assets/AllUsers/AllUserProfilepic.png"
-import headingpicture from "../../../assets/AllUserbankDetails/headingLinePicture.png"
+import MyDataProfilePic from "../../../../assets/AllUsers/AllUserProfilepic.png"
+import headingpicture from "../../../../assets/AllUserbankDetails/headingLinePicture.png"
 import { CSVLink } from "react-csv";
+import { useNavigate } from 'react-router-dom';
+import {ROUTES} from "../../../../Utils/routes"
 
 let PageSize = 2;
-const MyData = () => {
+const AllUser = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggling = () => setIsOpen(!isOpen)
-
+    const navigate = useNavigate();
 
     const headers = [
         { label: "Full Name", key: "full_name" },
@@ -25,22 +27,22 @@ const MyData = () => {
     ];
 
     const data = [
-        { full_name: "Ahmed", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
+        { full_name: "Ahmed", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "", date_of_birth: "11-Dec-2022", contact_number: "", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Tobi", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Ayoub", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
-        { full_name: "John", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
+        { full_name: "John", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Andy", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Ahmed", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Tobi", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" }
     ];
 
-    const [currentPage, setCurrentPage] = useState(1);
+    // const [currentPage, setCurrentPage] = useState(1);
 
-    const currentTableData = useMemo(() => {
-        const firstPageIndex = (currentPage - 1) * PageSize;
-        const lastPageIndex = firstPageIndex + PageSize;
-        return data.slice(firstPageIndex, lastPageIndex);
-    }, [currentPage]);
+    // const currentTableData = useMemo(() => {
+    //     const firstPageIndex = (currentPage - 1) * PageSize;
+    //     const lastPageIndex = firstPageIndex + PageSize;
+    //     return data.slice(firstPageIndex, lastPageIndex);
+    // }, [currentPage]);
    
 
   
@@ -125,12 +127,19 @@ const MyData = () => {
                     {/* {currentTableData.map((item, keyid) => {
                         <div key={keyid}> 
                               </div>
-                    } )}                   */}
+                    } )}  
+                    */}
                         {data.map((datas,keyid) => (
                       
                                 <div className={`col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 ${allUserCss.allUserComponentMain}`} key={keyid}>
                                     <div className={allUserCss.AllUserClassComponent}>
                                         <div className={allUserCss.AllUserClassComponentInner}>
+                                            {data.length === 0 ? 
+                                            <div className={allUserCss.unfilledData}>
+                                                <span>Unfilled Data</span>
+                                            </div>
+                                            : null
+                                            }
                                             <div className="row">
                                                 <div className="col-4 col-lg-4">
                                                     <div className={allUserCss.AllUserProfilepic}>
@@ -148,8 +157,8 @@ const MyData = () => {
                                             <div className="row">
                                                 <div className="col-12 col-lg-12">
                                                     <div className={allUserCss.AllUserProfleDetails}>
-                                                        <label>Date of Joining: {datas.date_of_joining}</label>
-                                                        <label>CNIC: {datas.date_of_joining}</label>
+                                                        <label>Joining Date: {datas.date_of_joining}</label>
+                                                        <label>CNIC: {datas.cnic}</label>
                                                         <label>DOB: {datas.date_of_birth}</label>
                                                         <label>Contact No: {datas.contact_number}</label>
                                                         <label>Branch No: {datas.branch_number}</label>
@@ -162,7 +171,7 @@ const MyData = () => {
                                             <div className="row">
                                                 <div className="col-6 col-lg-6">
                                                     <div className={allUserCss.AllUserProfleDetailButton}>
-                                                        <button className="btn btn-primary shadow-none"> View Details</button>
+                                                        <button className="btn btn-primary shadow-none" onClick={()=>navigate(ROUTES.VIEW_DETAIL)}> View Details</button>
                                                     </div>
                                                 </div>
                                                 <div className="col-6 col-lg-6">
@@ -193,4 +202,4 @@ const MyData = () => {
     )
 }
 
-export default MyData
+export default AllUser

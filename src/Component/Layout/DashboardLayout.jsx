@@ -4,11 +4,7 @@ import Footer from '../Footer/footer'
 import { Outlet, useLocation } from 'react-router-dom'
 
 const DashboardLayout = () => {
-  let location = useLocation();
 
-useEffect(() => {
-    console.log("aa")
-  }, [location]);
   return (
     <>
     <Header></Header>

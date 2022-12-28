@@ -19,7 +19,10 @@ import DashBoard from './Component/DashBoard/dashBoard'
 import UserBody from './Component/User/userBody';
 import BankDetails from './Component/User/BankDetails/bankDetails';
 import UserDirectory from './Component/User/userDirectory/userDirectory';
-import AllUser from './Component/User/AllUser/allUser'
+import AllUser from './Component/User/AllUser/allUser/allUser'
+import AllUserOutlet from './Component/User/AllUser/allUserOutlet';
+import ViewDetail from './Component/User/AllUser/viewDetail/viewDetail';
+import Department from './Component/User/Department/department';
 
 
 function App() {
@@ -30,7 +33,10 @@ function App() {
 
       <Routes>
         <Route element={<DashboardLayout />}>
-          <Route path={ROUTES.USER_PROFILE} element={<UserProfile></UserProfile>}>
+
+          <Route path={ROUTES.DASHBOARD} element={<DashBoard />} />
+
+          <Route path={ROUTES.USER_PROFILE} element={<UserProfile />}>
             <Route path={ROUTES.MY_DEPARTMENT} element={<MyDepartment />}></Route>
             <Route path={ROUTES.FAMILY_TREE} element={<FamilyTree />}></Route>
             <Route path={ROUTES.MY_DATA} element={<MyData />}></Route>
@@ -46,17 +52,24 @@ function App() {
             </Route>
           </Route>
 
-          <Route path={ROUTES.DASHBOARD} element={<DashBoard></DashBoard>} />
 
 
 
-          <Route path={ROUTES.USER_BODY} element={<UserBody></UserBody>}>
+
+
+          <Route path={ROUTES.USER_BODY} element={<UserBody />}>
+            <Route element={<AllUserOutlet />}>
+              <Route path={ROUTES.ALL_USER} element={<AllUser />} />
+              <Route path={ROUTES.VIEW_DETAIL} element={<ViewDetail />} />
+            </Route>
             <Route path={ROUTES.BANK_DETAILS} element={<BankDetails />}></Route>
             <Route path={ROUTES.USER_DIRECTORY} element={<UserDirectory />}></Route>
-            <Route path={ROUTES.ALL_USER} element={<AllUser />}></Route>
-          </Route>
-        </Route>
+            <Route path={ROUTES.DEPARTMENT} element={<Department />}></Route>
+            
 
+          </Route>
+
+        </Route>
 
       </Routes>
 

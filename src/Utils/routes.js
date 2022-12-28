@@ -14,10 +14,13 @@ export const ROUTES = {
 
     DASHBOARD: "/dashboard",
 
-  
-    USER_BODY: "/user-Body",
-    ALL_USER: "all-user",
-    BANK_DETAILS: "bank-Details",
+    USER_BODY: "/user-body",
+    
+    ALL_USER: "/user-body/all-user",
+    VIEW_DETAIL: "/user-body/view-detail",
+    BANK_DETAILS: "bank-Detail",
     USER_DIRECTORY: "user-directory",
+    DEPARTMENT: "department"
+
 
 }

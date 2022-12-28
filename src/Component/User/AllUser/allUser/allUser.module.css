@@ -56,9 +56,7 @@
     align-items: center;
     padding-left: 5%;
 }
-i.fa-solid.fa-download {
-    font-size: 13px;
-}
+
 .DetailsMenuSearchIcon{
 
     width: 20%;
@@ -135,6 +133,71 @@ i.fa-solid.fa-magnifying-glass {
   .UserDetailsdropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+
+  .dropDownContainer{
+    margin-left: 70px;
+}
+
+
+.dropDownHeader{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 22px;
+}
+.dropDownHeader a{
+    color: black;
+    text-decoration: none;
+}
+.dropDownHeader i{
+    font-size: 40px;
+}
+
+.dropDownListContainer{
+    position: absolute;
+    right: 5%;
+    width:200px;
+    z-index: 1;
+}
+
+.DropDownList{
+    border:2px #f1f1f1 solid;
+    background: #ffffff;
+    padding-left:0px;
+    padding-top: 20px;
+}
+
+.ListItem{
+    list-style: none;
+    margin-bottom: 0.8em;
+}
+.ListItem label{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ListItem select{
+   border-radius: 25px;
+}
+.ListItem a{
+    text-decoration: none;
+    color: black;
+}
+.menuIconName{
+    display: flex;
+    justify-content: space-between;
+}
+.menuIconName span{
+    margin-left: 10px;
+}
+.menuIconName i{
+   margin-right: 20px;
+   background-color: #8200c6;
+   color: white;
+   border-radius: 50%;
+   padding: 2px 6px 2px 6px;
+}
 
 
 
@@ -279,6 +342,9 @@ i.fa-solid.fa-magnifying-glass {
     
 
     /*All User Component*/
+
+  
+
     .allUserComponentMain{
         margin-bottom: 30px;
         min-width: 300px;
@@ -292,6 +358,7 @@ i.fa-solid.fa-magnifying-glass {
         display: flex;
         justify-content: center;
     }
+   
  
     .AllUserClassComponentInner{
        
@@ -300,6 +367,20 @@ i.fa-solid.fa-magnifying-glass {
         padding: 20px 10px 20px 10px;
         margin: 0px 8px 0px 8px;
         box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.1);
+        position: relative;
+        min-height: 347px;
+    }
+    .unfilledData{
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+    .unfilledData span{
+        color: rgb(250, 21, 21);
+        padding: 2px 8px 2px 8px;
+        border-radius: 5px;
+        font-size: 11px;   
+        background-color: rgb(255, 219, 219);
     }
     .AllUserProfilepic img{
         width: 70px;
@@ -320,13 +401,14 @@ i.fa-solid.fa-magnifying-glass {
     .AllUserProfleDetails{
         margin-top: 15px;
         margin-bottom: 15px;
+        min-height: 170px;
     }
     .AllUserProfleDetails label{
         font-size: 11px;
         color: #a2a2a2;
         background-color: #faf6fc;
         padding: 4px 7px 4px 7px;
-        Margin: 5px 0px 5px 0px;
+        Margin: 5px 3px 5px 0px;
         border-radius: 8px;
     }
     .AllUserProfleDetailButton button{

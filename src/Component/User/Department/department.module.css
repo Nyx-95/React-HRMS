@@ -3,10 +3,19 @@
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    width: 98%;
 }
 
 .UserDetailsMainHeading{
     width: 60%;
+}
+.UserDetailsMenuSearch{
+    display: flex;
+    align-items: center;
+}
+.UserDetailsMenuSearch a{
+    display: flex;
+    align-items: center;text-decoration: none;
 }
 .UserDetailsMainHeadingRightButton{
     width: 40%;

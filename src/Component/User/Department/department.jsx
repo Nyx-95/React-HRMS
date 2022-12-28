@@ -1,13 +1,13 @@
 import React from 'react'
-import userDirectoryCss from "./userDirectory.module.css"
 import headingpicture from "../../../assets/AllUserbankDetails/headingLinePicture.png"
 import { useEffect, useState, useMemo } from 'react'
 import data from './data/data.json';
 import Pagination from './Pagination'
+import departmenCss from './department.module.css'
 
 let PageSize = 8;
 
-const BankDetails = () => {
+const Department = () => {
     const [currentPage, setCurrentPage] = useState(1);
 
     const currentTableData = useMemo(() => {
@@ -23,23 +23,31 @@ const BankDetails = () => {
     return (
         <>
             <div className="row">
-                <div className={userDirectoryCss.UserDetailsMenuHeader}>
-                    <div className={userDirectoryCss.UserDetailsMainHeading}>
-                        <div className={userDirectoryCss.UserDetailsMainHeadingInner}>
+                <div className={departmenCss.UserDetailsMenuHeader}>
+                    <div className={departmenCss.UserDetailsMainHeading}>
+                        <div className={departmenCss.UserDetailsMainHeadingInner}>
                             <h3>All Users Bank Details</h3>
                             <img src={headingpicture} />
                         </div>
                     </div>
-                    <div className={userDirectoryCss.UserDetailsdropdown}>
-                        <div onClick={toggling} className={userDirectoryCss.dropDownHeader}><a href='#'><i className="ri-arrow-drop-down-fill"></i></a> </div>
+                    <div className={departmenCss.UserDetailsMenuSearch}>
+                        <a href="#">
+                            <div className={departmenCss.menuIconName}>
+                            
+                                <i className="ri-search-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                    {/* <div className={departmenCss.UserDetailsdropdown}>
+                        <div onClick={toggling} className={departmenCss.dropDownHeader}><a href='#'><i className="ri-arrow-drop-down-fill"></i></a> </div>
                         {isOpen && (
-                            <div className={`dropDownListContain ${userDirectoryCss.dropDownListContainer}`}>
-                                <div className={userDirectoryCss.DropDownList}>
+                            <div className={`dropDownListContain ${departmenCss.dropDownListContainer}`}>
+                                <div className={departmenCss.DropDownList}>
                          
                                     
-                                    <div className={userDirectoryCss.ListItem}>
+                                    <div className={departmenCss.ListItem}>
                                         <a href="#">
-                                            <div className={userDirectoryCss.menuIconName}>
+                                            <div className={departmenCss.menuIconName}>
                                                 <span>Search</span>
                                                 <i className="ri-search-line"></i>
                                             </div>
@@ -48,58 +56,37 @@ const BankDetails = () => {
                                 </div>
                             </div>
                         )}
-                    </div>
-                    <div className={userDirectoryCss.UserDetailsMainHeadingRightButton}>
-                        <div className={userDirectoryCss.DetailsMenuShowButton}>
-                            <label>Show</label>
-                            <select id="DetailsHeadingRightSelectNumber" className={userDirectoryCss.DetailsHeadingRightSelectNumber} >
-                                <option value="1">1</option>
-                                <option value="2">20</option>
-                                <option value="3">300</option>
-                            </select>
-                            <label>Entries</label>
-                        </div>
-         
-                        <div className={userDirectoryCss.DetailsMenuSearchIcon}> <a href="#"> <i className="ri-search-line"></i></a></div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="row">
-                <div className={userDirectoryCss.UserDetailsMenuTable}>
-                    <div className={userDirectoryCss.UserDetailsMenuTableInner}>
+                <div className={departmenCss.UserDetailsMenuTable}>
+                    <div className={departmenCss.UserDetailsMenuTableInner}>
                         <table className="table">
                             <thead className="thead-dark">
                                 <tr>
-                                   
-                                    <th scope="col">
-                                        <p>User Name</p>
-                                    </th>
-                                    <th scope="col">
-                                        <p>Active Email</p>
-                                    </th>
-                                    <th scope="col">
-                                        <p>Gender</p>
-                                    </th>
+
                                     <th scope="col">
                                         <p>Department</p>
                                     </th>
                                     <th scope="col">
-                                        <p>Designation</p>
+                                        <p>Head</p>
                                     </th>
-                                   
+                                    <th scope="col">
+                                        <p>Email</p>
+                                    </th>
+                                  
+
                                 </tr>
                             </thead>
                             <tbody>
                                 {currentTableData.map((item, keyid) => {
                                     return (
                                         <tr key={keyid}>
-                                            
-                                            <td><p>{item.first_last_name}</p></td>
-                                            <td><p> {item.email} </p></td>
-                                            <td><p>{item.gender}</p></td>
-                                            
-                                            <td><p>{item.designation}</p></td>
-                                            <td><p>{item.department}</p></td>
+
+                                            <td><p>{item.adminstration}</p></td>
+                                            <td><p> {item.head} </p></td>
+                                            <td><p>{item.email}</p></td>
                                         </tr>
                                     );
                                 })}
@@ -111,11 +98,11 @@ const BankDetails = () => {
                 </div>
             </div>
             <div className="row">
-                <div className={userDirectoryCss.UserBankDetailTableShow}>
+                <div className={departmenCss.UserBankDetailTableShow}>
                     <div className="col-lg-12 ">
-                        <div className={userDirectoryCss.DetailsMenuShowButtonLastRow}>
+                        <div className={departmenCss.DetailsMenuShowButtonLastRow}>
                             <label>Show</label>
-                            <select id="DetailsHeadingRightSelectNumberLastRow" className={userDirectoryCss.DetailsHeadingRightSelectNumberLastRow}>
+                            <select id="DetailsHeadingRightSelectNumberLastRow" className={departmenCss.DetailsHeadingRightSelectNumberLastRow}>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -126,7 +113,7 @@ const BankDetails = () => {
                 </div>
             </div>
             <div className="row">
-                <div className={userDirectoryCss.UserBankDetailsTablePagination}>
+                <div className={departmenCss.UserBankDetailsTablePagination}>
                     <Pagination
                         className="pagination-bar"
                         currentPage={currentPage}
@@ -140,4 +127,4 @@ const BankDetails = () => {
     )
 }
 
-export default BankDetails
+export default Department
