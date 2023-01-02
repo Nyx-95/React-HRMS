@@ -29,12 +29,28 @@ const AllUser = () => {
     const data = [
         { full_name: "Ahmed", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "", date_of_birth: "11-Dec-2022", contact_number: "", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Tobi", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
-        { full_name: "Ayoub", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
+        { full_name: "Ayoub", designation: "", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "John", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Andy", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Ahmed", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" },
         { full_name: "Tobi", designation: "Sr. Manager - Ecomerce", ra: "Sameer Khan", date_of_joining: "12-april-2022", cnic: "41302482828282", date_of_birth: "11-Dec-2022", contact_number: "031331313131", branch_number: "0342", bank_name: "Meezan", gender: "Male", account_number: "002842424242" }
-    ];
+    ].map((el) => {
+        let objectValuesArray = Object.values(el)
+        let res = null
+        res = objectValuesArray.some(innerEl => !innerEl)
+           return res ? {
+            ...el,
+          hasEmpty:true,
+        } : {
+            ...el,
+          hasEmpty:false
+        }
+      })
+
+
+
+    
+
 
     // const [currentPage, setCurrentPage] = useState(1);
 
@@ -129,16 +145,27 @@ const AllUser = () => {
                               </div>
                     } )}  
                     */}
-                        {data.map((datas,keyid) => (
+                        {data.map((datas,key) => (
                       
-                                <div className={`col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 ${allUserCss.allUserComponentMain}`} key={keyid}>
+                                <div className={`col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 ${allUserCss.allUserComponentMain}`} key={key}>
                                     <div className={allUserCss.AllUserClassComponent}>
                                         <div className={allUserCss.AllUserClassComponentInner}>
-                                            {data.length === 0 ? 
+                                             {/* {
+                                             data.map(obj => Object.values(obj).forEach(value => value.length===0 ?
+                                               hasemptyElement = true
+                                             
+                                             : console.log(value, "not empty")
+                                                ))
+                                             } */}
+                                        
+                                            {
+                                            
+                                            datas.hasEmpty && 
+
                                             <div className={allUserCss.unfilledData}>
                                                 <span>Unfilled Data</span>
                                             </div>
-                                            : null
+
                                             }
                                             <div className="row">
                                                 <div className="col-4 col-lg-4">
@@ -148,23 +175,23 @@ const AllUser = () => {
                                                 </div>
                                                 <div className="col-8 col-lg-8">
                                                     <div className={allUserCss.AllUserProfleInfo}>
-                                                        <h6>{datas.full_name}</h6>
-                                                        <label>{datas.designation}</label>
-                                                        <p>{datas.ra}</p>
+                                                        <h6>{datas?.full_name}</h6>
+                                                        <label>{datas?.designation}</label>
+                                                        <p>{datas?.ra}</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="row">
                                                 <div className="col-12 col-lg-12">
                                                     <div className={allUserCss.AllUserProfleDetails}>
-                                                        <label>Joining Date: {datas.date_of_joining}</label>
-                                                        <label>CNIC: {datas.cnic}</label>
-                                                        <label>DOB: {datas.date_of_birth}</label>
-                                                        <label>Contact No: {datas.contact_number}</label>
-                                                        <label>Branch No: {datas.branch_number}</label>
-                                                        <label>Bank Name: {datas.bank_name}</label>
-                                                        <label>Gender: {datas.gender}</label>
-                                                        <label>Account No:{datas.account_number}</label>
+                                                        <label>Joining Date: {datas?.date_of_joining}</label>
+                                                        <label>CNIC: {datas?.cnic}</label>
+                                                        <label>DOB: {datas?.date_of_birth}</label>
+                                                        <label>Contact No: {datas?.contact_number}</label>
+                                                        <label>Branch No: {datas?.branch_number}</label>
+                                                        <label>Bank Name: {datas?.bank_name}</label>
+                                                        <label>Gender: {datas?.gender}</label>
+                                                        <label>Account No:{datas?.account_number}</label>
                                                     </div>
                                                 </div>
                                             </div>
