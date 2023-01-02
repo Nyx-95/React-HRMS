@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Header from '../Header/header'
 import Footer from '../Footer/footer'
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet} from 'react-router-dom'
 
 const DashboardLayout = () => {
 

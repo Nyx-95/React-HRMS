@@ -26,6 +26,7 @@ import Department from './Component/User/Department/department';
 import CreateNewUser from './Component/User/CreateNewUser/createNewUser';
 import ContactDirectory from './Component/User/ContactDirectory/contactDirectory';
 import AllUserRa from './Component/User/allUserRa/allUserRa';
+import EmployeeSalary from './Component/User/employeeSalary/employeeSalary';
 import { element } from 'prop-types';
 
 
@@ -68,6 +69,7 @@ function App() {
             <Route path={ROUTES.CREATE_NEW_USER} element={<CreateNewUser />}></Route>
             <Route path={ROUTES.CONTACT_DIRECTORY} element={<ContactDirectory/>}></Route>
             <Route path={ROUTES.ALL_USER_RA} element={<AllUserRa/>}></Route>
+            <Route path={ROUTES.EMPLOYEE_SALARY} element={<EmployeeSalary/>}></Route>
 
           </Route>
 

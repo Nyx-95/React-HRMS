@@ -23,6 +23,7 @@ export const ROUTES = {
     DEPARTMENT: "department",
     CREATE_NEW_USER: "create-new-user",
     CONTACT_DIRECTORY: "contact-directory",
-    ALL_USER_RA:"all-user-ra"
+    ALL_USER_RA:"all-user-ra",
+    EMPLOYEE_SALARY:"employee-salary"
 
 }
