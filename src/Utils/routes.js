@@ -24,6 +24,8 @@ export const ROUTES = {
     CREATE_NEW_USER: "create-new-user",
     CONTACT_DIRECTORY: "contact-directory",
     ALL_USER_RA:"all-user-ra",
-    EMPLOYEE_SALARY:"employee-salary"
+    EMPLOYEE_SALARY:"employee-salary",
+    USER_EVENTS: "user-events",
+    PROBATION_USER: "probation-user"
 
 }

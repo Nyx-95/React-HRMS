@@ -368,19 +368,19 @@ i.fa-solid.fa-magnifying-glass {
         margin: 0px 8px 0px 8px;
         box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.1);
         position: relative;
-
+        min-height: 347px;
     }
-    .eventData{
+    .unfilledData{
         position: absolute;
         top: 0;
         right: 20px;
     }
-    .eventData span{
-        color: #8200c6;
+    .unfilledData span{
+        color: rgb(250, 21, 21);
         padding: 2px 8px 2px 8px;
         border-radius: 5px;
         font-size: 11px;   
-        background-color: rgb(252, 219, 255);
+        background-color: rgb(255, 219, 219);
     }
     .AllUserProfilepic img{
         width: 70px;
