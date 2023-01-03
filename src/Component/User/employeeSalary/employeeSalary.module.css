@@ -128,7 +128,8 @@
     margin-right: 20px;
  
 }
-.tableHeaderDiv1{
+
+.tableHeaderDivButton{
     width: 50%;
     min-width: 150px;
     display: flex;
@@ -141,8 +142,8 @@
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 15px;
+    border: none;
     box-shadow: 0px 0px 15px 5px #8100c62c;
-    
 }
 .tableHeaderDiv1Icon{
     background-color:#901acd;
@@ -229,6 +230,15 @@
 
 .UserDetailsMenuTable tbody > tr:last-child > td {
     border-bottom: 0;
+}
+
+table tbody tr td i{
+    color: white;
+    background-color: #8200c6;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 /*Attendance table ends*/

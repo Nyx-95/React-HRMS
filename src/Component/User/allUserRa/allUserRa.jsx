@@ -79,7 +79,7 @@ const AllUserRa = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {currentTableData.map((item, keyid) => {
+                                {data.map((item, keyid) => {
                                     return (
                                         <tr key={keyid}>
 

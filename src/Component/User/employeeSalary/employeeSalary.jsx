@@ -9,13 +9,36 @@ const EmployeeSalary = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const toggling = () => setIsOpen(!isOpen);
+
+    const headers = [
+        { label: "Serial No.", key: "serial_no" },
+        { label: "Array Id", key: "array_id" },
+        { label: "Employee Id", key: "employee_id" },
+        { label: "Employee Name", key: "employee_name" },
+        { label: "Date of Joining", key: "date_of_joining" },
+        { label: "Reporting Authority", key: "reporting_authority" },
+        { label: "Employee Type", key: "employee_type" },
+        { label: "Salary", key: "salary" }
+
+   
+    ];
+
+    const data = [
+        { serial_no: "2", array_id: "AD-0008", employee_id: "AD-23510", employee_name: "Syed Sadat Ali", date_of_joining: "08-01-2018", reporting_authority: "Rameez Shahid", employee_type: "Permanent", salary: "Rs. 325,000.0"},
+        { serial_no: "2", array_id: "AD-0008", employee_id: "AD-23510", employee_name: "Syed Sadat Ali", date_of_joining: "08-01-2018", reporting_authority: "Rameez Shahid", employee_type: "Permanent", salary: "Rs. 325,000.0"},
+        { serial_no: "2", array_id: "AD-0008", employee_id: "AD-23510", employee_name: "Syed Sadat Ali", date_of_joining: "08-01-2018", reporting_authority: "Rameez Shahid", employee_type: "Permanent", salary: "Rs. 325,000.0"},
+        { serial_no: "2", array_id: "AD-0008", employee_id: "AD-23510", employee_name: "Syed Sadat Ali", date_of_joining: "08-01-2018", reporting_authority: "Rameez Shahid", employee_type: "Permanent", salary: "Rs. 325,000.0"},
+        { serial_no: "2", array_id: "AD-0008", employee_id: "AD-23510", employee_name: "Syed Sadat Ali", date_of_joining: "08-01-2018", reporting_authority: "Rameez Shahid", employee_type: "Permanent", salary: "Rs. 325,000.0"},
+        { serial_no: "2", array_id: "AD-0008", employee_id: "AD-23510", employee_name: "Syed Sadat Ali", date_of_joining: "08-01-2018", reporting_authority: "Rameez Shahid", employee_type: "Permanent", salary: "Rs. 325,000.0"},
+    ]
+
   return (
     <>
     <div className={`row ${EmployeeSalaryCss.myAttendanceMain}`}>
         <div className={`row ${EmployeeSalaryCss.headingMain}`}>
             <div className={`row ${EmployeeSalaryCss.headingInner}`}>
                 <div className={`col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 ${EmployeeSalaryCss.headingWrapper}`}>
-                    <h4> My Attendance Report</h4>
+                    <h4> Employee Salary</h4>
                     <img src={headingpicture}></img>
                 </div>
                 {/* <div className={`col-lg-3 col-xl-3 entrieSelectWrapperJQ ${EmployeeSalaryCss.entrieSelectWrapper}`} >
@@ -81,9 +104,10 @@ const EmployeeSalary = () => {
                                 </div>
                             </div>
                             <div className={EmployeeSalaryCss.tableHeaderDivs}>
-                                <div className={EmployeeSalaryCss.tableHeaderDiv1}>
-                                    Search
-                                </div>
+           
+                                    <button className={EmployeeSalaryCss.tableHeaderDivButton}>   Search</button>
+                                 
+                    
                             </div>
                         </div>
                     </div>
@@ -124,74 +148,29 @@ const EmployeeSalary = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>2</td>
-                                <td>AD-0008</td>
-                                <td>AD-23510</td>
-                                <td>Syed Sadat Ali</td>
-                                <td>08-01-2018</td>
-                                <td>Rameez Shahid</td>
-                                <td>Permanent</td>
-                                <td>Rs. 325,000.0</td>
-                                <td>details Button</td>
-                                <td>edit Button</td>
+                        {data.map((item, keyid) => {
+                            return(
+                            <tr key={keyid}>
+                                <td>{item.serial_no}</td>
+                                <td>{item.array_id}</td>
+                                <td>{item.employee_id}</td>
+                                <td>{item.employee_name}</td>
+                                <td>{item.date_of_joining}</td>
+                                <td>{item.reporting_authority}</td>
+                                <td>{item.employee_type}</td>
+                                <td>{item.salary}</td>
+                                <td><i className="ri-profile-line"></i></td>
+                                <td><i className="ri-edit-line"></i></td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>AD-0008</td>
-                                <td>AD-23510</td>
-                                <td>Syed Sadat Ali</td>
-                                <td>08-01-2018</td>
-                                <td>Rameez Shahid</td>
-                                <td>Permanent</td>
-                                <td>Rs. 325,000.0</td>
-                                <td>details Button</td>
-                                <td>edit Button</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>AD-0008</td>
-                                <td>AD-23510</td>
-                                <td>Syed Sadat Ali</td>
-                                <td>08-01-2018</td>
-                                <td>Rameez Shahid</td>
-                                <td>Permanent</td>
-                                <td>Rs. 325,000.0</td>
-                                <td>details Button</td>
-                                <td>edit Button</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>AD-0008</td>
-                                <td>AD-23510</td>
-                                <td>Syed Sadat Ali</td>
-                                <td>08-01-2018</td>
-                                <td>Rameez Shahid</td>
-                                <td>Permanent</td>
-                                <td>Rs. 325,000.0</td>
-                                <td>details Button</td>
-                                <td>edit Button</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>AD-0008</td>
-                                <td>AD-23510</td>
-                                <td>Syed Sadat Ali</td>
-                                <td>08-01-2018</td>
-                                <td>Rameez Shahid</td>
-                                <td>Permanent</td>
-                                <td>Rs. 325,000.0</td>
-                                <td>details Button</td>
-                                <td>edit Button</td>
-                            </tr>
-
+                            );
+                        })}
                         </tbody>
                     </table>
                 
                 </div>
             </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
                 <div className={EmployeeSalaryCss.UserBankDetailTableShow}>
                     <div className="col-lg-12 ">
                         <div className={EmployeeSalaryCss.DetailsMenuShowButtonLastRow}>
@@ -205,7 +184,7 @@ const EmployeeSalary = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         <div className="row">
                         <div className={EmployeeSalaryCss.UserBankDetailsTablePagination}>
                             <div className="col-lg-12 ">
