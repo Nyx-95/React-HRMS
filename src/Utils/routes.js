@@ -15,7 +15,6 @@ export const ROUTES = {
     DASHBOARD: "/dashboard",
 
     USER_BODY: "/user-body",
-    
     ALL_USER: "/user-body/all-user",
     VIEW_DETAIL: "/user-body/view-detail",
     BANK_DETAILS: "bank-Detail",
@@ -26,6 +25,8 @@ export const ROUTES = {
     ALL_USER_RA:"all-user-ra",
     EMPLOYEE_SALARY:"employee-salary",
     USER_EVENTS: "user-events",
-    PROBATION_USER: "probation-user"
+    PROBATION_USER: "probation-user",
 
+    ATTENDANCE: "/attendance",
+    ATTENDANCE_REPORT: "attendance-report"
 }

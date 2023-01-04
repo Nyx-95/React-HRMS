@@ -29,7 +29,9 @@ import AllUserRa from './Component/User/allUserRa/allUserRa';
 import EmployeeSalary from './Component/User/employeeSalary/employeeSalary';
 import UserEvents from './Component/User/userEvents/userEvents';
 import ProbationUser from './Component/User/probationUser/probationUser';
+import Attendance from './Component/Attendance/attendance'
 import { element } from 'prop-types';
+import AttendanceReport from './Component/Attendance/AttendanceReport/attendanceReport';
 
 
 function App() {
@@ -74,6 +76,11 @@ function App() {
             <Route path={ROUTES.EMPLOYEE_SALARY} element={<EmployeeSalary/>}></Route>
             <Route path={ROUTES.USER_EVENTS} element={<UserEvents/>}></Route>
             <Route path={ROUTES.PROBATION_USER} element={<ProbationUser/>}></Route>
+          </Route>
+
+
+          <Route path={ROUTES.ATTENDANCE} element={<Attendance />}>
+            <Route path={ROUTES.ATTENDANCE_REPORT} element={<AttendanceReport />}></Route>
           </Route>
 
         </Route>

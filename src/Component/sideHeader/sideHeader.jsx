@@ -67,12 +67,12 @@ function SideHeader() {
 
                     </li>
                     <li className="has-subnav">
-                        <a href="#">
+                        <NavLink to={ROUTES.ATTENDANCE}>
                             <i className="ri-calendar-line"></i>
                             <span className="navText">
                                 Attendance
                             </span>
-                        </a>
+                        </NavLink>
 
                     </li>
                     <li className="has-subnav">
